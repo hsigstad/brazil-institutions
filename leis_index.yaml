@@ -15,6 +15,12 @@
 # - Reform laws are cross-linked via "reformed_by" / "reforms".
 # - Constitutional amendments (EC) and decree-laws (DL) follow the
 #   same schema with appropriate tipo field.
+# - "apelido" (when present) is the short alias used in the
+#   article-level law database (tools/leis_artigos/) and in canonical
+#   bracket-form citations like [[LIA Art. 9 §1.II]] documented in
+#   CLAUDE.md. Only laws ingested into the article DB carry an
+#   apelido. Laws without an apelido are still cited in long form
+#   (e.g., [[Lei 13.709/2018 Art. 7]]).
 
 schema_version: 1
 last_updated: 2026-04-09
@@ -210,6 +216,7 @@ statutes:
     numero: "8429"
     ano: 1992
     titulo: Lei de Improbidade Administrativa (LIA)
+    apelido: LIA
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/l8429.htm
     topics: [civil_corruption, improbidade, MP]
@@ -269,6 +276,7 @@ statutes:
     numero: "8666"
     ano: 1993
     titulo: Lei Geral de Licitações
+    apelido: L8666
     status: parcialmente_revogada
     url: https://www.planalto.gov.br/ccivil_03/leis/l8666cons.htm
     topics: [procurement, corruption]
@@ -300,6 +308,7 @@ statutes:
     numero: "9504"
     ano: 1997
     titulo: Lei das Eleições
+    apelido: LE
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/l9504.htm
     topics: [electoral_law, campaign_finance]
@@ -574,6 +583,7 @@ statutes:
     numero: "14133"
     ano: 2021
     titulo: Nova Lei de Licitações
+    apelido: L14133
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm
     topics: [procurement]

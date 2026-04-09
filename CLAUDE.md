@@ -51,6 +51,127 @@ Files are designed for grep-first reading. Useful patterns:
   inline. Treat anything without a date as durable; treat anything
   with a date as needing verification before being cited as current.
 
+## Citing statutes — the canonical bracket form
+
+This repository uses a canonical citation format that is designed to
+**resolve directly against an article-level law database** (currently
+in development under `tools/leis_artigos/`, with the database file
+shipped separately). Following the format consistently is the contract
+between the prose reference and the lookup tool.
+
+### Form
+
+```
+[[apelido Art. N path :modifier]]
+```
+
+- **Double brackets** distinguish resolvable citations from inline
+  prose mentions and from regular markdown link syntax `[text](url)`.
+- **Inside the brackets**: identifier, optional article, optional
+  path, optional vintage modifier — separated by single spaces.
+
+### Identifier
+
+- **Cataloged laws** use the apelido from `leis_index.yaml`. Currently
+  cataloged: `LIA` (Lei 8.429/1992), `L8666` (Lei 8.666/1993),
+  `L14133` (Lei 14.133/2021), `LE` (Lei 9.504/1997). New apelidos are
+  added as the database grows.
+- **Non-cataloged laws** use the long form: `Lei 13.709/2018`,
+  `LC 64/1990`, `CF`, `CP`, `CPP`, `CLT`, etc. Same bracketed
+  structure; same `Art. N path` syntax inside; just doesn't resolve
+  via the lookup tool until cataloged.
+- **Whole laws by canonical id** use the `fonte_id` form from the
+  database: `L14230-2021`, `LC219-2025`, `EC45-2004`, `DL2848-1940`.
+
+### Article and path
+
+- `Art. N` for plain article number (e.g., `Art. 9`).
+- `Art. N-X` for articles with letters (e.g., `Art. 17-A`).
+- `path` follows the structural-path convention used by the database:
+  `caput`, `II`, `II.a`, `§1`, `§1.II`, `§1.II.a`, `§unico`, `ementa`.
+  See `tools/leis_artigos/PATH_CONVENTION.md` for the full grammar
+  once the tool is in place.
+
+### Vintage modifiers (optional)
+
+| Modifier | Meaning | Maps to |
+|---|---|---|
+| (none) | Currently in force | `vigente_ate IS NULL` |
+| `@YYYY-MM-DD` | Version in force on this date | `vigente_desde <= date AND (vigente_ate IS NULL OR date < vigente_ate)` |
+| `from:fonte_id` | Version introduced by a specific source | `fonte_id = X` |
+| `:original` | The first-published version | min(`vigente_desde`) for that path |
+| `:current` | Explicit "currently in force" (same as no modifier) | `vigente_ate IS NULL` |
+
+### Examples
+
+```
+[[LIA Art. 9]]                          ← whole article, all current paths
+[[LIA Art. 9 §1.II]]                    ← specific leaf, current
+[[LIA Art. 17-A caput]]                 ← article with letter
+[[LIA Art. 11 §unico @2020-06-01]]      ← what § único said in mid-2020
+[[LE Art. 11 §10 @2024-12-31]]          ← § 10 before LC 219/2025 revoked it
+[[LIA Art. 10 from:L14230-2021]]        ← Art. 10 as rewritten by the 2021 reform
+[[LIA Art. 10 :original]]               ← original 1992 wording
+[[LIA ementa]]                          ← the law's preamble
+[[LIA]]                                 ← refer to the law as a whole
+[[L14230-2021]]                         ← refer to a non-cataloged amending law
+[[Lei 13.709/2018 Art. 7]]              ← long form for non-cataloged law
+[[CF Art. 31 §2]]                       ← long form for the constitution
+```
+
+### Citing amendment events
+
+The database has a separate `amendment` table for tracking which
+amending lei touched which clause, but **citations don't need a
+separate amendment-event syntax**. Express the change as a combination
+of leaf citations + amending-law citations:
+
+> The 2021 reform [[L14230-2021]] rewrote [[LIA Art. 10]] and
+> eliminated culposa improbidade. Pre-reform, [[LIA Art. 10 :original]]
+> permitted both intentional and negligent conduct; post-reform,
+> [[LIA Art. 10 from:L14230-2021]] requires proof of dolo.
+
+When you need to query the amendment table directly (e.g., "what did
+L14230-2021 touch?"), use the lookup tool with `--by-amending`
+flag — but the prose stays in leaf-citation form.
+
+### When to use the bracket form vs prose mention
+
+- **Use the bracket form** when you want a *resolvable* citation —
+  one that points to a specific row (or query) in the database. This
+  is most useful when discussing a specific clause's text, comparing
+  versions, or anchoring a claim to the precise statutory language.
+- **Use prose mention** ("Lei 8.429/1992 Art. 9", "the 2021 reform")
+  for narrative references that don't need to resolve to a specific
+  database row.
+- **Both styles can coexist in the same paragraph.** The bracket form
+  is opt-in; existing topical files mostly use prose mentions and
+  that's fine.
+
+### Migration policy
+
+- Don't sweep existing files to convert prose mentions to bracket
+  form. That's high-effort and low-value.
+- When you *touch* a topical file for other reasons, you may
+  opportunistically convert the most prominent statutory anchors to
+  bracket form — particularly for the four cataloged laws.
+- When a new law gets cataloged, its apelido is added to
+  `leis_index.yaml` and topical files can reference it with the new
+  apelido.
+
+### Apelido naming policy
+
+- Apelidos are short, distinct, and assigned in `leis_index.yaml`.
+- For most ordinary leis, the apelido is `L<numero>` (e.g., `L8666`,
+  `L14133`).
+- For laws with a widely-known acronym, the acronym is preferred
+  (e.g., `LIA` for Lei de Improbidade Administrativa, `LE` for Lei
+  Eleitoral, `LRF` for Lei de Responsabilidade Fiscal, `LAI`,
+  `LGPD`).
+- For ambiguity (`CC` could be Código Civil 2002 or Código Comercial
+  1850), the first cataloged law gets the apelido and conflicts are
+  resolved with a year suffix (`CC2002`, `CC1850`).
+
 ## When you make changes
 
 - **Preserve the conventions**. Each topical file opens with: scope
