@@ -48,26 +48,45 @@ VI - em 3 (três) anos, se o máximo da pena é inferior a 1 (um) ano.
 
 ### Foro privilegiado
 
-Approximate [22](lei/2.org::*Art%202),000 has foro privilegiado
+Approximately 22,000 authorities have foro privilegiado (criminal-
+case forum) under the Constitution and state constitutions.
+Established by `CF.102` (STF), `CF.105` (STJ), and parallel state-
+level provisions.
 
-Applies to all criminal cases related/unrelated to office and
-before/after taking office
+**Scope under STF jurisprudence (post-2018):**
 
-Discussion whether acao de improbidade should follow. On the docket to
-be decided by the Supreme Court. Right now foro should not apply to
-those cases.
+- **Criminal actions only.** Foro privilegiado is a criminal-procedure
+  device. Settled by `Pet3240` (STF Plenário, 2018-05-10, Rel. Roberto
+  Barroso, 10–1): improbidade administrativa is *civil*, so the foro
+  provisions in `CF.102`/`CF.105` do not extend to it. Even authorities
+  with criminal foro respond to improbidade actions in first instance.
+  Reaffirms **ADI 2797** (2005, Rel. Sepúlveda Pertence), which had
+  already declared unconstitutional the legislative attempt in
+  Lei 10.628/2002 to create foro for improbidade via § 2º of CPP
+  Art. 84.
+- **Restricted to mandate-period crimes connected to the office.**
+  In **AP 937 QO** (Plenário, 2018-05-03, Rel. Roberto Barroso),
+  decided one week before Pet 3240, STF restricted criminal foro
+  privilegiado to crimes committed *during the mandate* AND *in
+  connection with the office held*. Crimes outside this window or
+  unconnected to office are tried at first instance, even when the
+  defendant currently occupies a foro-bearing position. (AP 937 QO is
+  not yet in `jurisprudencia_index.yaml`; should be added.)
+- **Movement of cases between instances.** When a defendant takes
+  office, criminal cases against them that meet the AP 937 criteria
+  move *up* to the higher court; when they leave office, cases move
+  back *down*. STF has flagged that downward movement just before
+  prescription is suspect and may be policed for abuse.
 
-Cases go up and down to higher courts depending on whether the
-politician is in office. Unless movement to lower court is a clear move
-by the defendant to exceed the statute of limitations.
+**State-level variation.** In some states, legislation grants foro to
+vereadores, auditores, and delegados — controversial and sometimes
+struck down on equality grounds. In São Paulo: vice-governadores,
+secretários estaduais, and deputados estaduais carry state foro;
+vereadores and vice-prefeitos do not.
 
-In some states [veradores, auditores, and delegados have
-foro](http://www1.folha.uol.com.br/poder/2017/05/1888256-estados-dao-foro-privilegiado-a-vereadores-auditores-e-ate-delegados.shtml)
-
-[Overview](http://epoca.globo.com/politica/noticia/2017/03/para-cada-estado-uma-regra-diferente-de-foro-privilegiado.html)
-
-In São Paulo: Vice-governadores, secretarios estaduais, deputados
-estaduais, NOT: vereadores, vice-prefeitos
+**Cross-references**: `topics/improbidade.md` §3 for the
+improbidade-specific framing; `jurisprudencia-stf.md` for the
+canonical descriptions of `Pet3240` and `ADI2797`.
 
 ### Allocation of cases to judges
 

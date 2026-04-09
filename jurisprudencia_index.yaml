@@ -82,6 +82,39 @@ cases:
     superado_por: null
     fonte: https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1199
 
+  Pet3240:
+    tipo: AgR_Pet
+    numero: 3240
+    processo: Pet 3.240 AgR / DF
+    aliases: [Pet3240AgR]
+    relator: Roberto Barroso
+    relator_original: Teori Zavascki
+    decidido: 2018-05-10
+    publicacao: 2018-08-22  # DJe
+    votacao: 10-1
+    tema: improbidade — inexistência de foro por prerrogativa de função
+    status: vigente
+    holding_short: >
+      A ação de improbidade administrativa tem natureza civil; o foro
+      por prerrogativa de função estabelecido na CF para infrações
+      penais comuns (Arts. 102 e 105) não se estende a ela. Mesmo
+      autoridades com foro criminal (ministros de Estado, governadores,
+      parlamentares) respondem em primeira instância em ações de
+      improbidade. Reafirma ADI 2797 (2005), que já havia declarado
+      inconstitucional a tentativa do Lei 10.628/2002 de criar foro
+      para improbidade via § 2º do art. 84 do CPP.
+    discussed_in: [topics/improbidade.md, topics/procedimentos-legais.md, jurisprudencia-stf.md]
+    related_leis: [LIA, CF]
+    nota: >
+      Reafirma ADI 2797 (decidida 2005-09-15, Rel. Sepúlveda Pertence),
+      que declarou inconstitucional o § 2º do art. 84 do CPP introduzido
+      pela Lei 10.628/2002 — tentativa legislativa de criar foro
+      privilegiado para improbidade. ADI 2797 ainda não consta deste
+      índice.
+    supera: []
+    superado_por: null
+    fonte: https://portal.stf.jus.br/processos/detalhe.asp?incidente=2230342
+
   # ---------------------------------------------------------------------
   # 2. Contas municipais e Ficha Limpa
   # ---------------------------------------------------------------------

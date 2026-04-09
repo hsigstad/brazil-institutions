@@ -63,6 +63,36 @@ modulated, overruled, or superseded by checking
   [`topics/licitacoes.md`](topics/licitacoes.md) §"Related statutes".
 - **Source**: <https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1199>.
 
+### Pet 3.240 AgR — Inexistência de foro por prerrogativa em improbidade
+
+- **Decided**: 10 May 2018, Plenário (DJe 22 August 2018).
+- **Rel.**: Min. Roberto Barroso (after redistribution from Min. Teori
+  Zavascki).
+- **Votação**: 10–1.
+- **Holding**: Improbidade administrativa actions are *civil*, not
+  criminal. The foro por prerrogativa de função established in CF
+  Arts. 102 and 105 covers only "infrações penais comuns" and does
+  not extend to civil improbidade actions. Even authorities with
+  criminal foro privilegiado (ministros de Estado, governadores,
+  parlamentares, including in principle the President) respond to
+  improbidade actions in **first instance**, alongside ordinary
+  defendants.
+- **Doctrinal posture**: reaffirms **ADI 2797** (Plenário, decided
+  15 September 2005, Rel. Sepúlveda Pertence), which had already
+  declared unconstitutional the legislative attempt in Lei 10.628/2002
+  to add § 2º to CPP Art. 84 and create a foro privilegiado for
+  improbidade. Pet 3240 closes the door on revival of that argument.
+  (ADI 2797 not yet in `jurisprudencia_index.yaml`; should be added.)
+- **Why it matters for empirical work**: this is the case that lets
+  researchers study improbidade caseloads at the first-instance level
+  uniformly, without segregating defendants by political rank.
+  Mayors, governors, and ministros all appear in TJ/TRF first-
+  instance dockets; there's no parallel "STF improbidade" track to
+  worry about.
+- **Cited in**: [`topics/improbidade.md`](topics/improbidade.md) §3,
+  [`topics/procedimentos-legais.md`](topics/procedimentos-legais.md) §"Foro privilegiado".
+- **Source**: <https://portal.stf.jus.br/processos/detalhe.asp?incidente=2230342>.
+
 ---
 
 ## 2. Contas municipais e Ficha Limpa

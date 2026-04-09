@@ -192,11 +192,12 @@ ACP is filed, jurisdiction follows the money:
   the federal-competence rule in `CF.109`.
 - **No foro por prerrogativa.** Improbidade actions follow ordinary
   first-instance rules regardless of the defendant's political office,
-  including for governors and mayors. Settled by STF in 2018 (QO Pet
-  3.240, not yet in `jurisprudencia_index.yaml`); see
-  `procedimentos-legais.md` for the broader foro discussion. This is
-  load-bearing for empirical work because mayors are prosecuted at the
-  same first-instance vara as ordinary defendants.
+  including for governors, ministros, and mayors. Settled by `Pet3240`
+  (STF Plenário, 2018-05-10, Rel. Roberto Barroso, 10–1), which
+  reaffirmed ADI 2797 (2005). See `procedimentos-legais.md` for the
+  broader foro discussion. Load-bearing for empirical work: the
+  population of improbidade defendants is uniformly first-instance,
+  with no parallel STF docket to segregate.
 
 ### The 2021 reform restructured the case flow
 
