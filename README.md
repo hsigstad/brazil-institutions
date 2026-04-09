@@ -137,7 +137,13 @@ citations. Please see `CONTRIBUTING.md` for guidelines.
 Released under **CC BY 4.0** (see `LICENSE`). You are free to use,
 share, and adapt the material with attribution.
 
-## Citation
+## Designed for use with Claude Code
 
-If you find this reference useful in academic work, please cite it via
-the `CITATION.cff` file in this repository.
+This repository is structured for use with [Claude Code](https://claude.com/claude-code)
+and similar coding agents working on Brazilian institutional research.
+The format conventions (topic keywords, inline statute citations,
+cross-reference back-links, alphabetical indices) are optimized for
+fast grep and self-contained claims that survive being read out of
+context. See [`CLAUDE.md`](CLAUDE.md) for the agent-facing entry
+point. Humans should start with this README; Claude Code sessions
+will auto-load `CLAUDE.md`.
