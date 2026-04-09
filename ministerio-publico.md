@@ -27,8 +27,8 @@ the exclusive holder of standing in improbidade actions (see
 `improbidade.md`). CNMP composition and rules updated periodically by
 constitutional amendment (EC 45/2004 created it).
 
-Sourced from general knowledge, `decompose` project fragments, and
-existing `funcoes-essenciais.md`.
+Compiled from personal research notes on the Ministério Público,
+complementing the constitutional overview in `funcoes-essenciais.md`.
 
 ---
 
@@ -144,15 +144,15 @@ and each state's own Lei Orgânica.
   *promoção* (antiguidade or merecimento) between entrâncias. See
   `carreira-juizes.md` for the parallel judicial career structure.
 
-### Career movements (MP-SP, decompose project)
+### Career movements (MP-SP)
 
 - **Promoção**: permanent move between entrâncias (antiguidade or
   merecimento).
 - **Remoção**: permanent transfer within the same entrância.
 - **Permuta**: mutual swap between two prosecutors.
 - **Designação**: temporary assignment (vacation, leave coverage).
-- MP-SP: ~154 permanent movements/year across 319 comarcas (decompose
-  project data).
+- In MP-SP, on the order of ~150 permanent movements per year occur
+  across the ~319 comarcas (rough scale from internal observation).
 
 ---
 
@@ -193,16 +193,15 @@ training to the promotores who hold cases in the field.
 - Central actor in most high-profile corruption operations (Lava Jato
   was led largely out of MPF force-tasks, not the GAECO brand, but the
   operational model is similar).
-- `decompose` project notes 2,766 mentions of GAECO in MP-SP data.
 
 ### Patrimônio Público specialization
 
 - Capital-city MPE typically has **Promotores de Justiça do Patrimônio
   Público**, specialized in improbidade, licitação fraud, and
   administrative irregularities.
-- In São Paulo: dedicated Promotores de Patrimônio Público (decompose
-  project notes 441 mentions). In small comarcas, the single assigned
-  promotor handles improbidade alongside everything else.
+- In São Paulo, dedicated Promotores de Patrimônio Público handle
+  improbidade at the capital. In small comarcas, the single assigned
+  promotor handles improbidade alongside all other case types.
 
 ### Other specialized positions
 

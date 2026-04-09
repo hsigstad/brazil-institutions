@@ -20,9 +20,8 @@ highest conciliation rate in the Brazilian judiciary. They also offer a
 relatively rare empirical feature: **nearly all settlements are
 judicially mediated and observable in the data**.
 
-Sourced from `projects/lawsuit/docs/institutions.md`,
-`projects/connect/docs/institutions.md`, and
-`projects/deterrence/docs/institutions.md`.
+Compiled from personal research notes on Brazilian labor courts, with
+citations to published CNJ and TST reports where relevant.
 
 ---
 
@@ -64,16 +63,15 @@ Sourced from `projects/lawsuit/docs/institutions.md`,
 - Impedimento is *matéria de ordem pública*: judge can recognize ex
   officio. Suspeição (bias) is not — must be raised by a party.
 
-### Empirical compliance (connect project)
+### Compliance notes
 
-- Direct relatives: judges recuse in nearly all cases (41–42pp drop in
-  main judge deciding).
-- About half of recusals go to the substitute in the same vara (potential
-  for continued favoritism).
-- Colleagues of relatives: judges recuse in only ~half of cases (29pp
-  pre-2015, 16pp post-2015). 2015 CPC reform did not noticeably increase
-  compliance for colleague connections.
-- Cousins (not covered by the rules): no change in assignment.
+- Compliance with formal impedimento rules is high when the lawyer is a
+  direct relative of the judge.
+- Compliance is substantially weaker for looser connections (e.g.,
+  relatives of colleagues in the same law firm), even after the 2015
+  CPC reform explicitly extended the rule to members of the firm.
+- Cousins (not covered by the rule) generate no observable change in
+  case assignment.
 
 ---
 
@@ -130,7 +128,7 @@ for *justiça gratuita* beneficiaries:
 filing cost deterrence. The 40% RGPS threshold for automatic eligibility
 remains in force; non-beneficiaries still face the full cost regime.
 
-### Impact on filing volumes (lawsuit project)
+### Impact on filing volumes
 
 | Year | New cases (1st instance) | Change |
 |---|---|---|
@@ -275,8 +273,8 @@ The 2017 reform clarified the boundary through two CLT articles:
 
 ## Overtime disputes (horas extras) — evidentiary rules
 
-The most frequent category of labor cases (~65% per the deterrence project
-sample; lawsuit notes 38% as top subject).
+Overtime disputes are consistently the most frequent category of labor
+cases; exact share varies by sample and period.
 
 Key legal standards:
 
@@ -314,14 +312,14 @@ Key legal standards:
   awarded).
 - Defendant lawyers: typically on **fixed-wage** contracts independent of
   case outcome.
-- The asymmetry potentially explains why favoritism effects are found only
-  for plaintiff-side connections.
+- This asymmetry shapes incentives differently on the two sides of a
+  case.
 
 ---
 
 ## Typical timeline (first instance)
 
-Based on CNJ and TRT data (lawsuit project):
+Based on aggregated CNJ and TRT data:
 
 - **Filing → first hearing**: ~135 days (~4.5 months).
 - **First hearing → continuation hearing**: ~300–450 days (high variance).

@@ -140,8 +140,8 @@ CGU historically has four pillars:
     corruption.
   - Avis, Ferraz & Finan (2018, *JPE*): deterrence effect of audits on
     future corruption.
-  - Used extensively by this research group — `audit`, `decompose`,
-    `deterrence`, and the Ferraz–Finan–Monteiro line of work.
+  - The Ferraz–Finan–Monteiro line of work remains the canonical
+    reference.
 
 ### Operational details
 

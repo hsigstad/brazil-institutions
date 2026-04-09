@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+message: "If you use this reference in academic work, please cite it as below."
+title: "Brazilian institutions — a research reference"
+abstract: >-
+  A topical reference on Brazilian legal and political institutions,
+  compiled for empirical research use. Covers courts, procedure, the
+  Ministério Público, fiscal federalism, electoral system, procurement,
+  corruption statutes, and related topics.
+type: dataset
+authors:
+  - family-names: Sigstad
+    given-names: Henrik
+license: CC-BY-4.0
+repository-code: "https://github.com/hsigstad/brazil-institutions-reference"
+keywords:
+  - Brazil
+  - institutions
+  - judiciary
+  - electoral system
+  - fiscal federalism
+  - Ministério Público
+  - improbidade
+  - procurement
+  - corruption
+  - Lei 8.666
+  - Lei 14.133
+  - Ficha Limpa
+  - CGU
+  - CNJ

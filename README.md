@@ -1,19 +1,40 @@
-# Brazilian institutions — reference
+# Brazilian institutions — a research reference
 
-Reference notes on Brazilian legal institutions, courts, and procedure.
-Compiled from accumulated org-mode notes (`~/Dropbox/org/judiciario.org` and
-`~/Dropbox/org/processo.org`), which span ~2018–2025. Migrated and split
-into topical files in this directory.
+A topical reference on Brazilian legal and political institutions,
+compiled for empirical research use. Covers courts, procedure, the
+Ministério Público, fiscal federalism, electoral system, procurement,
+corruption statutes, and related topics.
 
-**Status: snapshot, not authoritative.** Some details may be out of date
-(e.g., post-2017 CPC reforms, recent CNJ resolutions, electoral law
-changes). For project work that depends on legally-current details, verify
-against the current law text. This is reference for orientation, not
-citation.
+These are **personal research notes**, not an authoritative legal
+treatise. The target audience is researchers who need an orientation
+to Brazilian institutions dense enough to inform research design but
+not exhaustive. Most claims cite statutes or jurisprudence inline; each
+file lists topic keywords at the top to help search.
 
-**Language:** Portuguese where translation loses meaning, English otherwise.
-Many legal terms have no clean English equivalent (`improbidade`, `prestação
-de contas`, `recurso especial` etc.) and are kept in Portuguese throughout.
+## Status and scope
+
+**This is a snapshot, not a live document.** The directory was compiled
+from accumulated notes spanning roughly 2018–2026. Some details may be
+out of date, especially:
+
+- Post-2017 CPC reforms and subsequent CNJ resoluções.
+- Electoral law (coligações, federações, cláusula de desempenho) changed
+  substantially 2017–2022.
+- Lei de Improbidade reformed by Lei 14.230/2021; STF Tema 1199 (2022)
+  governs retroactivity.
+- Reforma tributária (EC 132/2023) is in phase-in through 2033.
+- Monetary thresholds (RGPS ceiling, minimum wage, FPM coefficients)
+  update annually.
+
+For project work that depends on legally-current details, verify against
+the current statute text (<https://www.planalto.gov.br>). This reference
+is for orientation, not citation.
+
+**Language**: Portuguese where translation loses meaning, English
+otherwise. Many legal terms have no clean English equivalent
+(*improbidade*, *prestação de contas*, *recurso especial*, etc.) and
+are kept in Portuguese throughout. Each file's top-of-file `Topics /
+keywords` line includes both Portuguese and English search terms.
 
 ## Contents
 
@@ -30,7 +51,7 @@ de contas`, `recurso especial` etc.) and are kept in Portuguese throughout.
 - [`justica-eleitoral.md`](justica-eleitoral.md) — Electoral courts (TSE, TREs)
 - [`justica-trabalho.md`](justica-trabalho.md) — Labor courts (TST, TRTs, varas)
 - [`tribunais-contas.md`](tribunais-contas.md) — TCU, TCEs, TCMs (audit courts)
-- [`cnj-administracao-judicial.md`](cnj-administracao-judicial.md) — CNJ normative power, Justiça em Números, PJe/e-Proc/ESAJ, TPU, case numbering, specialization, execução fiscal
+- [`cnj-administracao-judicial.md`](cnj-administracao-judicial.md) — CNJ normative power, Justiça em Números, PJe/e-Proc/ESAJ, TPU, case numbering, specialization
 
 ### Procedure (processo)
 
@@ -65,83 +86,51 @@ de contas`, `recurso especial` etc.) and are kept in Portuguese throughout.
 
 - [`nao-judicial.md`](nao-judicial.md) — Non-judicial institutions (diplomats, etc.)
 
-## How to use
-
-When starting a new project that needs Brazilian institutional context, grep
-this directory for relevant terms before searching the web. For project-specific
-detail (e.g., a particular CADE resolution), web search supplements.
-
-### Reading guidance for future sessions
+## How to use this reference
 
 - **Grep first, then read the whole file.** Headers and subheaders are
-  descriptive; topic keywords appear near the top of newer files. Try both
-  Portuguese and English terms — e.g., "bid rigging" won't hit, but
-  "cartel" and "licitação" will. Most files include a `Topics / keywords`
-  line at the top for exactly this reason.
-- **Verify before citing for legal-current work.** This directory is a
-  snapshot (compiled ~2018–2025, with 2026 additions from project-level
-  docs). Time-volatile claims — monetary thresholds, lists of
-  municipalities/TCEs, pending STF theses, most recent reforms — are
-  flagged with "as of YYYY" where possible. For anything that depends on
-  currently-binding law text, verify against the planalto database (below)
-  or the primary source.
-- **Some files are project-sourced.** Newer files (`licitacoes.md`,
-  `contas-municipais.md`, `tribunais-contas.md`, expanded
-  `justica-trabalho.md`) were built from specific project `docs/institutions.md`
-  files and may inherit that project's emphasis. Each such file names its
-  provenance in the header. If a claim looks narrowly framed, check the
-  source project for fuller context.
-- **Intentional omissions.** Topics that appear in individual projects
-  but are not cross-project — e.g., SUS / health-law institutional detail
-  (lives in `projects/saude/docs/institutions.md`), Brazilian causation
-  doctrine for labor accidents (`projects/causal-judge/docs/institutions.md`),
-  the corruption-role typology (`projects/network/docs/institutions.md`)
-  — are deliberately not migrated here. Don't treat their absence as a
-  gap to fill; read the project file directly if relevant.
-- **Cross-reference the new + old files.** Several old files
-  (`justica-estadual.md`, `procedimentos-legais.md`, `justica-eleitoral.md`)
-  now have "See also" pointers at the top to the new substantive-area
-  files. Follow them when the topic spans multiple files.
+  descriptive; topic keywords appear at the top of each topical file.
+  Try both Portuguese and English terms — e.g., "bid rigging" won't hit,
+  but "cartel" and "licitação" will. Most files include a `Topics /
+  keywords` line at the top for exactly this reason.
+- **Verify before citing for legal-current work.** Time-volatile claims
+  — monetary thresholds, lists of municipalities/TCEs, pending STF
+  theses, most recent reforms — are flagged with "as of YYYY" where
+  possible. For anything that depends on currently-binding law text,
+  verify against [planalto.gov.br](https://www.planalto.gov.br) or the
+  primary source.
+- **Broken legacy links.** Several of the older migrated files contain
+  internal references in the form `[CF103](lei/cf.org::*Art.%20103)`.
+  These are dead pointers to the original author's local notes system
+  and do not resolve. The article number after the prefix is usually
+  enough to locate the cited provision.
+- **Cross-reference files.** Many files have "See also" pointers near
+  the top. Follow them when the topic spans multiple files (e.g., a
+  question about procurement fraud touches `licitacoes.md`,
+  `improbidade.md`, and `anticorrupcao-penal.md`).
 
-**Avoid pasting verbatim law text into these files.** Files here should be
-explanatory notes, summaries, and Henrik's own observations — not statute
-copies. For the actual text of a law, query the planalto database (next
-section).
+## Conventions
 
-## Looking up the text of a Brazilian law
+- Each topical file opens with a scope paragraph, a `Topics / keywords`
+  line, a `Snapshot as of YYYY` note for volatile content, and
+  cross-references to related files.
+- Statute citations appear inline (e.g., `Lei 8.666/93 Art. 23`, `CF
+  Art. 31 §2`, `STF Tema 157`) to enable fast grep.
+- Portuguese legal terms are preserved; English is used for narrative
+  explanation.
 
-The full text of all 57,255 federal laws scraped from planalto.gov.br lives
-in a SQLite database with FTS5 full-text search:
+## Contributing
 
-```
-~/research/projects/saude/data/planalto/planalto_legislacao.db
-```
+This is a personal reference. Issues and pull requests are welcome for
+factual corrections, updated statute references, or additional source
+citations. Please see `CONTRIBUTING.md` for guidelines.
 
-Schema (`legislacao` table): `tipo`, `numero`, `data`, `ementa`,
-`texto_completo`, `url`. Indexed on `numero` and `tipo`. There's also a
-`legislacao_fts` virtual table for FTS5 queries.
+## License
 
-**Examples:**
+Released under **CC BY 4.0** (see `LICENSE`). You are free to use,
+share, and adapt the material with attribution.
 
-```bash
-# Full text of Lei 8.666/93 (procurement)
-sqlite3 ~/research/projects/saude/data/planalto/planalto_legislacao.db \
-  "SELECT texto_completo FROM legislacao WHERE numero='8666' AND tipo LIKE '%lei%' AND data LIKE '%1993%' LIMIT 1"
+## Citation
 
-# Search for laws mentioning "improbidade administrativa"
-sqlite3 ~/research/projects/saude/data/planalto/planalto_legislacao.db \
-  "SELECT tipo, numero, data, substr(ementa, 1, 80) FROM legislacao_fts WHERE legislacao_fts MATCH 'improbidade administrativa' LIMIT 20"
-```
-
-**Caveats:**
-
-- The DB lives under `saude/data/` for historical reasons. The scraping code
-  is at `~/research/pipelines/bdata/source/scrape/planalto_scraper.py`.
-  This DB should eventually move to `pipelines/bdata/data/planalto/` so that
-  any project can use it without depending on saude. Tracked as a TODO.
-- Articles are not parsed out individually — `texto_completo` is the full
-  law as plain text. To extract `Art. 93` from a lei, regex on
-  `Art\.\s*93[º°]?` and read until the next `Art\.\s*\d+`. A small
-  utility (`bdata/source/lookup/lei.py`) is on the TODO list to make this
-  ergonomic and to optionally build an article-level table.
-- Last full scrape: 2025-02-07 (recent reforms may not be reflected).
+If you find this reference useful in academic work, please cite it via
+the `CITATION.cff` file in this repository.

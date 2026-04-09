@@ -16,7 +16,7 @@ is current through ADPF 982 (~2025). The set of municipalities that have
 reformed to open voting is a living list — the examples below are
 illustrative, not exhaustive or current.
 
-Sourced from `projects/segredo/docs/institutions.md`.
+Compiled from personal research notes on municipal fiscal oversight.
 
 ---
 
@@ -199,10 +199,11 @@ Not directly binding on câmaras municipais, but served as a catalyst for
 subsequent municipal reforms that cite EC 76/2013 and the publicity
 principle.
 
-### Municipal reform examples (from segredo project data)
+### Municipal reform examples
 
 Diffusion process over two decades rather than a single coordinated event.
-Examples confirmed by the segredo project:
+The examples below are illustrative, collected through ad-hoc review of
+individual câmara records; they are **not** a systematic census:
 
 - **Early movers**: Criciúma/SC (2004, RI Art. 180), Canelinha/SC (2008,
   Emenda LOM nº 9), Belo Horizonte/MG (2012).

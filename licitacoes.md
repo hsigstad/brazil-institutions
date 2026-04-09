@@ -13,7 +13,8 @@ improbidade, compras governamentais.
 thresholds under Lei 14.133 are updated annually via Decree — verify
 current values before using specific R$ figures for post-2023 work.
 
-Sourced in part from `projects/procure/docs/institutions.md`.
+Compiled from personal research notes on municipal procurement and
+cartel enforcement in Brazil.
 
 ---
 

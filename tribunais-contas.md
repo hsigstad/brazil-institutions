@@ -13,8 +13,7 @@ Audesp, procurement oversight, random assignment, judicial independence.
 through Resolução 16/2024. Conselheiro composition rules are stable
 (constitutional).
 
-Sourced from `projects/decompose/docs/institutions.md` (relator assignment)
-and `projects/procure/docs/institutions.md` (TCE-SP / Audesp).
+Compiled from personal research notes on TCE-SP procedure and Audesp.
 
 ---
 
@@ -57,9 +56,8 @@ and `projects/procure/docs/institutions.md` (TCE-SP / Audesp).
 
 ### Jurisdiction
 
-- All 644 non-capital municipalities in São Paulo state (count as of the
-  `procure` project dataset ~2024; IBGE municipal count can change via
-  state-level emancipations).
+- All 644 non-capital municipalities in São Paulo state (count as of
+  ~2024; IBGE municipal counts can change via state-level emancipations).
 - São Paulo capital has its own **TCM-SP**.
 - Reviews annual accounts, audits specific acts (including procurement),
   issues opinions, imposes sanctions.
@@ -75,7 +73,8 @@ de Órgãos Públicos):
 - Bid-level information, firm identifiers (CNPJ)
 - Contract values and amendments
 
-Source of procurement data for the `procure` and `decompose` projects.
+Audesp is the primary source of structured municipal procurement data
+for research on São Paulo state.
 
 ### Oversight mechanisms
 
@@ -110,10 +109,10 @@ the review and drafts the opinion. Assignment follows the Regimento Interno
 - **Conselheiros substitutos-auditores** participate in the same
   distribution pool on equal footing with full conselheiros (Art. 35).
 
-**Empirical validation (decompose project):** Year-over-year relator
-turnover for contas processos is 83%, consistent with random assignment
-under the two-year exclusion rule. Balance tests confirm lagged procurement
-outcomes do not predict relator toughness (5/6 tests p > 0.4).
+**Empirical implication:** The random draw + two-year exclusion produces
+high year-over-year relator turnover for contas processos, which can be
+exploited as a quasi-experimental source of variation in relator identity
+for causal research on audit outcomes.
 
 **Sources:** [Regimento Interno compilado](https://www.tce.sp.gov.br/legislacao/lei-organica-e-regimento-interno/regimento-interno-compilado);
 [LC 709/1993](https://www.al.sp.gov.br/repositorio/legislacao/lei.complementar/1993/lei.complementar-709-14.01.1993.html);

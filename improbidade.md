@@ -23,8 +23,8 @@ câmara procedure that converts a rejected account into ineligibility, see
 (lavagem, organização criminosa, Lei Anticorrupção), see
 `anticorrupcao-penal.md`.
 
-Sourced from fragments in `projects/procure`, `projects/decompose`,
-`projects/segredo`, `projects/network`, plus the statute texts.
+Compiled from personal research notes on civil corruption prosecution
+in Brazil, plus the statute texts.
 
 ---
 
@@ -188,12 +188,9 @@ Central jurisprudence on the **retroactivity** of the reform:
   response, post-2021) → judicial decision whether to receive the
   petition → contestação → instruction → sentença → appeal.
 - **Typical duration**: 7–8 years from filing to first-instance sentença
-  in TJSP (examples from `procure` project: Adamantina case
-  0007153-26.2009.8.26.0081 took 8 years; São José do Rio Preto case
-  1003519-62.2015.8.26.0576 took 8 years).
-- **Median lag from conduct to sentença**: ~6 years (decompose project).
+  in TJSP is common in observed cases.
 - CNJ study cited in MPSP Manual: average time to judgment in state
-  courts ~1,586 days.
+  courts ~1,586 days (~4.3 years).
 
 ### Outcomes
 
@@ -240,7 +237,7 @@ MP-SP (Ministério Público do Estado de São Paulo) is the dominant actor
 in state-level improbidade prosecution. Federal cases (involving federal
 funds or entities) go to MPF.
 
-- **~2,000 active promotores** in São Paulo state (decompose project).
+- **~2,000 active promotores** in São Paulo state.
 - Organized by **entrância** (tier): Inicial → Intermediária → Final.
   Small comarcas = inicial; São Paulo capital = final.
 - **Specialized positions in the capital**: Promotor de Justiça do
@@ -257,12 +254,9 @@ For general MP structure (career, guarantees, CNMP oversight), see
 
 ---
 
-## 6. Key empirical facts (from projects)
+## 6. Key empirical facts
 
 | Fact | Value | Source |
 |---|---|---|
-| TJSP improbidade universe | ~19,000 cases | decompose project |
-| TJSP improbidade cases with sentença text | ~12,500 | procure/decompose |
-| Typical duration, filing → sentença | 7–8 years | procure (case examples) |
-| Median lag, conduct → sentença | ~6 years | decompose |
-| Average state-court judgment time | ~1,586 days | CNJ study in MPSP Manual |
+| Average state-court judgment time | ~1,586 days (~4.3 years) | CNJ study cited in MPSP Manual |
+| Typical improbidade duration (TJSP) | 7–8 years filing → sentença | Observed in sampled TJSP cases |

@@ -70,8 +70,7 @@ the CNJ public documentation.
   - **Res. 185/2013**: PJe as the unified case-management platform for
     the judiciary.
   - **Res. 215/2015**: LAI applied to the judiciary.
-  - **Res. 238/2016**: health-litigation specialization (relevant to
-    `projects/saude`).
+  - **Res. 238/2016**: health-litigation specialization.
   - **Res. 331/2020**: management of PJe and procedural data standards.
   - **Res. 363/2021**: LGPD compliance in the judiciary.
   - **Res. 547/2024**: authorized judges to extinguish low-value
@@ -204,8 +203,8 @@ backbone of any structured analysis of court data.
   court in Brazil) and many other TJs.
 - Proprietary; access is via TJSP's web consultation (*Consulta
   Processual*), with scrape-based research dominant.
-- `projects/procure`, `projects/decompose`, `projects/electoral-justice`,
-  and `projects/judgeGPT` rely on ESAJ data scraped from TJSP.
+- Most empirical research on TJSP case law relies on ESAJ data scraped
+  from the public consultation interface.
 
 ### Other systems
 

@@ -3,9 +3,9 @@
 Fiscal framework of Brazilian federalism: how tax revenue is assigned
 across União / estados / municípios, the intergovernmental transfer
 system (FPM, FPE, SUS, royalties), municipal taxation, and LRF limits.
-Essential context for any project that exploits municipal-budget
-variation as a source of identification (saude, segredo, audit, decompose,
-procure) or that treats municipal fiscal capacity as an outcome.
+Essential context for any empirical project that exploits
+municipal-budget variation as a source of identification — or that
+treats municipal fiscal capacity as an outcome.
 
 **Topics / keywords**: federalismo fiscal, FPM, FPE, ICMS, quota-parte,
 transferências constitucionais, SUS, royalties, pre-sal, Lei Kandir,
@@ -19,8 +19,7 @@ re-classification based on IBGE population estimates, new royalty
 distribution rules for oil/mining, and post-reforma tributária transition
 arrangements (EC 132/2023 phase-in begins 2026 with full effect by 2033).
 
-Sourced from general knowledge + fragments in segredo and saude project
-docs; not from a single project file.
+Compiled from personal research notes on Brazilian fiscal federalism.
 
 ---
 
@@ -150,7 +149,7 @@ The largest constitutional transfer to municípios.
   Components (pre-2017): PAB fixo + PAB variável + MAC + assistência
   farmacêutica. Restructured in 2017 (Portaria GM/MS 3.992/2017) into
   just two blocks: **Custeio** and **Investimento**.
-- Relevant to the saude project and any municipal health-outcome design.
+- Relevant to any municipal health-outcome research design.
 
 ### Royalties (oil, mining, water)
 
@@ -279,8 +278,8 @@ líquida (RCL)**:
 ### SIOPS, SIOPE, FINBRA
 
 - **SIOPS**: Sistema de Informações sobre Orçamentos Públicos em Saúde
-  — standardized municipal health-spending reports. Data source for the
-  saude project.
+  — standardized municipal health-spending reports. Primary source for
+  any municipal-level health-spending research.
 - **SIOPE**: analogous for education.
 - **FINBRA** (Finanças do Brasil): STN's consolidated municipal fiscal
   database (now partially absorbed into **SICONFI** — Sistema de
