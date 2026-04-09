@@ -1,5 +1,10 @@
 # Justiça Estadual
 
+**See also:**
+- [`licitacoes.md`](licitacoes.md) — procurement law and cartel framework often at issue in TJ improbidade cases
+- [`contas-municipais.md`](contas-municipais.md) — fiscal oversight of mayors, Ficha Limpa ineligibility, STF Tema 157
+- [`tribunais-contas.md`](tribunais-contas.md) — TCE-SP structure and relator assignment
+
 ### General
 
 [CF125-126](lei/cf.org::*Seção%20VIII%20-%20DOS%20TRIBUNAIS%20E%20JUÍZES%20DOS%20ESTADOS)

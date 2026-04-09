@@ -1,5 +1,11 @@
 # Procedimentos legais (notas gerais)
 
+**See also:**
+- [`licitacoes.md`](licitacoes.md) — procurement-specific procedure, CADE administrative process
+- [`contas-municipais.md`](contas-municipais.md) — câmara procedure for judging mayoral accounts, 2/3 override rule
+- [`tribunais-contas.md`](tribunais-contas.md) — TCE relator assignment and procedure
+- [`justica-trabalho.md`](justica-trabalho.md) — labor-court case assignment, impedimento rules, hearing procedure
+
 ### Statute of limitations
 
 The Civil Code and a number of federal laws provide for two types of

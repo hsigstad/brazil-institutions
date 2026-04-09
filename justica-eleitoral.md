@@ -1,5 +1,9 @@
 # Justiça Eleitoral
 
+**See also:**
+- [`prestacao-contas-eleitorais.md`](prestacao-contas-eleitorais.md) — campaign finance accounting (SPCE, recibos, expenditure rules)
+- [`contas-municipais.md`](contas-municipais.md) — Ficha Limpa (LC 64/90 Art. 1 I "g") ineligibility from rejected mayoral accounts
+
 ### Historia
 
 1.  General

@@ -1,4 +1,9 @@
-# Prestação de contas dos municípios
+# Prestação de contas eleitorais
+
+Campaign finance accounting for candidates (municipal elections in the
+original note). For **municipal fiscal accounts** (mayoral contas de
+governo / gestão), see `contas-municipais.md`.
+
 
   - Needs to be done by about Nov 1st (for 1st round)
   - Each candidate needs to have a CNPJ
