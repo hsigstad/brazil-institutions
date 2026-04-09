@@ -102,18 +102,34 @@ keywords` line includes both Portuguese and English search terms.
   possible. For anything that depends on currently-binding law text,
   verify against [planalto.gov.br](https://www.planalto.gov.br) or the
   primary source.
-- **For exact statutory text, query the article DB.** All laws cited
-  here (37 of them, including LIA, L8666, L14133, LE, CPC, CPP, CC, CE,
-  LFL, LI, LRF, LAC, LCO, LP, LAP, etc.) are parsed into a searchable
-  SQLite table at `~/research/data/lei/artigos.db`. Each row is one
-  leaf of an article (caput, paragraph, inciso) with date-versioned
-  amendment tracking. Query via the CLI:
+- **For exact statutory text, query the article DB.** All cataloged
+  laws (37 as of 2026, including LIA, L8666, L14133, LE, CPC, CPP, CC,
+  CE, LFL, LI, LRF, LAC, LCO, LP, LAP, etc.) are parsed into a
+  searchable SQLite table at `~/research/data/lei/artigos.db`. Each
+  row is one leaf of an article (caput, paragraph, inciso) with
+  date-versioned amendment tracking.
+
+  The database, the CLI tools, and the parser all live in
+  [`tools/leis_artigos/`](tools/leis_artigos/). Download the prebuilt
+  `artigos.db` from Dropbox (see `tools/leis_artigos/README.md` for
+  the link), then query via the bracket-form citation resolver or
+  the lower-level lookup CLI:
   ```bash
-  python3 ~/research/pipelines/bdata/source/clean/leis_artigos/lookup.py LIA 9 --path II
-  python3 ~/research/pipelines/bdata/source/clean/leis_artigos/lookup.py LE 36-A --as-of 2010-01-01
-  python3 ~/research/pipelines/bdata/source/clean/leis_artigos/lookup.py --by-amending L14230-2021
+  # Resolve a compact bracket-form citation
+  python3 tools/leis_artigos/cite.py '[[LIA.9.II]]'
+  python3 tools/leis_artigos/cite.py '[[LE.36-A@2010-01-01]]'
+  python3 tools/leis_artigos/cite.py '[[LIA.10 from:L14230-2021]]'
+
+  # Lower-level lookup
+  python3 tools/leis_artigos/lookup.py LIA 9 --path II
+  python3 tools/leis_artigos/lookup.py LE 36-A --as-of 2010-01-01
+  python3 tools/leis_artigos/lookup.py --by-amending L14230-2021
   ```
-  See `pipelines/bdata/source/clean/leis_artigos/README.md` for details.
+  See [`tools/README.md`](tools/README.md) for the full overview and
+  [`tools/leis_artigos/README.md`](tools/leis_artigos/README.md) for
+  the catalog and CLI reference. The companion scraper that builds
+  the raw input for the article DB is in
+  [`tools/planalto_scraper/`](tools/planalto_scraper/).
 - **Broken legacy links.** Several of the older migrated files contain
   internal references in the form `[CF103](lei/cf.org::*Art.%20103)`.
   These are dead pointers to the original author's local notes system

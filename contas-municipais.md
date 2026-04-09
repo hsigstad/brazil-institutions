@@ -117,7 +117,7 @@ prevalecer por decisão de dois terços dos vereadores."*
 
 ## 3. Lei da Ficha Limpa — ineligibility from rejected accounts
 
-### Legal provision — LC 64/1990 Art. 1, I, "g" (amended by LC 135/2010)
+### Legal provision — [[LI.1.I]] alínea g (amended by [[LFL]])
 
 Ineligible are those who have had their accounts rejected due to:
 
@@ -129,7 +129,7 @@ Ineligible are those who have had their accounts rejected due to:
 
 **Duration:** 8 years from the date of the decision.
 
-**Source:** LC 64/1990 Art. 1 I "g"; LC 135/2010.
+**Source:** [[LI.1.I]] alínea g; [[LFL]].
 
 ### Who is the "órgão competente"?
 

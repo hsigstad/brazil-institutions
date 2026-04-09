@@ -73,6 +73,7 @@ statutes:
     numero: "3689"
     ano: 1941
     titulo: Código de Processo Penal (CPP)
+    apelido: CPP
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/decreto-lei/del3689compilado.htm
     topics: [criminal_procedure]
@@ -104,6 +105,7 @@ statutes:
     numero: "4717"
     ano: 1965
     titulo: Lei da Ação Popular
+    apelido: LAP
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/l4717.htm
     topics: [civil_procedure, public_interest_litigation]
@@ -114,6 +116,7 @@ statutes:
     numero: "4737"
     ano: 1965
     titulo: Código Eleitoral
+    apelido: CE
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/l4737.htm
     topics: [electoral_law]
@@ -145,6 +148,7 @@ statutes:
     numero: "7347"
     ano: 1985
     titulo: Lei da Ação Civil Pública
+    apelido: LACP
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/l7347orig.htm
     topics: [public_interest_litigation, MP]
@@ -165,6 +169,7 @@ statutes:
     numero: "8112"
     ano: 1990
     titulo: Regime Jurídico Único dos Servidores Públicos Federais
+    apelido: L8112
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/l8112cons.htm
     topics: [public_servants, PAD]
@@ -177,6 +182,7 @@ statutes:
     numero: "8137"
     ano: 1990
     titulo: Crimes contra a Ordem Tributária e Econômica
+    apelido: LCOT
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/l8137.htm
     topics: [criminal_law, tax_crimes, cartel]
@@ -202,6 +208,7 @@ statutes:
     numero: "64"
     ano: 1990
     titulo: Lei das Inelegibilidades
+    apelido: LI
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp64.htm
     topics: [electoral_law, ineligibility, ficha_limpa]
@@ -236,6 +243,7 @@ statutes:
     numero: "8443"
     ano: 1992
     titulo: Lei Orgânica do Tribunal de Contas da União
+    apelido: LOTCU
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/l8443.htm
     topics: [audit_courts, TCU]
@@ -246,6 +254,7 @@ statutes:
     numero: "75"
     ano: 1993
     titulo: Lei Orgânica do MPU (LOMPU)
+    apelido: LCMP
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp75.htm
     topics: [MP, MPU]
@@ -256,6 +265,7 @@ statutes:
     numero: "8625"
     ano: 1993
     titulo: Lei Orgânica Nacional do MP (LONMP)
+    apelido: LOMP
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/l8625.htm
     topics: [MP, MPE]
@@ -298,6 +308,7 @@ statutes:
     numero: "9096"
     ano: 1995
     titulo: Lei dos Partidos Políticos
+    apelido: LPP
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/l9096.htm
     topics: [political_parties, fundo_partidario]
@@ -319,6 +330,7 @@ statutes:
     numero: "9613"
     ano: 1998
     titulo: Lei de Lavagem de Dinheiro
+    apelido: LL
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/l9613.htm
     topics: [criminal_law, money_laundering]
@@ -330,6 +342,7 @@ statutes:
     numero: "101"
     ano: 2000
     titulo: Lei de Responsabilidade Fiscal (LRF)
+    apelido: LRF
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp101.htm
     topics: [fiscal_responsibility, federalism]
@@ -347,6 +360,7 @@ statutes:
     numero: "10406"
     ano: 2002
     titulo: Código Civil
+    apelido: CC
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm
     topics: [civil_law]
@@ -357,6 +371,7 @@ statutes:
     numero: "10520"
     ano: 2002
     titulo: Lei do Pregão
+    apelido: LP
     status: parcialmente_revogada
     url: https://www.planalto.gov.br/ccivil_03/leis/2002/l10520.htm
     topics: [procurement, pregao]
@@ -379,6 +394,7 @@ statutes:
     numero: "135"
     ano: 2010
     titulo: Lei da Ficha Limpa
+    apelido: LFL
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp135.htm
     topics: [electoral_law, ineligibility, ficha_limpa]
@@ -409,6 +425,7 @@ statutes:
     numero: "12527"
     ano: 2011
     titulo: Lei de Acesso à Informação (LAI)
+    apelido: LAI
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12527.htm
     topics: [transparency, access_to_information]
@@ -423,6 +440,7 @@ statutes:
     numero: "12529"
     ano: 2011
     titulo: Lei de Defesa da Concorrência
+    apelido: LCADE
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12529.htm
     topics: [antitrust, CADE, cartel]
@@ -437,6 +455,7 @@ statutes:
     numero: "12683"
     ano: 2012
     titulo: Reforma da Lei de Lavagem
+    apelido: LL2
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12683.htm
     topics: [criminal_law, money_laundering]
@@ -448,6 +467,7 @@ statutes:
     numero: "12846"
     ano: 2013
     titulo: Lei Anticorrupção
+    apelido: LAC
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm
     topics: [corporate_liability, corruption, CGU]
@@ -465,6 +485,7 @@ statutes:
     numero: "12850"
     ano: 2013
     titulo: Lei das Organizações Criminosas
+    apelido: LCO
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12850.htm
     topics: [criminal_law, organized_crime, colaboracao_premiada]
@@ -479,6 +500,7 @@ statutes:
     numero: "13105"
     ano: 2015
     titulo: Código de Processo Civil (NCPC)
+    apelido: CPC
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm
     topics: [civil_procedure]
@@ -492,6 +514,7 @@ statutes:
     numero: "13165"
     ano: 2015
     titulo: Minirreforma Eleitoral 2015
+    apelido: L13165
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13165.htm
     topics: [electoral_law]
@@ -523,6 +546,7 @@ statutes:
     numero: "13487"
     ano: 2017
     titulo: Criação do FEFC (Fundo Especial de Financiamento de Campanha)
+    apelido: L13487
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13487.htm
     topics: [campaign_finance, FEFC]
@@ -533,6 +557,7 @@ statutes:
     numero: "13709"
     ano: 2018
     titulo: Lei Geral de Proteção de Dados (LGPD)
+    apelido: LGPD
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm
     topics: [data_protection, privacy, research_ethics]
@@ -549,6 +574,7 @@ statutes:
     numero: "13964"
     ano: 2019
     titulo: Pacote Anticrime
+    apelido: LPC
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm
     topics: [criminal_law, criminal_procedure]
@@ -608,6 +634,7 @@ statutes:
     numero: "14230"
     ano: 2021
     titulo: Reforma da Lei de Improbidade Administrativa
+    apelido: L14230
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14230.htm
     topics: [civil_corruption, improbidade]
@@ -675,6 +702,77 @@ statutes:
     url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc132.htm
     topics: [constitutional_amendment, tax_reform, federalism]
     notes: "Cria CBS, IBS, IS substituindo PIS, COFINS, ICMS, ISS, IPI; transição 2026-2033"
+    discussed_in: [federalismo-fiscal.md]
+
+  # Cataloged in the article DB but added later as part of index expansion.
+
+  lc_35_1979:
+    tipo: Lei Complementar
+    numero: "35"
+    ano: 1979
+    titulo: Lei Orgânica da Magistratura Nacional (LOMAN)
+    apelido: LOMAN
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp35.htm
+    topics: [judiciary, judicial_career]
+    discussed_in: [carreira-juizes.md, juizes.md, cortes-superiores.md]
+
+  lei_12462_2011:
+    tipo: Lei
+    numero: "12462"
+    ano: 2011
+    titulo: Regime Diferenciado de Contratações (RDC)
+    apelido: RDC
+    status: revogada
+    url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12462.htm
+    topics: [procurement]
+    revoked_by:
+      law: lei_14133_2021
+      transition: até 30 de dezembro de 2023
+    discussed_in: [licitacoes.md]
+
+  lei_12891_2013:
+    tipo: Lei
+    numero: "12891"
+    ano: 2013
+    titulo: Modificações ao Código Eleitoral e à Lei das Eleições
+    apelido: L12891
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12891.htm
+    topics: [electoral_law]
+    discussed_in: [processo-eleitoral.md]
+
+  lei_13019_2014:
+    tipo: Lei
+    numero: "13019"
+    ano: 2014
+    titulo: Lei das OSCs (parcerias com organizações da sociedade civil)
+    apelido: L13019
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2014/lei/l13019.htm
+    topics: [public_administration, civil_society]
+    discussed_in: [federalismo-fiscal.md]
+
+  lei_13488_2017:
+    tipo: Lei
+    numero: "13488"
+    ano: 2017
+    titulo: Limites de despesa eleitoral e ajustes em propaganda
+    apelido: L13488
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2017/lei/l13488.htm
+    topics: [campaign_finance, electoral_law]
+    discussed_in: [partidos-e-sistema-eleitoral.md]
+
+  lc_131_2009:
+    tipo: Lei Complementar
+    numero: "131"
+    ano: 2009
+    titulo: Lei da Transparência (acréscimos à LRF)
+    apelido: LCT
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp131.htm
+    topics: [fiscal_responsibility, transparency]
     discussed_in: [federalismo-fiscal.md]
 
 # Topic glossary (controlled vocabulary used in the topics field above)

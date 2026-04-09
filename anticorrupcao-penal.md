@@ -91,7 +91,7 @@ which greatly expanded its scope.
   the laundered funds came from a specific list (narcotraffic, arms
   trade, terrorism, corruption, organized crime, among others).
 
-### Post-2012 regime (Lei 12.683/2012)
+### Post-2012 regime ([[LL2]])
 
 - **Any criminal offense** can be a predicate for lavagem (eliminated the
   closed list).
@@ -99,7 +99,7 @@ which greatly expanded its scope.
   critical for the Lava Jato model, which used lavagem charges to attach
   to corruption schemes regardless of predicate specification.
 
-### Offense (Art. 1)
+### Offense ([[LL.1]])
 
 - "Ocultar ou dissimular a natureza, origem, localização, disposição,
   movimentação ou propriedade de bens, direitos ou valores provenientes,
@@ -123,11 +123,11 @@ which greatly expanded its scope.
 
 ---
 
-## 3. Lei 12.850/2013 — Organização criminosa e colaboração premiada
+## 3. [[LCO]] — Organização criminosa e colaboração premiada
 
 Central statute in the modern corruption-prosecution toolkit.
 
-### Definition of organização criminosa (Art. 1 §1)
+### Definition of organização criminosa ([[LCO.1.§1]])
 
 - "Associação de 4 (quatro) ou mais pessoas estruturalmente ordenada e
   caracterizada pela divisão de tarefas, ainda que informalmente, com
@@ -139,14 +139,14 @@ Central statute in the modern corruption-prosecution toolkit.
   tasks, purpose of obtaining advantage through crimes with max penalty
   >4 years (or transnational crimes).
 
-### Offense (Art. 2)
+### Offense ([[LCO.2]])
 
 - Participating in, promoting, constituting, financing, or integrating a
   criminal organization.
 - Penalty: **3–8 years** + fine. Increases in several aggravated
   hypotheses.
 
-### Colaboração premiada (Art. 4)
+### Colaboração premiada ([[LCO.4]])
 
 Cooperation-agreement framework. The procedural innovation that powered
 the Lava Jato prosecutorial strategy.
@@ -168,7 +168,7 @@ the Lava Jato prosecutorial strategy.
 
 ### Safeguards added post-2019
 
-- **Lei 13.964/2019** (pacote anticrime) reinforced formalities around
+- **[[LPC]]** (pacote anticrime) reinforced formalities around
   colaboração premiada:
   - Mandatory written, detailed agreement.
   - Mandatory recording of negotiation sessions.
@@ -181,9 +181,9 @@ the Lava Jato prosecutorial strategy.
 
 ### Prêmio and corroboration
 
-- A colaboração premiada alone **cannot sustain a conviction** — Art. 4
-  §16: "nenhuma sentença condenatória será proferida com fundamento
-  apenas nas declarações de agente colaborador."
+- A colaboração premiada alone **cannot sustain a conviction** —
+  [[LCO.4.§16]]: "nenhuma sentença condenatória será proferida com
+  fundamento apenas nas declarações de agente colaborador."
 - Corroboration by other evidence is required.
 
 **Source**: [Lei 12.850/2013](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12850.htm); [Lei 13.964/2019](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm).

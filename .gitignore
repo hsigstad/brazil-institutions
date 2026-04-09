@@ -1,0 +1,12 @@
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Editor backups
+*~
+.*.swp
+
+# Local override databases (these are build artifacts, not source)
+tools/leis_artigos/*.db

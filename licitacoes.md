@@ -23,65 +23,65 @@ cartel enforcement in Brazil.
 Governed virtually all Brazilian public procurement for nearly three decades.
 Still the relevant statute for historical (pre-2021) analysis.
 
-### Modalities (Art. 22)
+### Modalities ([[L8666.22]])
 
 Five modalities, each defined by value thresholds and procedural requirements:
 
-- **Convite** (Art. 23, I a / II a): engineering up to R$150,000; goods/services
-  up to R$80,000. Minimum 3 invited firms (Art. 22 §3).
-- **Tomada de preços** (Art. 23, I b / II b): engineering up to R$1,500,000;
-  goods/services up to R$650,000. Requires prior cadastro.
+- **Convite** ([[L8666.23.I]] / [[L8666.23.II]], alínea a): engineering up
+  to R$150,000; goods/services up to R$80,000. Minimum 3 invited firms
+  ([[L8666.22.§3]]).
+- **Tomada de preços** ([[L8666.23.I]] / [[L8666.23.II]], alínea b):
+  engineering up to R$1,500,000; goods/services up to R$650,000.
+  Requires prior cadastro.
 - **Concorrência**: above tomada de preços thresholds; open to all.
 - **Concurso**: for technical/artistic/scientific work.
 - **Leilão**: for sale of public goods.
 
 Thresholds updated by Decreto 9.412/2018.
 
-**Sources:** [Lei 8.666/1993 Art. 22–23](https://www.planalto.gov.br/ccivil_03/leis/l8666cons.htm); Decreto 9.412/2018.
-
-### Award criteria (Art. 45)
+### Award criteria ([[L8666.45]])
 
 - **Menor preço** (lowest price) — default.
 - Melhor técnica; técnica e preço; maior lance (for leilões).
 
-### Publication requirements (Art. 21)
+### Publication requirements ([[L8666.21]])
 
 Diário Oficial, newspapers; varies by modality and value. Creates the paper
 trail exploited in Audesp / TCE-SP datasets.
 
-### Contract amendments (Art. 65)
+### Contract amendments ([[L8666.65]])
 
 Permitted up to **25% of original value** (50% for construction renovations,
-Art. 65 §1). Frequent vehicle for ex-post price adjustments.
+[[L8666.65.§1]]). Frequent vehicle for ex-post price adjustments.
 
-### Dispensa de licitação (Art. 24)
+### Dispensa de licitação ([[L8666.24]])
 
 Enumerated exceptions where competitive bidding is not required:
 
-- Art. 24, I: works/engineering below R$15,000 (original threshold).
-- Art. 24, II: purchases/services below R$8,000 (original threshold).
-- Art. 24, IV: emergency situations.
-- Art. 24, V: no bidders appeared (*deserto*).
+- [[L8666.24.I]]: works/engineering below R$15,000 (original threshold).
+- [[L8666.24.II]]: purchases/services below R$8,000 (original threshold).
+- [[L8666.24.IV]]: emergency situations.
+- [[L8666.24.V]]: no bidders appeared (*deserto*).
 
 Dispensations and inexigibilidade are frequently cited in improbidade cases
 as mechanisms for directing contracts without competition.
 
-### Inexigibilidade (Art. 25)
+### Inexigibilidade ([[L8666.25]])
 
 When competition is objectively infeasible: sole source, artistic services,
 specialized professionals.
 
-### Anti-fracionamento rule (Art. 23 §5)
+### Anti-fracionamento rule ([[L8666.23.§5]])
 
 Prohibits splitting works or services of the same nature that could be
 performed simultaneously or successively to circumvent modality thresholds.
-Lei 14.133/2021 Art. 75 §1 strengthens this by requiring agencies to sum
-all expenditures for objects of the same nature within a fiscal year.
+[[L14133.75.§1]] strengthens this by requiring agencies to sum all
+expenditures for objects of the same nature within a fiscal year.
 
 ### Criminal provisions (Arts. 89–98)
 
-Crimes specific to procurement: fraud in bidding (Art. 90), unlawful
-dispensation (Art. 89), obstruction of competition (Art. 95).
+Crimes specific to procurement: fraud in bidding ([[L8666.90]]), unlawful
+dispensation ([[L8666.89]]), obstruction of competition ([[L8666.95]]).
 
 ---
 
@@ -97,15 +97,16 @@ dispensation (Art. 89), obstruction of competition (Art. 95).
 
 ---
 
-## Lei 14.133/2021 — Nova Lei de Licitações
+## [[L14133]] — Nova Lei de Licitações
 
-- Replaces Lei 8.666/1993, Lei 10.520/2002, and the RDC (Lei 12.462/2011).
+- Replaces [[L8666]], [[LP]] (Lei do Pregão), and the RDC ([[RDC]]).
 - **Transition period:** municipalities could choose old or new regime until
-  December 30, 2023 (Art. 191). After that date, Lei 14.133 is mandatory.
+  December 30, 2023 ([[L14133.191]]). After that date, [[L14133]] is mandatory.
 - New modality: **diálogo competitivo** added.
-- **Dispensa thresholds (Art. 75):** works/engineering up to R$100,000 (I);
-  goods/other services up to R$50,000 (II). Values updated annually via
-  Decree. Significantly higher than Lei 8.666 thresholds.
+- **Dispensa thresholds** ([[L14133.75]]): works/engineering up to R$100,000
+  ([[L14133.75.I]]); goods/other services up to R$50,000 ([[L14133.75.II]]).
+  Values updated annually via Decree. Significantly higher than L8666
+  thresholds.
 - Strengthened integrity requirements: compliance programs, risk matrices.
 
 **Source:** [Lei 14.133/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm).

@@ -37,26 +37,26 @@ direct, indirect, or foundational administration of any branch of the
 União, estados, DF, municípios, territórios, state-owned enterprises, or
 entities receiving incentive/subvention/benefit from public coffers.
 
-### Three categories of improbidade (Arts. 9–11)
+### Three categories of improbidade ([[LIA.9]]–[[LIA.11]])
 
-- **Art. 9 — Enriquecimento ilícito**: acts yielding any type of
+- **[[LIA.9]] — Enriquecimento ilícito**: acts yielding any type of
   undue patrimonial advantage through the exercise of office, employment,
   mandate, function, or activity in the administration. Most severe
   category. Examples (non-exhaustive list in §§): receiving money/gifts
   from interested parties, using public labor/materials for private gain,
   accepting commissions on public contracts.
-- **Art. 10 — Prejuízo ao erário**: any action or omission, dolosa or
+- **[[LIA.10]] — Prejuízo ao erário**: any action or omission, dolosa or
   (pre-reform) culposa, that causes loss, misappropriation, waste, or
   diversion of public assets, income, or benefits. Most common category
   in TJSP improbidade cases. Includes procurement fraud, irregular
   dispensations, contract overpricing, failure to collect receivables.
-- **Art. 11 — Violação de princípios administrativos**: acts violating
+- **[[LIA.11]] — Violação de princípios administrativos**: acts violating
   the principles of legality, impessoalidade, moralidade, lealdade às
   instituições, publicidade, etc. Broadest category; narrowed
   substantially by the 2021 reform (now requires a taxative list of
   conduct types in §1).
 
-### Sanctions (Art. 12)
+### Sanctions ([[LIA.12]])
 
 Scaled to the category. All forms can combine loss of office, asset
 freezing, and prohibition from contracting with the public administration;
@@ -74,14 +74,15 @@ rights suspension:
   of political rights up to 4 years; fine up to 24× remuneration;
   prohibition for 4 years.
 
-### Standing to sue (Art. 17)
+### Standing to sue ([[LIA.17]])
 
 - **Pre-reform (original LIA)**: Ministério Público **or** the affected
-  public entity (*pessoa jurídica interessada*) could bring the action.
-- **Post-reform (Lei 14.230/2021)**: only the **Ministério Público** has
-  standing. Public entities can participate as intervenors but cannot
-  initiate. This centralized standing in the MP is one of the most
-  consequential changes of the reform.
+  public entity (*pessoa jurídica interessada*) could bring the action
+  ([[LIA.17:original]]).
+- **Post-reform ([[L14230]])**: only the **Ministério Público** has
+  standing ([[LIA.17 from:L14230-2021]]). Public entities can participate
+  as intervenors but cannot initiate. This centralized standing in the MP
+  is one of the most consequential changes of the reform.
 
 ### Original prescription regime
 
@@ -97,7 +98,7 @@ rights suspension:
 
 ---
 
-## 2. Lei 14.230/2021 — the reform
+## 2. [[L14230]] — the reform
 
 Published 26 October 2021. Fundamentally rewrote the LIA.
 
@@ -106,17 +107,17 @@ Published 26 October 2021. Fundamentally rewrote the LIA.
 1. **Elimination of culposa improbidade.** Only **dolosa** (intentional)
    conduct is actionable. Mere negligence, procedural shortcuts,
    missed deadlines, and failure to supervise no longer suffice. The
-   reformed Art. 1 §§1–3 define dolo as the conscious will to achieve the
-   illicit result.
-2. **Exclusive MP standing** (Art. 17 caput): "será proposta pelo
+   reformed [[LIA.1]] §§1–3 define dolo as the conscious will to achieve
+   the illicit result.
+2. **Exclusive MP standing** ([[LIA.17.caput]]): "será proposta pelo
    Ministério Público". Public entities lose initiating standing.
-3. **New prescription regime** (Art. 23): **8-year absolute prescription**
+3. **New prescription regime** ([[LIA.23]]): **8-year absolute prescription**
    from the act, replacing the previous term-end or knowledge-based
    clocks. Intermediate prescription rules for phases of the action
-   (Art. 23 §§) also introduced.
-4. **Narrowed Art. 11**: violation of principles now requires conduct on
-   a taxative list (not just any violation of abstract principles).
-5. **Acordo de não persecução cível** (Art. 17-B): formal settlement
+   ([[LIA.23]] §§) also introduced.
+4. **Narrowed [[LIA.11]]**: violation of principles now requires conduct
+   on a taxative list (not just any violation of abstract principles).
+5. **Acordo de não persecução cível** ([[LIA.17-B]]): formal settlement
    mechanism between MP and the accused, including ressarcimento and
    other conditions, subject to judicial homologation.
 6. **Procedural changes**: heightened evidentiary standards, expanded
