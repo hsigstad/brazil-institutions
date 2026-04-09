@@ -1,18 +1,25 @@
 #!/usr/bin/env python3
-"""cite.py — resolve compact bracket-form citations to artigo rows.
+"""cite.py — resolve compact bracket-form citations.
 
-Parses a citation string like '[[LIA.10.§1.II]]' or
-'[[LE.11.§10@2024-12-31]]' into structured fields and runs the
-corresponding query against artigos.db. This is the bridge between
-prose citations in the institutions reference and the article-level
-law database.
+Parses a citation string like '[[LIA.10.§1.II]]' or '[[Tema1199]]'
+into structured fields and resolves it against the appropriate index:
 
-The bracket form is documented in ../../CLAUDE.md (section 'Citing
-statutes'). Path syntax follows PATH_CONVENTION.md.
+- **Statute citations** ([[LIA.10.§1.II]], [[L14230-2021]], [[CF.5]])
+  resolve to rows in artigos.db (article-level law database).
+- **Jurisprudence citations** ([[Tema1199]], [[ADI4650]], [[HC126292]],
+  [[ADPF982]], [[ADC43]], [[ARE652777]]) resolve to entries in
+  jurisprudencia_index.yaml.
 
-The resolver returns rows from artigos.db directly. If the database
-isn't available locally, the parser still works — callers can use the
-parsed Citation object to format a fallback (e.g., a planalto link).
+Both forms share the same [[ ]] bracket grammar; the parser disambiguates
+syntactically (case prefixes like Tema/ADI/HC are reserved for case IDs).
+
+The bracket forms are documented in ../../CLAUDE.md. Path syntax for
+statutes follows PATH_CONVENTION.md.
+
+If the artigos.db isn't available locally, the statute parser still
+works — callers can use the parsed Citation object to format a fallback
+(e.g., a planalto link). Likewise, if the jurisprudência index isn't
+present, case citations parse but don't resolve.
 """
 
 from __future__ import annotations
@@ -33,6 +40,16 @@ DEFAULT_DB = Path(
     os.environ.get(
         "ARTIGOS_DB",
         Path.home() / "research" / "data" / "lei" / "artigos.db"
+    )
+)
+
+# ---------------------------------------------------------------------------
+# Default jurisprudência index location. Override with JURIS_INDEX env var.
+# ---------------------------------------------------------------------------
+DEFAULT_JURIS_INDEX = Path(
+    os.environ.get(
+        "JURIS_INDEX",
+        Path(__file__).resolve().parent.parent.parent / "jurisprudencia_index.yaml"
     )
 )
 
@@ -99,6 +116,32 @@ ARTICLE_RE = re.compile(
 
 # Citation enclosed in [[ ]] (for find_citations)
 BRACKET_RE = re.compile(r"\[\[([^\[\]]+?)\]\]")
+
+# ---------------------------------------------------------------------------
+# Jurisprudence citation grammar
+# ---------------------------------------------------------------------------
+# Case IDs are an enumerated set of STF/STJ classe prefixes followed by
+# a digit run, e.g.:
+#   Tema1199, Tema897   — repercussão geral theme number
+#   ADI4650, ADC43, ADPF982, ADO123  — abstract control
+#   RE852475, ARE843989, AI...         — recurso/agravo
+#   HC126292, RHC..., MS..., MI..., Pet..., Inq..., Rcl..., AP..., AR...
+#
+# A second pattern catches compound/named keys ending in a 4-digit year
+# (e.g., LulaMoro2021) — used sparingly for joint-trial entries that
+# don't fit the prefix grammar.
+CASE_PREFIXES = (
+    "Tema",
+    "ADI", "ADC", "ADPF", "ADO",
+    "RE", "ARE", "AI",
+    "HC", "RHC",
+    "MS", "RMS", "MI", "MC",
+    "Rcl", "Pet", "Inq", "AP", "AR", "ACO",
+)
+CASE_ID_RE = re.compile(
+    r"^(?:" + "|".join(CASE_PREFIXES) + r")\d+$"
+    r"|^[A-Z][A-Za-z]+\d{4}$"
+)
 
 
 # ---------------------------------------------------------------------------
@@ -189,10 +232,11 @@ class Citation:
     from_id: Optional[str] = None  # from:X
     vintage: Optional[str] = None  # :original or :current
     raw: Optional[str] = None  # original bracket string
+    is_case: bool = False  # True for jurisprudence citations like [[Tema1199]]
 
     @property
     def is_whole_law(self) -> bool:
-        return self.artigo is None and self.path is None
+        return self.artigo is None and self.path is None and not self.is_case
 
     def to_lookup_args(self) -> List[str]:
         """Return the equivalent lookup.py CLI arguments for this citation."""
@@ -211,6 +255,8 @@ class Citation:
         return args
 
     def __str__(self) -> str:
+        if self.is_case:
+            return f"[[{self.identifier}]]"
         s = self.identifier
         if self.artigo is not None:
             s += f".{self.artigo}"
@@ -236,6 +282,12 @@ def parse(citation: str) -> Citation:
     body = citation.strip()
     if body.startswith("[[") and body.endswith("]]"):
         body = body[2:-2].strip()
+
+    # Case citation? (Tema1199, ADI4650, HC126292, LulaMoro2021, ...)
+    # Checked first because case prefixes like RE, ADI overlap syntactically
+    # with the law identifier grammar.
+    if CASE_ID_RE.match(body):
+        return Citation(identifier=body, is_case=True, raw=raw)
 
     # Try whole-law form first
     m = WHOLE_LAW_RE.match(body)
@@ -281,6 +333,59 @@ def find_citations(text: str) -> List[Citation]:
             # Not a citation we can parse — skip silently. Could log.
             continue
     return out
+
+
+# ---------------------------------------------------------------------------
+# Jurisprudência index loader
+# ---------------------------------------------------------------------------
+_juris_cache: Optional[dict] = None
+
+
+def load_juris_index(path: Optional[Path] = None) -> dict:
+    """Load and cache jurisprudencia_index.yaml.
+
+    Returns a dict with keys 'cases' (the raw mapping) and '_alias_map'
+    (resolved alias → canonical key). On missing file, returns empty
+    structures rather than raising — case parsing still works, lookups
+    just return None.
+    """
+    global _juris_cache
+    if _juris_cache is not None:
+        return _juris_cache
+    if path is None:
+        path = DEFAULT_JURIS_INDEX
+    if not path.exists():
+        _juris_cache = {"cases": {}, "_alias_map": {}}
+        return _juris_cache
+
+    try:
+        import yaml  # PyYAML; optional dependency
+    except ImportError:
+        _juris_cache = {"cases": {}, "_alias_map": {}}
+        return _juris_cache
+
+    data = yaml.safe_load(path.read_text()) or {}
+    cases = data.get("cases", {}) or {}
+    alias_map: dict = {}
+    for key, entry in cases.items():
+        alias_map[key] = key
+        for alias in (entry or {}).get("aliases", []) or []:
+            alias_map[alias] = key
+    _juris_cache = {"cases": cases, "_alias_map": alias_map}
+    return _juris_cache
+
+
+def lookup_case(identifier: str, index_path: Optional[Path] = None) -> Optional[dict]:
+    """Look up a case by canonical key or alias. Returns the entry merged
+    with its canonical id under 'id', or None if not found."""
+    idx = load_juris_index(index_path)
+    key = idx["_alias_map"].get(identifier)
+    if key is None:
+        return None
+    entry = idx["cases"].get(key)
+    if entry is None:
+        return None
+    return {"id": key, **entry}
 
 
 # ---------------------------------------------------------------------------
@@ -371,6 +476,49 @@ def resolve(
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
+def _print_case(entry: dict, full: bool = False) -> None:
+    """Print a jurisprudência index entry to stdout."""
+    cid = entry.get("id", "?")
+    tipo = entry.get("tipo", "")
+    processo = entry.get("processo") or ", ".join(entry.get("processos", []) or [])
+    decidido = entry.get("decidido", "")
+    status = entry.get("status", "")
+    tema = entry.get("tema", "")
+
+    print(f"--- [[{cid}]]  {tipo} {processo}".rstrip())
+    if tema:
+        print(f"  tema:     {tema}")
+    if decidido:
+        print(f"  decidido: {decidido}")
+    print(f"  status:   {status}")
+
+    holding = entry.get("holding_short")
+    if holding:
+        # Collapse YAML folded scalar whitespace for clean stdout.
+        text = " ".join(holding.split())
+        print(f"  holding:  {text}")
+
+    if full:
+        for k in ("relator", "votacao", "tese_certificada"):
+            if entry.get(k):
+                print(f"  {k}: {entry[k]}")
+        if entry.get("supera"):
+            print(f"  supera:       {', '.join(entry['supera'])}")
+        if entry.get("superado_por"):
+            print(f"  superado_por: {entry['superado_por']}")
+        if entry.get("complementa"):
+            print(f"  complementa:  {', '.join(entry['complementa'])}")
+        if entry.get("complementado_por"):
+            print(f"  complementado_por: {', '.join(entry['complementado_por'])}")
+        if entry.get("discussed_in"):
+            print(f"  discussed_in: {', '.join(entry['discussed_in'])}")
+        if entry.get("related_leis"):
+            print(f"  related_leis: {', '.join(entry['related_leis'])}")
+        if entry.get("fonte"):
+            print(f"  fonte:    {entry['fonte']}")
+    print()
+
+
 def _print_row(row: sqlite3.Row, full: bool = False) -> None:
     artigo_label = f"Art. {row['artigo']}"
     if row["artigo_letra"]:
@@ -394,12 +542,18 @@ def main() -> int:
     ap = argparse.ArgumentParser(
         description="Resolve a compact bracket-form citation against artigos.db.",
         epilog=(
-            "Examples:\n"
+            "Examples (statute):\n"
             "  cite.py '[[LIA.9]]'\n"
             "  cite.py '[[LIA.10.§1.II]]'\n"
             "  cite.py '[[LIA.11.§unico@2020-06-01]]'\n"
             "  cite.py '[[LIA.10 from:L14230-2021]]'\n"
             "  cite.py --parse-only '[[LE.17-A.caput]]'\n"
+            "\n"
+            "Examples (jurisprudence):\n"
+            "  cite.py '[[Tema1199]]'\n"
+            "  cite.py '[[ADI4650]]' --full\n"
+            "  cite.py '[[HC126292]]'           # superada — see superado_por\n"
+            "\n"
             "  cite.py --find-in path/to/file.md\n"
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -435,15 +589,30 @@ def main() -> int:
     if args.parse_only:
         print(f"Parsed: {c}")
         print(f"  identifier: {c.identifier}")
-        print(f"  artigo:     {c.artigo}")
-        print(f"  letra:      {c.letra}")
-        print(f"  path:       {c.path}")
-        print(f"  date:       {c.date}")
-        print(f"  from_id:    {c.from_id}")
-        print(f"  vintage:    {c.vintage}")
-        print(f"  lookup args: {' '.join(c.to_lookup_args())}")
+        print(f"  is_case:    {c.is_case}")
+        if not c.is_case:
+            print(f"  artigo:     {c.artigo}")
+            print(f"  letra:      {c.letra}")
+            print(f"  path:       {c.path}")
+            print(f"  date:       {c.date}")
+            print(f"  from_id:    {c.from_id}")
+            print(f"  vintage:    {c.vintage}")
+            print(f"  lookup args: {' '.join(c.to_lookup_args())}")
         return 0
 
+    # Jurisprudence citation: resolve against the YAML index
+    if c.is_case:
+        entry = lookup_case(c.identifier)
+        if entry is None:
+            print(
+                f"No case match for {c} in {DEFAULT_JURIS_INDEX}",
+                file=sys.stderr,
+            )
+            return 3
+        _print_case(entry, full=args.full)
+        return 0
+
+    # Statute citation: resolve against artigos.db
     try:
         rows = resolve(c, args.db)
     except FileNotFoundError as e:

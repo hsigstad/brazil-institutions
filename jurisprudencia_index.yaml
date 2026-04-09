@@ -1,0 +1,339 @@
+# Jurisprudência index — structured metadata for STF (and selected STJ)
+# decisions cited in this directory.
+#
+# Purpose: a lightweight, queryable index parallel to leis_index.yaml.
+# Each entry names a leading case, gives its identifier(s), current
+# status, theme, and the files in this directory that discuss it.
+# The substantive description of each case lives in
+# jurisprudencia-stf.md; this file is the index, not a duplicate.
+#
+# Format: YAML, top-level "cases" mapping keyed by canonical citation
+# ID (e.g., "Tema1199", "ADI4650", "HC126292"). The key matches the
+# bracket-form citation accepted by tools/leis_artigos/cite.py:
+# [[Tema1199]] resolves to cases.Tema1199 in this file.
+#
+# Status values:
+#   vigente              — current binding interpretation
+#   superada             — overruled in full
+#   parcialmente_superada — partially overruled / modulated
+#   modulada             — effects modulated by later decision
+#
+# Aliases: a single case may be known by both its tema number and its
+# processo number (Tema 1199 = ARE 843.989). The canonical key is
+# whichever form is most commonly cited; the other goes in `aliases`.
+#
+# Supersession chain: `supera` lists case IDs this decision overruled;
+# `superado_por` names the case that overruled this one (if any).
+# Both fields support reasoning about whether a citation is still good
+# law without re-reading the full prose entry.
+#
+# Conventions:
+# - All processo numbers use the bare form (no spaces, no dots) in the
+#   key and aliases (HC126292, not "HC 126.292"). The display form
+#   with dots is in `processo`.
+# - Compound entries (e.g., ADC 43+44+54 decided jointly) get a single
+#   key and list all processos in `processos`.
+# - `discussed_in` lists are filenames in this directory.
+# - `related_leis` cross-references leis_index.yaml apelidos or
+#   fonte_ids that the case interprets.
+
+schema_version: 1
+last_updated: 2026-04-09
+
+cases:
+
+  # ---------------------------------------------------------------------
+  # 1. Improbidade administrativa
+  # ---------------------------------------------------------------------
+
+  Tema897:
+    tipo: repercussao_geral
+    numero: 897
+    processo: RE 852.475
+    aliases: [RE852475]
+    tema: improbidade — imprescritibilidade do ressarcimento ao erário
+    status: vigente
+    holding_short: >
+      Ressarcimento ao erário em improbidade dolosa é imprescritível;
+      sanções e declaratória seguem prescrição ordinária.
+    discussed_in: [improbidade.md, jurisprudencia-stf.md]
+    related_leis: [LIA, CF]
+    supera: []
+    superado_por: null
+    fonte: https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=897
+
+  Tema1199:
+    tipo: repercussao_geral
+    numero: 1199
+    processo: ARE 843.989
+    aliases: [ARE843989]
+    relator: Alexandre de Moraes
+    decidido: 2022-08-18
+    tema: improbidade — retroatividade da Lei 14.230/2021
+    status: vigente
+    holding_short: >
+      Eliminação da improbidade culposa é irretroativa para casos
+      transitados em julgado, mas aplica-se imediatamente a casos
+      pendentes. Prescrição de 8 anos é irretroativa: para condutas
+      anteriores ao reforma, conta da publicação (2021-10-26).
+    discussed_in: [improbidade.md, licitacoes.md, jurisprudencia-stf.md]
+    related_leis: [LIA, L14230-2021]
+    supera: []
+    superado_por: null
+    fonte: https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=1199
+
+  # ---------------------------------------------------------------------
+  # 2. Contas municipais e Ficha Limpa
+  # ---------------------------------------------------------------------
+
+  Tema157:
+    tipo: repercussao_geral
+    numero: 157
+    processo: RE 848.826
+    aliases: [RE848826]
+    decidido: 2016-08-10
+    tese_certificada: 2019-10-18
+    votacao: 6-5
+    tema: contas municipais — competência da câmara para apreciação (Ficha Limpa)
+    status: vigente
+    holding_short: >
+      Tanto contas de governo quanto contas de gestão de prefeito são
+      julgadas pela câmara municipal para fins de inelegibilidade
+      (LC64/1990 Art. 1 I g). Parecer do TCE só deixa de prevalecer
+      por 2/3 dos vereadores; omissão da câmara não gera inelegibilidade.
+    discussed_in: [contas-municipais.md, partidos-e-sistema-eleitoral.md, jurisprudencia-stf.md]
+    related_leis: [LI, CF]
+    supera: []
+    superado_por: null
+    complementado_por: [ADPF982]
+    fonte: https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=157
+
+  ADPF982:
+    tipo: ADPF
+    numero: 982
+    decidido: 2025
+    tema: contas municipais — fronteira TCE × câmara × Ficha Limpa
+    status: vigente
+    holding_short: >
+      TCEs podem julgar contas de gestão e impor débitos/multas a
+      prefeitos ordenadores de despesas, mas inelegibilidade Ficha
+      Limpa só nasce de rejeição pela câmara das contas de governo.
+      Complementa Tema 157, não o contradiz.
+    discussed_in: [contas-municipais.md, jurisprudencia-stf.md]
+    related_leis: [LI, CF]
+    complementa: [Tema157]
+    supera: []
+    superado_por: null
+    fonte: https://www.migalhas.com.br/depeso/433107/adpf-982-quem-julga-as-contas-do-prefeito-afinal
+
+  ADC29:
+    tipo: ADC
+    numero: 29
+    processos: [ADC 29, ADC 30, ADI 4578]
+    aliases: [ADC30, ADI4578]
+    decidido: 2012-02-16
+    tema: Ficha Limpa — constitucionalidade da LC 135/2010
+    status: vigente
+    holding_short: >
+      Constitucionalidade da LC 135/2010 confirmada, incluindo
+      inelegibilidade por decisão de órgão colegiado (sem trânsito
+      em julgado). Presunção de inocência rejeitada como objeção:
+      inelegibilidade é restrição não-criminal à candidatura.
+    discussed_in: [partidos-e-sistema-eleitoral.md, jurisprudencia-stf.md]
+    related_leis: [LI, LC135-2010]
+    supera: []
+    superado_por: null
+
+  # ---------------------------------------------------------------------
+  # 3. Justiça do Trabalho — reforma trabalhista
+  # ---------------------------------------------------------------------
+
+  ADI5766:
+    tipo: ADI
+    numero: 5766
+    decidido: 2021-10-20
+    tema: justiça gratuita pós-reforma trabalhista
+    status: vigente
+    holding_short: >
+      Art. 790-B caput e §4 CLT (perícia) e Art. 791-A §4 CLT
+      (sucumbenciais sobre créditos de outros processos) declarados
+      inconstitucionais. Beneficiários da justiça gratuita não pagam
+      perícia com créditos da causa; sucumbenciais ficam suspensos
+      por 2 anos do trânsito em julgado.
+    discussed_in: [justica-trabalho.md, jurisprudencia-stf.md]
+    related_leis: [CLT, L13467-2017]
+    supera: []
+    superado_por: null
+
+  # ---------------------------------------------------------------------
+  # 4. Sistema eleitoral — financiamento de campanha
+  # ---------------------------------------------------------------------
+
+  ADI4650:
+    tipo: ADI
+    numero: 4650
+    decidido: 2015-09
+    relator: Luiz Fux
+    tema: financiamento eleitoral — fim das doações empresariais
+    status: vigente
+    holding_short: >
+      Inconstitucionalidade das doações empresariais a campanhas e
+      partidos (Lei 9.504/1997 e Lei 9.096/1995). Vigente a partir
+      das eleições de 2016, gerou criação do FEFC (Lei 13.487/2017).
+      Pré-2016 vs pós-2016 são regimes fundamentalmente distintos.
+    discussed_in: [partidos-e-sistema-eleitoral.md, jurisprudencia-stf.md]
+    related_leis: [LE, L9096-1995]
+    supera: []
+    superado_por: null
+    fonte: https://portal.stf.jus.br/processos/detalhe.asp?incidente=4136819
+
+  # ---------------------------------------------------------------------
+  # 5. Federalismo fiscal
+  # ---------------------------------------------------------------------
+
+  ADI875:
+    tipo: ADI
+    numero: 875
+    processos: [ADI 875, ADI 1987, ADI 2727, ADI 3243]
+    decidido: 2010
+    tema: FPE — inconstitucionalidade dos coeficientes rígidos
+    status: vigente
+    holding_short: >
+      Coeficientes fixos do FPE (LC 62/1989) declarados
+      inconstitucionais por perpetuar fatias sem atualização. Congresso
+      respondeu com LC 143/2013 (fórmula população + renda per capita).
+    discussed_in: [federalismo-fiscal.md, jurisprudencia-stf.md]
+    related_leis: [LC62-1989, LC143-2013, CF]
+    supera: []
+    superado_por: null
+
+  # ---------------------------------------------------------------------
+  # 6. Anticorrupção penal — Lava Jato e Pacote Anticrime
+  # ---------------------------------------------------------------------
+
+  HC126292:
+    tipo: HC
+    numero: 126.292
+    decidido: 2016
+    tema: execução provisória da pena após segunda instância
+    status: superada
+    holding_short: >
+      Permitiu execução de pena após confirmação em segunda
+      instância, antes do trânsito em julgado. Habilitou prisões
+      de réus de alto perfil da Lava Jato.
+    discussed_in: [anticorrupcao-penal.md, jurisprudencia-stf.md]
+    related_leis: [CF, CPP]
+    supera: []
+    superado_por: ADC43
+
+  ADC43:
+    tipo: ADC
+    numero: 43
+    processos: [ADC 43, ADC 44, ADC 54]
+    aliases: [ADC44, ADC54]
+    decidido: 2019-11
+    tema: reversão da execução provisória — exigência de trânsito em julgado
+    status: vigente
+    holding_short: >
+      Reverteu HC 126.292; restaurou exigência de trânsito em julgado
+      antes da execução penal. Reafirmou presunção de inocência em
+      sua forma processual plena. Triggered release of high-profile
+      defendants including Lula.
+    discussed_in: [anticorrupcao-penal.md, jurisprudencia-stf.md]
+    related_leis: [CF, CPP]
+    supera: [HC126292]
+    superado_por: null
+
+  LulaMoro2021:
+    tipo: HC
+    processos: [HC 193.726, Rcl 43.479, outros]
+    decidido: 2021
+    tema: anulação de condenações de Lula — incompetência e parcialidade de Moro
+    status: vigente
+    holding_short: >
+      (1) 13ª Vara Federal de Curitiba era incompetente para casos
+      Lula não-Petrobras. (2) Sergio Moro (depois Min. da Justiça)
+      atuou com parcialidade, viciando os processos. Anulou múltiplas
+      condenações de Lula em bases procedimentais.
+    discussed_in: [anticorrupcao-penal.md, jurisprudencia-stf.md]
+    related_leis: [CPP, CF]
+    supera: []
+    superado_por: null
+
+  ADI6298:
+    tipo: ADI
+    numero: 6298
+    processos: [ADI 6298, ADI 6299, ADI 6300, ADI 6305]
+    aliases: [ADI6299, ADI6300, ADI6305]
+    decidido: 2023-08
+    tema: juiz das garantias — constitucionalidade
+    status: vigente
+    holding_short: >
+      Juiz das garantias (Lei 13.964/2019, CPP Art. 3-A) é
+      constitucional, com diretrizes de implementação fixadas pelo
+      STF. Implementação efetiva a partir de 2024. Separa juiz da
+      investigação do juiz da instrução/julgamento.
+    discussed_in: [anticorrupcao-penal.md, jurisprudencia-stf.md]
+    related_leis: [CPP, L13964-2019]
+    supera: []
+    superado_por: null
+
+  HC127483:
+    tipo: HC
+    numero: 127.483
+    processos: [HC 127.483, HC 164.493]
+    aliases: [HC164493]
+    tema: colaboração premiada — controle judicial e prova
+    status: vigente
+    holding_short: >
+      Define escopo do controle judicial sobre acordos de colaboração
+      premiada (Lei 12.850/2013 Art. 4) e padrões probatórios para o
+      depoimento do colaborador. Colaboração isolada não sustenta
+      condenação (Art. 4 §16): exige corroboração.
+    discussed_in: [anticorrupcao-penal.md, jurisprudencia-stf.md]
+    related_leis: [L12850-2013]
+    supera: []
+    superado_por: null
+
+  # ---------------------------------------------------------------------
+  # 7. NTEP / acidentes de trabalho
+  # ---------------------------------------------------------------------
+
+  ADI3931:
+    tipo: ADI
+    numero: 3931
+    decidido: 2020-04
+    tema: NTEP — constitucionalidade do nexo técnico epidemiológico
+    status: vigente
+    holding_short: >
+      Constitucionalidade do Art. 21-A da Lei 8.213/1991 (incluído
+      pela Lei 11.430/2006). Presunção de origem ocupacional baseada
+      em CNAE × CID é constitucional; inversão do ônus da prova é
+      permitida neste contexto.
+    discussed_in: [jurisprudencia-stf.md]
+    related_leis: [L8213-1991, L11430-2006]
+    supera: []
+    superado_por: null
+
+  # ---------------------------------------------------------------------
+  # 8. Transparência
+  # ---------------------------------------------------------------------
+
+  ARE652777:
+    tipo: ARE
+    numero: 652.777
+    decidido: 2015-04-23
+    tipo_julgamento: repercussao_geral
+    tema: divulgação nominal de salários de servidores públicos
+    status: vigente
+    holding_short: >
+      Divulgação de salários nominais de servidores é constitucional
+      e compatível com publicidade (CF Art. 37) e direito à
+      privacidade. Servidor não tem interesse de privacidade em
+      ocultar remuneração paga com recursos públicos. LGPD (2018)
+      não revoga: divulgação segue válida sob base legal de
+      interesse público.
+    discussed_in: [transparencia-dados.md, jurisprudencia-stf.md]
+    related_leis: [CF, L13709-2018]
+    supera: []
+    superado_por: null

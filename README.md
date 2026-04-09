@@ -96,6 +96,7 @@ keywords` line includes both Portuguese and English search terms.
 - [`faq.md`](faq.md) — Common research questions mapped to topical files. Navigation aid by question, not by topic.
 - [`timeline.md`](timeline.md) — Date-anchored timeline of statutory and jurisprudential changes (1988 CF through 2026), with key cutoffs as design tools.
 - [`quasi-experimentos.md`](quasi-experimentos.md) — Index of identification strategies and natural experiments embedded in Brazilian institutions (CGU random audits, FPM step function, electoral cutoffs, reform shocks, etc.).
+- [`data_pointers.md`](data_pointers.md) — Where Brazilian institutional data lives. Public sources organized by topic, with basedosdados table IDs where available and pointers to scraping requirements where not.
 
 ## How to use this reference
 
