@@ -102,6 +102,18 @@ keywords` line includes both Portuguese and English search terms.
   possible. For anything that depends on currently-binding law text,
   verify against [planalto.gov.br](https://www.planalto.gov.br) or the
   primary source.
+- **For exact statutory text, query the article DB.** All laws cited
+  here (37 of them, including LIA, L8666, L14133, LE, CPC, CPP, CC, CE,
+  LFL, LI, LRF, LAC, LCO, LP, LAP, etc.) are parsed into a searchable
+  SQLite table at `~/research/data/lei/artigos.db`. Each row is one
+  leaf of an article (caput, paragraph, inciso) with date-versioned
+  amendment tracking. Query via the CLI:
+  ```bash
+  python3 ~/research/pipelines/bdata/source/clean/leis_artigos/lookup.py LIA 9 --path II
+  python3 ~/research/pipelines/bdata/source/clean/leis_artigos/lookup.py LE 36-A --as-of 2010-01-01
+  python3 ~/research/pipelines/bdata/source/clean/leis_artigos/lookup.py --by-amending L14230-2021
+  ```
+  See `pipelines/bdata/source/clean/leis_artigos/README.md` for details.
 - **Broken legacy links.** Several of the older migrated files contain
   internal references in the form `[CF103](lei/cf.org::*Art.%20103)`.
   These are dead pointers to the original author's local notes system
