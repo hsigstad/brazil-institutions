@@ -61,6 +61,69 @@ def is_roman(s: str) -> bool:
     return all(c in ROMAN_VALUES for c in s.upper())
 
 
+def is_strict_roman(s: str) -> bool:
+    """True if s is a CANONICAL Roman numeral (e.g., XCIX, not IC).
+
+    Round-trips s → integer → canonical string and compares.
+    """
+    if not s:
+        return False
+    s = s.upper()
+    if not all(c in ROMAN_VALUES for c in s):
+        return False
+    # Decode
+    total = 0
+    prev = 0
+    for c in reversed(s):
+        v = ROMAN_VALUES[c]
+        if v < prev:
+            total -= v
+        else:
+            total += v
+        prev = v
+    if total <= 0:
+        return False
+    # Re-encode and compare
+    n = total
+    out = ''
+    for value, sym in [
+        (1000, 'M'), (900, 'CM'), (500, 'D'), (400, 'CD'),
+        (100, 'C'), (90, 'XC'), (50, 'L'), (40, 'XL'),
+        (10, 'X'), (9, 'IX'), (5, 'V'), (4, 'IV'), (1, 'I'),
+    ]:
+        while n >= value:
+            out += sym
+            n -= value
+    return out == s
+
+
+def split_roman_alinea(s: str) -> tuple[Optional[str], Optional[str]]:
+    """Split a lowercase letter run into (inciso_roman_uppercase, alinea_lowercase).
+
+    The challenge: planalto anchors concatenate inciso + alínea without
+    a separator (e.g., 'ig' = inciso I alínea g, 'ivc' = inciso IV alínea c,
+    'iic' = inciso II alínea c). The greedy "consume all Roman digits"
+    approach mis-parses 'ic' as Roman 'IC' (which isn't even canonical),
+    and drops 'ig' entirely because 'g' isn't a Roman digit.
+
+    The correct algorithm: try the longest STRICT-Roman prefix that leaves
+    either nothing or a single lowercase letter (the alínea) as remainder.
+    """
+    if not s:
+        return None, None
+    s = s.lower()
+
+    # Try the whole string as a strict Roman numeral.
+    if is_strict_roman(s.upper()):
+        return s.upper(), None
+
+    # Try shrinking by one character — treat the last char as alínea.
+    if len(s) >= 2 and is_strict_roman(s[:-1].upper()):
+        return s[:-1].upper(), s[-1]
+
+    return None, None
+
+
 def normalize_anchor_roman(s: str) -> str:
     """Convert lowercase roman in an anchor (e.g., 'iv') to uppercase ('IV')."""
     return s.upper()
@@ -184,22 +247,31 @@ def parse_anchor(name: str) -> Optional[AnchorParse]:
         path_parts.append(f'§{para_num}')
         i = j
 
-    # Optional: lowercase Roman numeral (inciso)
+    # Optional: lowercase Roman numeral (inciso) possibly followed by an
+    # alínea letter. The anchor concatenates them without a separator
+    # (e.g., 'ig' = inciso I alínea g, 'ivc' = inciso IV alínea c).
+    # We greedily consume any run of lowercase letters and split it into
+    # (strict Roman prefix, optional single-letter alínea) using
+    # split_roman_alinea.
     if i < len(s):
         j = i
-        while j < len(s) and s[j] in 'ivxlcdm':
+        while j < len(s) and s[j].isalpha() and s[j].islower():
             j += 1
         if j > i:
-            roman = s[i:j].upper()
-            if is_roman(roman):
+            roman, alinea = split_roman_alinea(s[i:j])
+            if roman is not None:
                 path_parts.append(roman)
+                if alinea is not None:
+                    path_parts.append(alinea)
                 i = j
 
-    # Optional: single lowercase letter (alínea)  -- but tricky because the
-    # anchor doesn't always include alíneas. We'll handle alíneas via the text
-    # in a later pass when we see them.
-    # Optional: arabic number (item)
-    # For now we assume the anchor stops at the inciso level.
+    # Optional: arabic numeral (item) — sub-leaf within an alínea.
+    if i < len(s) and s[i].isdigit():
+        k = i
+        while k < len(s) and s[k].isdigit():
+            k += 1
+        path_parts.append(s[i:k])
+        i = k
 
     if i != len(s):
         # We didn't consume everything — log and skip for safety.

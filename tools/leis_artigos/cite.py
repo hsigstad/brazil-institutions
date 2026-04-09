@@ -101,6 +101,82 @@ ARTICLE_RE = re.compile(
 BRACKET_RE = re.compile(r"\[\[([^\[\]]+?)\]\]")
 
 
+# ---------------------------------------------------------------------------
+# Path normalization
+# ---------------------------------------------------------------------------
+# PATH_CONVENTION specifies dotted paths (e.g., 'I.a' for inciso I alínea a),
+# but the parser currently emits some leaves with concatenated paths
+# (e.g., 'IA' instead of 'I.a', 'IIC' instead of 'II.c'). To make the
+# resolver tolerant of both forms, we expand a canonical path into all
+# candidate forms before querying.
+
+ROMAN_DIGITS = set("IVXLCDM")
+
+
+def _is_roman_run(s: str) -> bool:
+    """True if s consists only of uppercase Roman digit characters (loose check)."""
+    return bool(s) and all(c in ROMAN_DIGITS for c in s)
+
+
+def normalize_path_candidates(path: str) -> List[str]:
+    """Return candidate paths to try for the same logical location.
+
+    Handles the divergence between PATH_CONVENTION (dotted, e.g., 'I.a')
+    and the DB's actual storage (concatenated, e.g., 'IA') for inciso +
+    alínea (and inciso + alínea + item) paths.
+
+    Examples:
+        'I.a'      -> ['I.a', 'IA']
+        'II.c'     -> ['II.c', 'IIC']
+        '§1.II.a'  -> ['§1.II.a', '§1.IIA']
+        'I.a.1'    -> ['I.a.1', 'IA1']
+        'caput'    -> ['caput']        (no expansion)
+        'IV'       -> ['IV']           (no expansion — pure Roman)
+    """
+    if not path:
+        return [path]
+
+    candidates = [path]
+    parts = path.split(".")
+
+    # Pattern: <Roman>.<lowercase letter> -> add <Roman><UPPER>
+    if len(parts) == 2 and _is_roman_run(parts[0]) and len(parts[1]) == 1 and parts[1].islower():
+        candidates.append(f"{parts[0]}{parts[1].upper()}")
+
+    # Pattern: §N.<Roman>.<lowercase letter> -> add §N.<Roman><UPPER>
+    elif (
+        len(parts) == 3
+        and parts[0].startswith("§")
+        and _is_roman_run(parts[1])
+        and len(parts[2]) == 1
+        and parts[2].islower()
+    ):
+        candidates.append(f"{parts[0]}.{parts[1]}{parts[2].upper()}")
+
+    # Pattern: <Roman>.<lowercase letter>.<digit> -> add <Roman><UPPER><digit>
+    elif (
+        len(parts) == 3
+        and _is_roman_run(parts[0])
+        and len(parts[1]) == 1
+        and parts[1].islower()
+        and parts[2].isdigit()
+    ):
+        candidates.append(f"{parts[0]}{parts[1].upper()}{parts[2]}")
+
+    # Pattern: §N.<Roman>.<lowercase letter>.<digit> -> add §N.<Roman><UPPER><digit>
+    elif (
+        len(parts) == 4
+        and parts[0].startswith("§")
+        and _is_roman_run(parts[1])
+        and len(parts[2]) == 1
+        and parts[2].islower()
+        and parts[3].isdigit()
+    ):
+        candidates.append(f"{parts[0]}.{parts[1]}{parts[2].upper()}{parts[3]}")
+
+    return candidates
+
+
 @dataclass
 class Citation:
     """A parsed citation. All fields except `identifier` may be None."""
@@ -244,8 +320,14 @@ def resolve(
         sql += " AND (artigo_letra IS NULL OR artigo_letra = '')"
 
     if citation.path:
-        sql += " AND path = ?"
-        args.append(citation.path)
+        candidates = normalize_path_candidates(citation.path)
+        if len(candidates) == 1:
+            sql += " AND path = ?"
+            args.append(candidates[0])
+        else:
+            placeholders = ",".join("?" * len(candidates))
+            sql += f" AND path IN ({placeholders})"
+            args.extend(candidates)
 
     # Vintage filter
     if citation.date:
@@ -254,16 +336,20 @@ def resolve(
             " AND (vigente_ate IS NULL OR ? < vigente_ate)"
         )
         args += [citation.date, citation.date]
+        sql += " ORDER BY ordem ASC"
     elif citation.from_id:
         sql += " AND fonte_id = ?"
         args.append(citation.from_id)
+        sql += " ORDER BY ordem ASC"
     elif citation.vintage == "original":
-        sql += " ORDER BY vigente_desde ASC"
+        # Sort by earliest vigente_desde so the first row per (artigo, path)
+        # is the original-publication version. The post-query dedup keeps
+        # one row per location.
+        sql += " ORDER BY ordem ASC, vigente_desde ASC"
     else:
         # Default: current version
         sql += " AND vigente_ate IS NULL"
-
-    sql += " ORDER BY ordem ASC"
+        sql += " ORDER BY ordem ASC"
 
     rows = con.execute(sql, args).fetchall()
 

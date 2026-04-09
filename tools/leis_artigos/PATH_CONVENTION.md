@@ -78,6 +78,32 @@ Because lex sort is imperfect, the `artigo` table also stores an `ordem`
 column that preserves the document order. Use `ORDER BY ordem` for
 reconstruction; use the path columns for lookup.
 
+## Notes on parser behavior
+
+- The parser was updated to canonicalize alínea paths as `<Roman>.<lowercase>`
+  (e.g., `I.a`, `IV.c`, `II.g`). Earlier versions of the DB stored these as
+  concatenated forms (`IA`, `IVC`, `IIG` — and in some cases dropped the
+  alínea entirely when its letter wasn't in `ivxlcdm`). After rebuilding,
+  all alíneas are stored in canonical dotted form.
+- The resolver (`cite.py`, `lookup.py`) accepts both the canonical
+  dotted form and the legacy concatenated form via path normalization,
+  so older citations continue to work.
+
+## Known parser limitations (not yet fixed)
+
+- **Sub-paragraph numbering**: laws sometimes have `§ 4º-C`, `§ 4º-D`,
+  etc. (paragraphs with letter suffixes, parallel to article letters).
+  The parser currently stores these as `§4.C` (dot + uppercase), which
+  is not strictly canonical. PATH_CONVENTION above does not cover this
+  case yet — when adding a sub-paragraph syntax, decide between
+  `§4-C` (parallel to article letters), `§4.C` (current), or
+  something else.
+- **Duplicate caput rows**: in laws with extensive amendment histories
+  (e.g., LI Art. 1), the parser sometimes emits two `caput` rows when a
+  law's article structure was reorganized but the original version is
+  also captured in planalto's HTML. The `vigente_desde`/`vigente_ate`
+  columns disambiguate.
+
 ## Validation regex
 
 ```python

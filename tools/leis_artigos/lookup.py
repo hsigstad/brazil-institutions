@@ -40,6 +40,56 @@ ARTIGOS_DB = Path(
 )
 
 
+# Path normalization: handles divergence between PATH_CONVENTION (dotted,
+# 'I.a') and the DB's actual storage (concatenated, 'IA') for inciso +
+# alínea paths. See cite.py for the full helper.
+ROMAN_DIGITS = set("IVXLCDM")
+
+
+def _is_roman_run(s: str) -> bool:
+    return bool(s) and all(c in ROMAN_DIGITS for c in s)
+
+
+def normalize_path_candidates(path):
+    if not path:
+        return [path]
+    candidates = [path]
+    parts = path.split(".")
+    if (
+        len(parts) == 2
+        and _is_roman_run(parts[0])
+        and len(parts[1]) == 1
+        and parts[1].islower()
+    ):
+        candidates.append(f"{parts[0]}{parts[1].upper()}")
+    elif (
+        len(parts) == 3
+        and parts[0].startswith("§")
+        and _is_roman_run(parts[1])
+        and len(parts[2]) == 1
+        and parts[2].islower()
+    ):
+        candidates.append(f"{parts[0]}.{parts[1]}{parts[2].upper()}")
+    elif (
+        len(parts) == 3
+        and _is_roman_run(parts[0])
+        and len(parts[1]) == 1
+        and parts[1].islower()
+        and parts[2].isdigit()
+    ):
+        candidates.append(f"{parts[0]}{parts[1].upper()}{parts[2]}")
+    elif (
+        len(parts) == 4
+        and parts[0].startswith("§")
+        and _is_roman_run(parts[1])
+        and len(parts[2]) == 1
+        and parts[2].islower()
+        and parts[3].isdigit()
+    ):
+        candidates.append(f"{parts[0]}.{parts[1]}{parts[2].upper()}{parts[3]}")
+    return candidates
+
+
 # Strict path validation per PATH_CONVENTION.md
 PATH_RE = re.compile(
     r'^(caput|ementa|preambulo'
@@ -98,8 +148,14 @@ def list_amendments_for_article(
     else:
         sql += " AND artigo_letra IS NULL"
     if path:
-        sql += " AND path = ?"
-        params.append(path)
+        candidates = normalize_path_candidates(path)
+        if len(candidates) == 1:
+            sql += " AND path = ?"
+            params.append(candidates[0])
+        else:
+            placeholders = ",".join("?" * len(candidates))
+            sql += f" AND path IN ({placeholders})"
+            params.extend(candidates)
     sql += " ORDER BY amending_data, path"
     cur.execute(sql, params)
     rows = cur.fetchall()
@@ -219,8 +275,14 @@ def lookup(
         sql += " AND artigo_letra IS NULL"
 
     if path:
-        sql += " AND path = ?"
-        params.append(path)
+        candidates = normalize_path_candidates(path)
+        if len(candidates) == 1:
+            sql += " AND path = ?"
+            params.append(candidates[0])
+        else:
+            placeholders = ",".join("?" * len(candidates))
+            sql += f" AND path IN ({placeholders})"
+            params.extend(candidates)
 
     if not history:
         if as_of:

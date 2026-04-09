@@ -13,22 +13,26 @@ file lists topic keywords at the top to help search.
 
 ## Status and scope
 
-**This is a snapshot, not a live document.** The directory was compiled
-from accumulated notes spanning roughly 2018–2026. Some details may be
-out of date, especially:
+**This is a living reference, updated continuously as research projects
+surface new material.** That said, coverage is uneven and not every file
+is revisited on every change in the law. Treat anything time-volatile
+as potentially stale unless the surrounding section was clearly updated
+recently. Areas especially prone to drift:
 
 - Post-2017 CPC reforms and subsequent CNJ resoluções.
 - Electoral law (coligações, federações, cláusula de desempenho) changed
-  substantially 2017–2022.
+  substantially 2017–2022 and continues to evolve.
 - Lei de Improbidade reformed by Lei 14.230/2021; STF Tema 1199 (2022)
-  governs retroactivity.
+  governs retroactivity, and post-reform jurisprudence is still settling.
 - Reforma tributária (EC 132/2023) is in phase-in through 2033.
 - Monetary thresholds (RGPS ceiling, minimum wage, FPM coefficients)
   update annually.
 
-For project work that depends on legally-current details, verify against
-the current statute text (<https://www.planalto.gov.br>). This reference
-is for orientation, not citation.
+Each topical file carries a `Snapshot as of YYYY` line indicating when
+its content was last meaningfully reviewed. For project work that depends
+on legally-current details, verify against the current statute text
+(<https://www.planalto.gov.br>) — this reference is for orientation, not
+citation.
 
 **Language**: Portuguese where translation loses meaning, English
 otherwise. Many legal terms have no clean English equivalent
@@ -88,6 +92,10 @@ keywords` line includes both Portuguese and English search terms.
 - [`glossario.md`](glossario.md) — Portuguese legal terms glossary. Look up *acórdão*, *súmula vinculante*, *trânsito em julgado*, *prevenção*, *parecer prévio*, etc.
 - [`leis_index.yaml`](leis_index.yaml) — Structured YAML index of statutes cited in this directory: status, key articles, topics, files where discussed.
 - [`jurisprudencia-stf.md`](jurisprudencia-stf.md) — Consolidated STF case file. STF Temas, ADIs, ADPFs, HCs cited elsewhere are described here once and cross-referenced.
+- [`pitfalls.md`](pitfalls.md) — Common mistakes about Brazilian institutions, paired ❌/✓ format. Read first when in doubt.
+- [`faq.md`](faq.md) — Common research questions mapped to topical files. Navigation aid by question, not by topic.
+- [`timeline.md`](timeline.md) — Date-anchored timeline of statutory and jurisprudential changes (1988 CF through 2026), with key cutoffs as design tools.
+- [`quasi-experimentos.md`](quasi-experimentos.md) — Index of identification strategies and natural experiments embedded in Brazilian institutions (CGU random audits, FPM step function, electoral cutoffs, reform shocks, etc.).
 
 ## How to use this reference
 

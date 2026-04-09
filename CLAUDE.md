@@ -129,7 +129,7 @@ the source identifier itself contains a hyphen.
 [[LE.11.§10@2024-12-31]]           ← § 10 before LC 219/2025 revoked it
 [[L14133.75.II]]                   ← inciso II of Art. 75 of Nova Lei de Licitações
 [[L13709-2018.7]]                  ← Art. 7 of Lei 13.709/2018 (LGPD; non-cataloged)
-[[LI.1.I]]                         ← Lei das Inelegibilidades Art. 1 inciso I (alínea must be drilled down in current DB)
+[[LI.1.I.g]]                       ← Lei das Inelegibilidades Art. 1 I g (Ficha Limpa contas)
 [[CF.31.§2]]                       ← Constituição Art. 31 § 2
 [[CP.312]]                         ← Código Penal Art. 312
 [[LIA.11.§unico@2020-06-01]]       ← what § único said in mid-2020

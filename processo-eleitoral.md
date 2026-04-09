@@ -219,6 +219,25 @@ Campaign donations exceeding the legal individual limit.
 
 ---
 
+## Comparison of the four main electoral actions
+
+Quick reference. Substance in §§4–7 below. For common confusions
+between these (especially deadlines and effects on inelegibilidade),
+see [`pitfalls.md`](pitfalls.md) "Electoral procedures".
+
+| Action | Phase | Deadline | Statutory basis | Cassação? | 8y inelegibilidade? |
+|---|---|---|---|---|---|
+| **AIPRC** | pre-election | 5 days from publication of registration request, hard cutoff 15 Aug | LC 64/1990 Art. 3 | yes (cassação of registration) | no (refusal of registration only) |
+| **AIJE** | campaign through diplomação | from registration to diplomação | LC 64/1990 Art. 22 | yes (post-Ficha Limpa) | yes (8y for those who acted + candidate) |
+| **AIME** | post-election | 15 days from diplomação | CF Art. 14 §§10–11 | yes (with eficácia imediata) | only if grounded in abuso de poder econômico |
+| **RCED** | post-election | 3 days from diplomação | CE Art. 262 | yes | yes (8y) |
+
+All four actions carry **suspensive effect** of recursos against
+cassação. AIME runs in **segredo de justiça**. AIJE's potencialidade
+requirement was made dispensable by Ficha Limpa.
+
+---
+
 ## 4. AIPRC — Ação de Impugnação ao Pedido de Registro de Candidatura
 
 Pre-election challenge to a candidate's registration. Filed before

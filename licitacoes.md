@@ -27,12 +27,12 @@ Still the relevant statute for historical (pre-2021) analysis.
 
 Five modalities, each defined by value thresholds and procedural requirements:
 
-- **Convite** ([[L8666.23.I]] / [[L8666.23.II]], alínea a): engineering up
-  to R$150,000; goods/services up to R$80,000. Minimum 3 invited firms
+- **Convite** ([[L8666.23.I.a]] / [[L8666.23.II.a]]): engineering up to
+  R$150,000; goods/services up to R$80,000. Minimum 3 invited firms
   ([[L8666.22.§3]]).
-- **Tomada de preços** ([[L8666.23.I]] / [[L8666.23.II]], alínea b):
-  engineering up to R$1,500,000; goods/services up to R$650,000.
-  Requires prior cadastro.
+- **Tomada de preços** ([[L8666.23.I.b]] / [[L8666.23.II.b]]): engineering
+  up to R$1,500,000; goods/services up to R$650,000. Requires prior
+  cadastro.
 - **Concorrência**: above tomada de preços thresholds; open to all.
 - **Concurso**: for technical/artistic/scientific work.
 - **Leilão**: for sale of public goods.
