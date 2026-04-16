@@ -353,3 +353,14 @@ selection explicitly.
 | Lei 13.964/2019 (Pacote Anticrime) | `CPP.28-A` (ANPP criminal) |
 
 **Sources**: LC 75/1993; Lei 8.625/1993.
+
+---
+
+## 10. Operational baselines
+
+- **Workforce**: approximately 13,000 members across all MP branches (CNMP *MP: Um Retrato* 2023).
+- **Largest state MP**: MP-SP (~2,000 promotores across ~319 comarcas).
+- **Improbidade standing**: post-`L14230-2021`, MP has exclusive standing for improbidade actions; pre-2021, injured entities could also file, but MP filed the vast majority (~90%+).
+- **Data gap**: precise MP caseload statistics (IC-to-ACP conversion rates, case selection rates) are not systematically published. CNMP's *MP: Um Retrato* series has aggregate numbers but does not break out improbidade-specific pipeline statistics. Researchers seeking prosecution-rate denominators should expect to construct them from tribunal-side data, not MP-side reporting.
+
+**Source**: CNMP *MP: Um Retrato* 2023 (workforce numbers).

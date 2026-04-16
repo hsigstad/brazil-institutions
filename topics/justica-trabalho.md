@@ -334,6 +334,19 @@ Based on aggregated CNJ and TRT data:
 
 ---
 
+## Operational baselines
+
+Key structural numbers for the Justiça do Trabalho (base year 2023):
+
+- **Conciliation rate**: 20.2% overall, 36.5% in fase de conhecimento 1st instance — highest in the judiciary. TRT24 reached 48.1% in conhecimento.
+- **Court units**: 1,585 varas do trabalho; 610 municipalities with labor court presence (11% of all municipalities).
+- **Vacancy rate**: 11.6% (lowest of all branches).
+- **Congestion rate**: 44.1% (lowest of all branches — labor cases resolve faster than any other branch).
+
+**Source**: CNJ *Justiça em Números* 2024.
+
+---
+
 ## Peritos (court experts)
 
 Notes on judicial expert appointment in labor courts:

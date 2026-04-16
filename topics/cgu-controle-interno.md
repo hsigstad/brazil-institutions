@@ -253,6 +253,7 @@ See `transparencia-dados.md` for broader transparency infrastructure.
   disciplinary enforcement.
 - **Leniency agreements (`LAC`)**: a small-N but high-salience dataset
   for corporate liability research.
+- **Audit irregularity base rate**: CGU random audits (2003–2015) found irregularities in approximately 75% of audited municipalities (Ferraz & Finan 2008, 2011). The most common findings: procurement irregularities, diversion of SUS/education funds, ghost employees.
 - **Caveat on federal focus**: CGU is federal. State-level equivalents
   (controladorias estaduais, e.g., CGE-SP) exist but are less powerful
   and less studied.

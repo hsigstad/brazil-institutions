@@ -281,6 +281,24 @@ backbone of any structured analysis of court data.
 
 ---
 
+## 6.5 Operational baselines (Justiça em Números 2024)
+
+Key structural numbers for the Brazilian judiciary (base year 2023):
+
+- **Magistrates**: 18,265 seated; 19.8% vacancy rate (~4,505 unfilled positions). Vacancy highest in Justiça Estadual (22%), lowest in Justiça do Trabalho (11.6%).
+- **Judge density**: 9 judges per 100k inhabitants (vs ~18 in the EU).
+- **Court units**: 10,451 state-court units (9,113 varas + 1,338 juizados especiais), 1,000 federal units, 1,585 varas do trabalho, 2,577 zonas eleitorais.
+- **Comarcas**: 2,496 (44.8% of municipalities are sede of Justiça Estadual).
+- **Caseload**: 35.3M new cases filed in 2023 (5.8% increase over 2022); 83.4M total pending.
+- **Congestion rate** (*taxa de congestionamento*): overall ~68.7%; estadual ~71.9%; federal ~56.7%; trabalho ~44.1%.
+- **Productivity**: 2,063 cases resolved per magistrate per year (~8.2 per business day).
+- **Conciliation infrastructure**: 1,930 Cejuscs installed; 4M homologatory sentences in 2023.
+- **Conciliation rates**: trabalho 20.2% (36.5% in fase de conhecimento 1st instance); estadual ~12%; federal ~8%.
+
+**Source**: CNJ *Justiça em Números* 2024.
+
+---
+
 ## 7. The execução fiscal problem
 
 A single largest source of judicial congestion. Relevant because it

@@ -234,3 +234,15 @@ comarcas with creation dates from 1700 to 2016.
 The 1988–2010 expansion (146 → 342) coincides with CF giving TJs
 initiative over comarca creation (`CF.96`) and successive revisions
 lowering population thresholds in SP's COJ.
+
+## Operational baselines
+
+Key structural numbers for the Justiça Estadual (base year 2023):
+
+- **Court units**: 10,451 total — 9,113 varas + 1,338 juizados especiais.
+- **Comarcas**: 2,496 — 44.8% of Brazilian municipalities are sede of the Justiça Estadual.
+- **Congestion rate**: 71.9% (highest of all branches).
+- **Vacancy**: 22% of magistrate positions unfilled.
+- **Execuções fiscais**: 86% of pending execuções fiscais are in state courts. TJSP alone holds 48.5% (12.8M); TJRJ 12.4% (3.3M).
+
+**Source**: CNJ *Justiça em Números* 2024.
