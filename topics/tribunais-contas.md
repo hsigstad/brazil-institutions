@@ -13,27 +13,22 @@ Audesp, procurement oversight, random assignment, judicial independence.
 through Resolução 16/2024. Conselheiro composition rules are stable
 (constitutional).
 
-Compiled from personal research notes on TCE-SP procedure and Audesp.
-
 ---
 
 ## Constitutional basis
 
-- **CF/88 Arts. 70–75** — external fiscal control (contábil, financeira,
+- `CF.70`–`CF.75` — external fiscal control (contábil, financeira,
   orçamentária, operacional, patrimonial).
-- **Art. 70**: Congress exercises fiscal oversight with the assistance of
+- `CF.70`: Congress exercises fiscal oversight with the assistance of
   the TCU.
-- **Art. 71**: lists TCU competences, including parecer prévio on
-  presidential accounts (I) and judging accounts of administrators of public
-  funds (II). The Art. 71 I/II split maps onto the contas de governo /
-  contas de gestão distinction.
-- **Art. 75**: extends the same rules, "no que couber", to Tribunais de
-  Contas dos Estados (TCEs), Distrito Federal, and existing Tribunais /
-  Conselhos de Contas dos Municípios (TCMs).
-- **CF Art. 31 §4**: prohibits creating new municipal-level Tribunais de
+- `CF.71`: lists TCU competences, including parecer prévio on
+  presidential accounts (`CF.71.I`) and judging accounts of administrators
+  of public funds (`CF.71.II`). The I/II split maps onto the contas de
+  governo / contas de gestão distinction.
+- `CF.75`: extends the same rules, "no que couber", to TCEs, DF, and
+  existing TCMs.
+- `CF.31.§4`: prohibits creating new municipal-level Tribunais de
   Contas (grandfathers existing TCMs).
-
-**Source:** [CF/1988 Arts. 70–75](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm).
 
 ---
 
@@ -43,10 +38,10 @@ Compiled from personal research notes on TCE-SP procedure and Audesp.
 - **TCEs**: one per state (26 + DF). As of 2026, only **Bahia, Goiás, and
   Pará** maintain active state-level TCMs. **Rio de Janeiro** and
   **São Paulo** have municipal TCMs for their capital cities specifically.
-  (CF Art. 31 §4 prohibits new TCMs; this list only shrinks.)
+  (`CF.31.§4` prohibits new TCMs; this list only shrinks.)
 - **Composition**: typically 7 conselheiros. Appointment: 4 by the state
   assembly, 3 by the governor (1 auditor, 1 MP de Contas member, 1 free
-  choice) — mirroring TCU rules per CF Art. 75.
+  choice) — mirroring TCU rules per `CF.75`.
 - Conselheiros are political appointees, raising questions about TCE
   independence.
 
