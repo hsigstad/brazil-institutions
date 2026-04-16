@@ -792,6 +792,48 @@ def _print_row(row: sqlite3.Row, full: bool = False) -> None:
     print()
 
 
+# ---------------------------------------------------------------------------
+# Annotations (TSE Código Eleitoral Anotado)
+# ---------------------------------------------------------------------------
+
+_DEFAULT_ANNOT_DB = Path(__file__).resolve().parent.parent / "tse_ce_anotado" / "ce_anotado.db"
+
+
+def _show_annotations(c, db_path: Optional[Path] = None) -> None:
+    """Show TSE jurisprudence annotations for a CE article."""
+    db = db_path or _DEFAULT_ANNOT_DB
+    if not db.exists():
+        print(f"  (annotations DB not found at {db})", file=sys.stderr)
+        return
+
+    import sqlite3 as _sql
+    con = _sql.connect(str(db))
+    con.row_factory = _sql.Row
+    rows = con.execute(
+        "SELECT tipo, referencia, texto FROM anotacao "
+        "WHERE lei = ? AND artigo = ? ORDER BY id",
+        (c.identifier, c.artigo),
+    ).fetchall()
+    con.close()
+
+    if not rows:
+        return
+
+    print(f"\n  --- TSE annotations for CE Art. {c.artigo} ({len(rows)} entries) ---")
+    for row in rows:
+        tipo = row["tipo"]
+        ref = row["referencia"]
+        texto = row["texto"]
+        label = f"[{tipo}]"
+        if ref:
+            label = f"[{tipo}: {ref}]"
+        # Truncate long texts for display
+        if len(texto) > 200:
+            texto = texto[:197] + "..."
+        print(f"  {label}")
+        print(f"    {texto}")
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(
         description="Resolve a compact backtick-form citation against artigos.db.",
@@ -831,6 +873,10 @@ def main() -> int:
     ap.add_argument("--db", type=Path, default=None, help=f"Path to artigos.db (default: {DEFAULT_DB})")
     ap.add_argument("--parse-only", action="store_true", help="Parse but don't query the DB.")
     ap.add_argument("--full", action="store_true", help="Show capítulo/seção/fonte metadata.")
+    ap.add_argument("--annotations", action="store_true",
+                    help="Show TSE jurisprudence annotations (CE articles only; requires ce_anotado.db).")
+    ap.add_argument("--annotations-db", type=Path, default=None,
+                    help="Path to ce_anotado.db (default: ../tse_ce_anotado/ce_anotado.db)")
     ap.add_argument("--find-in", metavar="FILE", help="Find and parse all citations in a file.")
 
     args = ap.parse_args()
@@ -925,14 +971,24 @@ def main() -> int:
         rows = resolve(c, args.db)
     except FileNotFoundError as e:
         print(str(e), file=sys.stderr)
+        # Even if the DB is missing, try annotations if requested
+        if args.annotations and c.identifier == "CE" and c.artigo:
+            _show_annotations(c, args.annotations_db)
         return 2
 
     if not rows:
         print(f"No rows match {c}", file=sys.stderr)
+        if args.annotations and c.identifier == "CE" and c.artigo:
+            _show_annotations(c, args.annotations_db)
         return 3
 
     for row in rows:
         _print_row(row, full=args.full)
+
+    # Show annotations if requested
+    if args.annotations and c.identifier == "CE" and c.artigo:
+        _show_annotations(c, args.annotations_db)
+
     return 0
 
 
