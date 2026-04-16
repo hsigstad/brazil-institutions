@@ -39,8 +39,7 @@ money, not the formal employment status of the actor.
 
 ### Three categories (`LIA.9`–`LIA.11`)
 
-The LIA classifies improbidade into three escalating categories. Each
-article opens with a *caput* defining the category, followed by a
+Each article opens with a *caput* defining the category, followed by a
 non-exhaustive list of incisos giving canonical examples.
 
 - **`LIA.9` — Enriquecimento ilícito.** Personal patrimonial gain
@@ -50,7 +49,7 @@ non-exhaustive list of incisos giving canonical examples.
   and kickbacks on contracts.
 - **`LIA.10` — Prejuízo ao erário.** Conduct causing loss to the
   public treasury, whether the official benefited personally or not.
-  By far the most common category in TJSP improbidade caseloads
+  The most common category in TJSP caseloads
   because it captures procurement irregularities, dispensações
   irregulares, overpricing, and failure-to-collect fact patterns.
   Pre-reform `LIA.10:original` reached both intentional and
@@ -256,7 +255,7 @@ regimes:
 | Criminal corruption | `CP` + `LCOT` + `L8666` Arts. 89–98 | MP → criminal court | Criminal penalties (imprisonment, fines) |
 | Cartel / competition | `LCADE` | CADE (admin) | Administrative fines up to 20% of revenue |
 | Corporate liability | `LAC` (Lei Anticorrupção) | CGU / MP | Administrative + judicial sanctions on firms |
-| Fiscal / audit | LC 101/00 (LRF), TC statutes | TCU / TCE / TCM | Débitos, multas, inabilitação |
+| Fiscal / audit | `LRF`, TC statutes | TCU / TCE / TCM | Débitos, multas, inabilitação |
 | Electoral ineligibility | `LI.1.I.g` | Câmara → TSE | 8-year ineligibility (Ficha Limpa) |
 
 Parallel prosecution is expressly permitted. A TCE finding of

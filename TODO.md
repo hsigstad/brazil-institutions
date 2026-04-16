@@ -78,7 +78,7 @@ Mark each file `[x]` after its audit commit lands. Order is
 suggested priority (most CF/LRF citations first), not mandatory.
 
 - [x] `topics/contas-municipais.md` — audited (2026-04-16), rules 1–9 complete
-- [ ] `topics/improbidade.md` — partially audited (2026-04-10), needs rules 8–9
+- [x] `topics/improbidade.md` — audited (2026-04-16), rules 1–9 complete
 - [ ] `topics/federalismo-fiscal.md`
 - [ ] `topics/tribunais-contas.md`
 - [ ] `topics/ministerio-publico.md`
