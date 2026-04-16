@@ -197,8 +197,40 @@ The MG series of COJs (1954, 1959, 1965, 1979, 1995, 2001) provides
 one of the longest continuous records of comarca-creation threshold
 changes, useful for studying the expansion of judicial access.
 
-<!-- TODO: consider adding TJSP comarca count over time (1832: 6,
-1940: 126, current: ~320) with sources for a complete time series -->
+### Cross-state comarca counts (current snapshot)
 
-<!-- TODO: consider adding cross-state comparison of total comarcas
-and varas from CNJ Justica em Numeros for current snapshot -->
+Source: `diarios` module comarca index (assembled from TJ websites
+and COJs). DF not included (Justiça do DF is organized federally).
+
+| State | Comarcas | State | Comarcas | State | Comarcas |
+|-------|---------|-------|---------|-------|---------|
+| SP | 315 | PE | 151 | MA | 103 |
+| MG | 293 | PR | 146 | PI | 79 |
+| BA | 275 | GO | 121 | MT | 78 |
+| RS | 164 | CE | 111 | SE, PB | 75 |
+| — | — | SC | 108 | ES | 68 |
+| — | — | PA | 107 | RJ | 67 |
+
+Smaller states: AM 60, AL 59, RN 53, MS 53, TO 41, RO 22, AC 22,
+AP 12, RR 8. **Total: 2,666 comarcas across 26 states.**
+
+### TJSP comarca count over time
+
+Source: `justica` pipeline, assembled from ALESP legislative archive
+(public decrees of comarca creation/installation). Coverage: 352
+comarcas with creation dates from 1700 to 2016.
+
+| Year | Cumulative comarcas | Notes |
+|------|-------------------|-------|
+| 1832 | 3 | Codigo de Processo Criminal |
+| 1900 | 31 | |
+| 1940 | 132 | |
+| 1960 | 145 | |
+| 1980 | 146 | Near-stagnation under military rule |
+| 2000 | 230 | Post-CF 1988 expansion wave |
+| 2010 | 342 | |
+| 2016 | 352 | Last creation in dataset |
+
+The 1988–2010 expansion (146 → 342) coincides with CF giving TJs
+initiative over comarca creation (`CF.96`) and successive revisions
+lowering population thresholds in SP's COJ.

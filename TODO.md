@@ -58,17 +58,10 @@ were completed by the 2026-04-16 audit pass.
   table covering at least the largest 5–10 states if the data is
   retrievable from state constitutions. Effort: ~2 hours.
 
-- **`topics/justica-estadual.md`** — cross-state comarca/vara count
-  table from CNJ Justiça em Números (public data, no sharing issue).
-  TJSP historical comarca count could be assembled from ALESP
-  legislative archive (public decrees). Flagged with inline TODO
-  comments. Effort: ~1 hour per item.
-  **Action**: check the `justica` repo (diarios module) for existing
-  comarca data — `data/municipio.csv` has a município→comarca snapshot;
-  check if there's a time-varying version or comarca creation dates.
-  Also check `~/ls_data/` for comarca inputs the repo consumes.
-  Summary statistics (counts per state, counts over time) are fine to
-  publish even if the underlying mapping is private.
+- ~~**`topics/justica-estadual.md`**~~ — added cross-state comarca
+  count table (2,666 comarcas, 26 states, from diarios module) and
+  TJSP historical time series (352 comarcas, 1700–2016, from justica
+  pipeline). Completed 2026-04-16.
 
 - ~~`CF.31.§1`~~ — resolved. Issue was missing DB, not a parse
   problem. Converted to backtick form (2026-04-16).
