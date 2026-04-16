@@ -63,6 +63,12 @@ were completed by the 2026-04-16 audit pass.
   TJSP historical comarca count could be assembled from ALESP
   legislative archive (public decrees). Flagged with inline TODO
   comments. Effort: ~1 hour per item.
+  **Action**: check the `justica` repo (diarios module) for existing
+  comarca data — `data/municipio.csv` has a município→comarca snapshot;
+  check if there's a time-varying version or comarca creation dates.
+  Also check `~/ls_data/` for comarca inputs the repo consumes.
+  Summary statistics (counts per state, counts over time) are fine to
+  publish even if the underlying mapping is private.
 
 - ~~`CF.31.§1`~~ — resolved. Issue was missing DB, not a parse
   problem. Converted to backtick form (2026-04-16).
