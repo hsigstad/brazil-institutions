@@ -1,145 +1,143 @@
-# Cortes superiores (CNJ, CJF, STF, STJ)
+# Cortes superiores (STF, STJ, TSE, TST, STM) e CNJ
 
-## CNJ
+Constitutional composition and competence of the superior courts and
+the Conselho Nacional de Justiça. This file is a structural map — who
+sits on each court, how they're appointed, and what cases each court
+hears. For **CNJ administrative functions** (Justiça em Números, PJe,
+Tabelas Unificadas), see `cnj-administracao-judicial.md`. For **STF
+jurisprudence** cited in this repository, see
+`../jurisprudencia-stf.md`.
 
-[Loman3](lei/loman.org::*Art.%203) [CF103](lei/cf.org::*Art.%20103) B
-[CNJ](lei/cnj.org)
+**Topics / keywords**: STF, STJ, TSE, TST, STM, CNJ, CJF, cortes
+superiores, composição, competência, ministro, conselheiro, quinto
+constitucional, repercussão geral, recurso especial, recurso
+extraordinário, súmula vinculante, controle de constitucionalidade.
 
-### Creation
+**Snapshot as of 2026**: composition rules stable since `EC45-2004`.
+STF has 11 ministros; STJ 33; TST 27; TSE 7; STM 15. CNJ 15
+conselheiros.
 
-Created 12/31/2004, installed 6/14/2005
+---
 
-### Conselheiros
+## 1. CNJ — Conselho Nacional de Justiça (`CF.103-B`)
 
-15 conselheiros \[indicados pelo\]
+Created by `EC45-2004`. Administrative and disciplinary oversight of
+the judiciary; does not adjudicate cases on their merits.
 
-  - President of STF (President of CNJ)
-  - 1 STJ ministro (Corregedor Nacional de Justiça) \[STJ\]
-  - 1 TST ministro \[TST\]
-  - 1 TJ desembargador \[STF\]
-  - 1 juiz estadual \[STF\]
-  - 1 TRF judge \[STJ\]
-  - 1 juiz federal \[STJ\]
-  - 1 TRT judge \[TST\]
-  - 1 juiz do trabalho \[TST\]
-  - 1 MPF membro \[PG\]
-  - 1 MP membro \[PG dentre nomes indicados da estadual\]
-  - 2 advogados \[OAB\]
-  - 2 citizens \[1 Câmara dos Deputaos, 1 Senado\]
+**Composition** (`CF.103-B`): 15 conselheiros, 2-year term (one
+renewal):
 
-Two year term, allowing one recondução. [CF103](lei/cf.org::*Art.%20103)
-B
+- President of the STF (presides).
+- 1 STJ ministro (Corregedor Nacional de Justiça) — indicated by STJ.
+- 1 TST ministro — indicated by TST.
+- 1 TJ desembargador — indicated by STF.
+- 1 juiz estadual — indicated by STF.
+- 1 TRF desembargador federal — indicated by STJ.
+- 1 juiz federal — indicated by STJ.
+- 1 TRT desembargador — indicated by TST.
+- 1 juiz do trabalho — indicated by TST.
+- 1 MPU member — indicated by PGR.
+- 1 MPE member — indicated by PGR (from state nominees).
+- 2 advogados — indicated by OAB.
+- 2 cidadãos — 1 by Câmara dos Deputados, 1 by Senado.
 
-### Nomeação
+**Appointment**: by the President, after Senate approval
+(`CF.103-B.§2`).
 
-Pelo Presidente, depois aprovação pelo Senado CF103B §2
+**Competence** (`CF.103-B.§4`): administrative/financial control of
+the judiciary, disciplinary oversight of judges, normative power via
+Resoluções. See `cnj-administracao-judicial.md` for details.
 
-### Competência
+---
 
-  - Projects/studies
-  - Get any information needed from PJ
-  - Plenary sessions
-  - Serve as relator in processos
+## 2. STF — Supremo Tribunal Federal (`CF.101`–`CF.103`)
 
-CF103B §4 Regimento Interno (arts. 4º, 17 e 18)
+Constitutional court and apex of the Brazilian judiciary. Guardian of
+the Constitution.
 
-### Processos
+**Composition** (`CF.101`): 11 ministros, appointed by the President
+with Senate approval (*maioria absoluta*). Age >35 and <65; *notável
+saber jurídico* and *reputação ilibada*. Life tenure.
 
-1.  Reclamação Disciplinar
-    
-    [CNJ67-72](lei/cnj.org::*Seção%20IV%20-%20Da%20Reclamação%20Disciplinar)
+**Competence** (`CF.102`):
 
-3.  Processo administrativo disciplinar
-    
-    [CNJ73-77](lei/cnj.org::*Seção%20V%20-%20Do%20Processo%20Administrativo%20Disciplinar)
+- **Originária** (I): controle concentrado de constitucionalidade (ADI,
+  ADC, ADPF, ADO), criminal prosecution of the President, Vice,
+  congressmembers, PGR, and ministros do STF; conflicts between the
+  União and states; extradição; habeas corpus when the coator is a
+  superior tribunal or high authority.
+- **Recurso ordinário** (II): habeas corpus, mandado de segurança,
+  habeas data, and mandado de injunção decided by superior tribunals
+  when denegatórios.
+- **Recurso extraordinário** (III): constitutional questions from final
+  decisions of other courts. Since `EC45-2004`, requires demonstration
+  of **repercussão geral** (`CF.102.§3`).
 
-## CJF
+**Súmula vinculante** (`CF.103-A`): STF can issue binding
+interpretive summaries. All 63 SVs are indexed in
+`../sumulas_vinculantes.yaml`.
 
-Regulated by
-[L11798](http://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11798.htm)
+---
 
-## STF
+## 3. STJ — Superior Tribunal de Justiça (`CF.104`–`CF.105`)
 
-[Loman2](lei/loman.org::*Art.%202),
-[C101-103](lei/constituicao.org::*Seção%20II%20-%20DO%20SUPREMO%20TRIBUNAL%20FEDERAL)
+Court of uniform interpretation of federal infraconstitutional law.
 
-## STJ
+**Composition** (`CF.104`): 33 ministros, appointed by the President
+with Senate approval. Age >35 and <65. Drawn from:
 
-[CF104-105](lei/cf.org::*Seção%20III%20-%20DO%20SUPERIOR%20TRIBUNAL%20DE%20JUSTIÇA)
+- 1/3 TRF desembargadores.
+- 1/3 TJ desembargadores.
+- 1/3 split equally between advogados (OAB) and MPU members
+  (quinto-like, but specific to STJ).
 
-### Competencia
+**Competence** (`CF.105`):
 
-1.  Originariamente
-    
-      - crimes de responsibilidade de governadores
-      - crimes comuns de governadoresm, desembargadores, membros dos
-        TCEs, TRFs, TREs, TRTs, Conelhos/Tribunais de contas dos
-        municipios, MPF
-      - MS e habeas data contra ato de Ministro de Estado, dos
-        Comandantes da Marinha, do Exército e da Aeronáutica ou do
-        próprio Tribunal
-      - HC quando o coator ou paciente for qualquer das pessoas
-        mencionadas na alínea "a", ou quando o coator for tribunal
-        sujeito à sua jurisdição, Ministro de Estado ou Comandante da
-        Marinha, do Exército ou da Aeronáutica, ressalvada a competência
-        da Justiça Eleitoral
-      - os conflitos de competência entre quaisquer tribunais,
-        ressalvado o disposto no art. 102, I, "o", bem como entre
-        tribunal e juízes a ele não vinculados e entre juízes vinculados
-        a tribunais diversos;
-      - as revisões criminais e as ações rescisórias de seus julgados;
-      - a reclamação para a preservação de sua competência e garantia da
-        autoridade de suas decisões;
-      - os conflitos de atribuições entre autoridades administrativas e
-        judiciárias da União, ou entre autoridades judiciárias de um
-        Estado e administrativas de outro ou do Distrito Federal, ou
-        entre as deste e da União;
-      - o mandado de injunção, quando a elaboração da norma
-        regulamentadora for atribuição de órgão, entidade ou autoridade
-        federal, da administração direta ou indireta, excetuados os
-        casos de competência do Supremo Tribunal Federal e dos órgãos da
-        Justiça Militar, da Justiça Eleitoral, da Justiça do Trabalho e
-        da Justiça Federal;
-      - a homologação de sentenças estrangeiras e a concessão de
-        exequatur às cartas rogatórias; [(Incluída pela Emenda
-        Constitucional nº 45,
-        de 2004)](http://www.planalto.gov.br/ccivil_03/constituicao/Emendas/Emc/emc45.htm#art1)
+- **Originária** (I): crimes of governors and desembargadores; mandado
+  de segurança against ministros; conflicts between tribunals;
+  homologação de sentenças estrangeiras (post-`EC45-2004`).
+- **Recurso ordinário** (II): denegatórios of HC and MS by TRFs/TJs;
+  cases involving foreign states or international organizations.
+- **Recurso especial** (III): decisions by TRFs or TJs that (a)
+  contravene federal statute, (b) uphold local law against federal
+  statute, or (c) diverge from another tribunal's interpretation.
 
-2.  Recurso ordinario
-    
-      - a)  
-        os *habeas corpus* decididos em única ou última instância pelos
-        Tribunais Regionais Federais ou pelos tribunais dos Estados, do
-        Distrito Federal e Territórios, quando a decisão for
-        denegatória;
-    
-      - b)  
-        os mandados de segurança decididos em única instância pelos
-        Tribunais Regionais Federais ou pelos tribunais dos Estados, do
-        Distrito Federal e Territórios, quando denegatória a decisão;
-    
-      - c)  
-        as causas em que forem partes Estado estrangeiro ou organismo
-        internacional, de um lado, e, do outro, Município ou pessoa
-        residente ou domiciliada no País;
+---
 
-2.  Recurso especial
-    
-      - III  
-        julgar, em recurso especial, as causas decididas, em única ou
-        última instância, pelos Tribunais Regionais Federais ou pelos
-        tribunais dos Estados, do Distrito Federal e Territórios, quando
-        a decisão recorrida:
-        
-          - a)  
-            contrariar tratado ou lei federal, ou negar-lhes vigência;
-        
-          - b)  
-            julgar válido ato de governo local contestado em face de lei
-            federal; [(Redação dada pela Emenda Constitucional nº 45,
-            de 2004)](http://www.planalto.gov.br/ccivil_03/constituicao/Emendas/Emc/emc45.htm#art1)
-        
-          - c)  
-            der a lei federal interpretação divergente da que lhe haja
-            atribuído outro tribunal.
+## 4. TSE — Tribunal Superior Eleitoral (`CF.118`–`CF.121`)
 
+Apex of the electoral justice system. Composition and electoral
+procedure are covered in `justica-eleitoral.md` and
+`processo-eleitoral.md`.
+
+**Composition** (`CF.119`): 7 members — 3 STF ministros (secret vote),
+2 STJ ministros (secret vote), 2 advogados from lista sêxtupla by STF.
+
+**Tenure** (`CF.121`): 2 years, maximum 2 consecutive terms.
+Inamovibilidade during mandate.
+
+---
+
+## 5. TST — Tribunal Superior do Trabalho
+
+Apex of the Justiça do Trabalho. See `justica-trabalho.md` for
+substance.
+
+**Composition**: 27 ministros. 1/5 from OAB and MPT (quinto); 4/5
+from TRT career judges. Appointed by President with Senate approval.
+
+---
+
+## 6. STM — Superior Tribunal Militar
+
+Military justice apex court. 15 ministros: 5 civilian (3 lawyers, 1
+from military MP auditors, 1 from military justice judges), 10 military
+(3 Army generals, 3 Navy admirals, 3 Air Force generals, 1 from
+military MP). Appointed by President with Senate approval.
+
+---
+
+## 7. CJF — Conselho da Justiça Federal
+
+Administrative oversight of the Justiça Federal, operating alongside
+the STJ. See `justica-federal.md` §2.
