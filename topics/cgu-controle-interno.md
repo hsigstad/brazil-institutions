@@ -10,7 +10,7 @@ expenditure but from different constitutional positions.
 This file is important for two lines of research: (1) the audit-based
 literature that exploits the **CGU random municipal audit program**
 (Ferraz–Finan, Avis–Ferraz–Finan, many others) for causal identification,
-and (2) corporate liability under the **Lei Anticorrupção** (Lei 12.846/13).
+and (2) corporate liability under the **Lei Anticorrupção** (`LAC`).
 
 **Topics / keywords**: CGU, Controladoria-Geral da União, municipal
 audit, random audit, Programa de Fiscalização por Sorteios, PFS,
@@ -27,14 +27,11 @@ and continues as CGU through 2026. The random municipal audit program
 ran under that name 2003–2015 (40 lotteries) before the program was
 reformulated.
 
-Not sourced from any single project file; built from general knowledge
-and the canonical audit literature.
-
 ---
 
 ## 1. Constitutional and statutory basis
 
-### Controle interno (CF Art. 74)
+### Controle interno (`CF.74`)
 
 The Constitution requires each branch (Legislativo, Executivo, Judiciário)
 to maintain an integrated **sistema de controle interno** with four
@@ -82,7 +79,7 @@ CGU historically has four pillars:
 
 - **PAD — Processo Administrativo Disciplinar**: formal investigation
   and sanction of federal civil servants for administrative infractions.
-  Legal basis: Lei 8.112/1990 (regime jurídico dos servidores federais),
+  Legal basis: `L8112` (regime jurídico dos servidores federais),
   Arts. 143–182.
 - **Sindicância**: lighter fact-finding procedure for minor allegations
   or preliminary investigation before PAD.
@@ -104,8 +101,8 @@ CGU historically has four pillars:
   database of federal expenditures, transfers, contracts, servant
   salaries. CGU operates it. See `transparencia-dados.md`.
 - **Promoting integrity and ethics programs** within federal agencies.
-- **Coordinating the federal response to LAI** (Lei de Acesso à
-  Informação, Lei 12.527/2011) — CGU is the recurso hierárquico
+- **Coordinating the federal response to `LAI`** (Lei de Acesso à
+  Informação) — CGU is the recurso hierárquico
   authority for denied LAI requests within the federal Executivo.
 
 ---
@@ -169,7 +166,7 @@ CGU historically has four pillars:
   municipalities); CGU is **controle interno** of the Executivo.
 - **TCU** audits federal expenditure from an **external** constitutional
   position; it reports to Congress and has its own jurisdiction over
-  administrators of federal funds (CF Art. 71). TCU does not focus on
+  administrators of federal funds (`CF.71`). TCU does not focus on
   random municipal audits.
 - A given municipal irregularity involving federal funds can be pursued
   by both CGU (internal control, referral to MP) and TCU (external
@@ -177,31 +174,31 @@ CGU historically has four pillars:
 
 ---
 
-## 4. Lei Anticorrupção (Lei 12.846/2013) — corporate liability
+## 4. Lei Anticorrupção (`LAC`) — corporate liability
 
 CGU is the federal authority for administrative enforcement of the
 corporate anti-corruption statute. See `anticorrupcao-penal.md` for
 full treatment; highlights here:
 
 - **Objective liability** of legal entities for acts against national
-  or foreign public administration (Art. 1).
-- **Administrative sanctions** (Art. 6): fines (0.1% to 20% of gross
+  or foreign public administration (`LAC.1`).
+- **Administrative sanctions** (`LAC.6`): fines (0.1% to 20% of gross
   revenue of the year before the filing of the administrative
   proceeding), publication of the sanction.
-- **Judicial sanctions** (Art. 19): dissolution, asset freezing,
+- **Judicial sanctions** (`LAC.19`): dissolution, asset freezing,
   prohibition from receiving public benefits.
-- **Acordo de leniência** (Arts. 16–17): firms can cooperate with CGU
+- **Acordo de leniência** (`LAC.16`–`LAC.17`): firms can cooperate with CGU
   in exchange for reduced sanctions and immunity from certain
   additional liabilities. CGU's leniency authority is a significant
   lever in corporate anti-corruption enforcement.
 - **CEIS — Cadastro Nacional de Empresas Inidôneas e Suspensas**
-  (Art. 23): public list of firms barred from contracting with the
-  public administration due to sanctions under 8.666/93, 14.133/21, or
+  (`LAC.23`): public list of firms barred from contracting with the
+  public administration due to sanctions under `L8666`, `L14133`, or
   other statutes. Maintained by CGU.
 - **CNEP — Cadastro Nacional de Empresas Punidas**: public list of
-  firms sanctioned under the Lei Anticorrupção specifically.
+  firms sanctioned under `LAC` specifically.
 
-**Source**: [Lei 12.846/2013](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm); Decreto 8.420/2015 (regulamenta a Lei Anticorrupção).
+**Source**: `LAC`; Decreto 8.420/2015 (regulamenta a `LAC`).
 
 ---
 
@@ -209,8 +206,8 @@ full treatment; highlights here:
 
 | Actor | Role | Competence | Relationship with CGU |
 |---|---|---|---|
-| **CGU** | Controle interno, Executivo federal | PAD servants, audit federal funds, Lei Anticorrupção, LAI recourse | Self |
-| **TCU** | Controle externo, Legislativo | Julga contas of administrators, Lei 8.443/1992 | Shares audit information; parallel jurisdiction |
+| **CGU** | Controle interno, Executivo federal | PAD servants, audit federal funds, `LAC`, `LAI` recourse | Self |
+| **TCU** | Controle externo, Legislativo | Julga contas of administrators, `LOTCU` | Shares audit information; parallel jurisdiction |
 | **MPF** | Prosecution, federal | Criminal + civil action on federal matters | CGU reports feed MPF inquéritos; joint action in acordos de leniência |
 | **Polícia Federal** | Investigation | Criminal investigation | CGU triggers PF action via denúncia |
 | **TCE / TCM** | Controle externo estadual/municipal | Julga contas municipais | CGU focuses on federal money; TCE on state/municipal money |
@@ -219,12 +216,12 @@ full treatment; highlights here:
 ### Leniency agreement coordination
 
 - A common procedural complication: firms under investigation may face
-  parallel exposure under CGU (Lei Anticorrupção), MPF (criminal), CADE
+  parallel exposure under CGU (`LAC`), MPF (criminal), CADE
   (cartel), and TCU (audit). Historically, these agencies negotiated
   separately.
 - **Post-2020 practice**: joint/coordinated leniency agreements are
   preferred, sometimes formalized by inter-institutional agreements (MoUs).
-- CGU historically leads on Lei Anticorrupção leniency; MPF typically
+- CGU historically leads on `LAC` leniency; MPF typically
   leads on parallel criminal leniency.
 
 ---
@@ -254,7 +251,7 @@ See `transparencia-dados.md` for broader transparency infrastructure.
 - **PAD records**: under LAI, sanctioned servants' decisions are
   publishable. Useful as an outcome or treatment in studies of
   disciplinary enforcement.
-- **Leniency agreements (12.846)**: a small-N but high-salience dataset
+- **Leniency agreements (`LAC`)**: a small-N but high-salience dataset
   for corporate liability research.
 - **Caveat on federal focus**: CGU is federal. State-level equivalents
   (controladorias estaduais, e.g., CGE-SP) exist but are less powerful
