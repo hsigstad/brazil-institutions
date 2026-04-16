@@ -556,6 +556,36 @@ statutes:
     topics: [campaign_finance, FEFC]
     discussed_in: [topics/partidos-e-sistema-eleitoral.md]
 
+  lei_8078_1990:
+    tipo: Lei
+    numero: "8078"
+    ano: 1990
+    apelido: CDC
+    titulo: Código de Defesa do Consumidor
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm
+    topics: [consumer_protection, credit_registries]
+    key_articles:
+      - "Art. 43 (cadastros de consumidores, prazo 5 anos)"
+      - "Art. 14 (responsabilidade objetiva do fornecedor)"
+      - "Art. 6 (direitos básicos do consumidor)"
+    discussed_in: []
+
+  lei_12414_2011:
+    tipo: Lei
+    numero: "12414"
+    ano: 2011
+    apelido: L12414
+    titulo: Lei do Cadastro Positivo
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12414.htm
+    topics: [consumer_protection, credit_registries]
+    key_articles:
+      - "Art. 5 (direitos do cadastrado)"
+      - "Art. 7 (fontes autorizadas)"
+    reformed_by: [lc_166_2019]
+    discussed_in: []
+
   lei_13709_2018:
     tipo: Lei
     numero: "13709"

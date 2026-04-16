@@ -485,6 +485,9 @@ LAW_CATALOG = [
     ('LAP',     '4717',  '1965', 10390, 'lei'),               # Ação Popular
     # Antitrust
     ('LCADE',   '12529', '2011', None, 'lei'),                # Lei de Defesa da Concorrência
+    # Consumer
+    ('CDC',     '8078',  '1990', 2820, 'lei'),                # Código de Defesa do Consumidor
+    ('L12414',  '12414', '2011', 4724, 'lei'),                # Cadastro Positivo
     # Other
     ('LGPD',    '13709', '2018', None, 'lei'),                # LGPD
     ('L13019',  '13019', '2014', None, 'lei'),                # MROSC
