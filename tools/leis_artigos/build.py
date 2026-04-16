@@ -440,6 +440,10 @@ LAW_CATALOG = [
     ('LE',      '9504',  '1997', 5450, 'lei'),
     # Constitution
     ('CF',      '91',    '1988', 1,    'constituicao', '1988-10-05'),  # CF/1988
+    # Codes (planalto_id hardcoded — scraper stored wrong numero)
+    ('CP',      '2848',  '1940', 5434, 'decreto_lei', '1940-12-07'),  # Código Penal
+    ('CLT',     '5452',  '1943', 5437, 'decreto_lei', '1943-05-01'),  # CLT
+    ('CTN',     '5172',  '1966', 5412, 'lei',         '1966-10-25'),  # Código Tributário Nacional
     # Constitutional / judicial framework
     ('LOMAN',   '35',    '1979', None, 'lei_complementar'),  # LC 35 — Lei Orgânica da Magistratura
     # Electoral

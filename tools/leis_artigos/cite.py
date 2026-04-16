@@ -559,6 +559,18 @@ def resolve(
     con = sqlite3.connect(db_path)
     con.row_factory = sqlite3.Row
 
+    # EC citations (EC45-2004, EC97-2017, ...) resolve to the CF articles
+    # that the emenda constitucional introduced or rewrote, identified by
+    # matching fonte_id in the CF rows.
+    ec_match = re.match(r'^EC\d+-\d{4}$', citation.identifier)
+    if ec_match and citation.is_whole_law:
+        sql = ("SELECT * FROM artigo WHERE apelido = 'CF'"
+               " AND fonte_id = ? AND vigente_ate IS NULL"
+               " ORDER BY ordem ASC")
+        rows = con.execute(sql, [citation.identifier]).fetchall()
+        con.close()
+        return rows
+
     sql = "SELECT * FROM artigo WHERE apelido = ?"
     args: List = [citation.identifier]
 

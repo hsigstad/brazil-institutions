@@ -44,8 +44,16 @@ should convert:
 - **LRF** — already ingested. Prose mentions remain in
   `topics/contas-municipais.md`, `topics/federalismo-fiscal.md`,
   `topics/improbidade.md`.
-- **CF** — newly ingested (2026-04-16). All topical files use prose
+- **CF** — ingested (2026-04-16). All topical files use prose
   CF references; audit pass should convert where `cite.py` resolves.
+- **CP** — ingested (2026-04-16). Prose mentions in
+  `topics/anticorrupcao-penal.md`, `topics/processo-penal.md`.
+- **CLT** — ingested (2026-04-16). Prose mentions in
+  `topics/justica-trabalho.md`.
+- **CTN** — ingested (2026-04-16). Prose mentions in
+  `topics/federalismo-fiscal.md`.
+- **EC citations** — `EC<num>-<year>` now resolves to the CF articles
+  the EC amended. Audit pass can convert prose EC mentions.
 
 ## Topical files — content gaps flagged inline
 

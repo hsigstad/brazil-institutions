@@ -56,6 +56,7 @@ statutes:
     tipo: Decreto-Lei
     numero: "2848"
     ano: 1940
+    apelido: CP
     titulo: Código Penal
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm
@@ -87,6 +88,7 @@ statutes:
     tipo: Decreto-Lei
     numero: "5452"
     ano: 1943
+    apelido: CLT
     titulo: Consolidação das Leis do Trabalho (CLT)
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/decreto-lei/del5452.htm
@@ -127,6 +129,7 @@ statutes:
     tipo: Lei
     numero: "5172"
     ano: 1966
+    apelido: CTN
     titulo: Código Tributário Nacional (CTN)
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/l5172compilado.htm
