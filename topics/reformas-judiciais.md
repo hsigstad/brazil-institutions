@@ -1,115 +1,83 @@
-# Reformas do judiciário
+# Reformas judiciais
 
-### General
+Chronological index of major statutory and constitutional reforms to the
+Brazilian judicial and procedural system. Each entry names the reform,
+its date, and its principal changes; for substantive treatment, see the
+linked topical file.
 
-Lobby of judges is strong. Tries to prevent certain reforms.
+**Topics / keywords**: reforma judiciária, EC 45/2004, CPC 2015,
+pacote anticrime, juizados especiais, recurso, precedente, conciliação,
+CNJ, repercussão geral, súmula vinculante, colaboração premiada.
 
-### 4.717/1965 - Lei da Ação Popular
+**Snapshot as of 2026**: the 2015 CPC and the 2019 Pacote Anticrime are
+the two most recent structural reforms. The juiz das garantias (from
+the Pacote Anticrime) reached full implementation only in 2024.
 
-### 7.347/1985 - Ação Civil Publica
+---
 
-### [1988](lei/198.org::*Art%208) constitution
+## Timeline
 
-  - Fundamental rights
+### 1965 — `LAP` (Lei 4.717/1965)
+Lei da Ação Popular: any citizen may challenge acts harmful to public
+patrimony.
 
-### 8.950/1994 - Recursos
+### 1985 — `LACP` (Lei 7.347/1985)
+Lei da Ação Civil Pública: collective-interest litigation by MP,
+Defensoria, and qualifying associations. See `ministerio-publico.md` §6.
 
-### 8.951/1994 - Ação consignatória
+### 1988 — Constitution
+CF/88 expanded fundamental rights, created STJ, restructured the
+judiciary. See `cortes-superiores.md`, `juizes.md`.
 
-### 8.952/1994 - Antecipação da tutela
+### 1995 — `LJE` (Lei 9.099/1995)
+Juizados Especiais Cíveis e Criminais: small-claims courts for cases
+up to 40 minimum wages (civil) and minor offenses (criminal).
 
-### 8.953/1994 - Processo de execução
+### 2001 — `LJEFP` precursor (Lei 10.259/2001)
+Juizados Especiais Federais: extended the small-claims model to federal
+jurisdiction (cases up to 60 minimum wages).
 
-### 9.099/1995 - Juizados especiais cíveis
+### 2004 — `EC45-2004` (Reforma do Judiciário)
+The largest structural reform to the judiciary since 1988:
 
-### 9.139/1995 - Agravo
+- Created **CNJ** (`CF.103-B`). See `cnj-administracao-judicial.md`.
+- Introduced **repercussão geral** for recurso extraordinário
+  (`CF.102.§3`).
+- Introduced **súmula vinculante** (`CF.103-A`).
+- Added **razoável duração do processo** as a fundamental right
+  (`CF.5.LXXVIII`).
+- Transferred homologação de sentenças estrangeiras from STF to STJ.
+- Created **CNMP** (`CF.130-A`). See `ministerio-publico.md` §7.
 
-### 9.245/1995 - Procedimento sumário
+### 2009 — `LJEFP` (Lei 12.153/2009)
+Juizados Especiais da Fazenda Pública: extended the small-claims model
+to cases against states and municipalities (up to 60 minimum wages).
 
-### EC [29/2000](http://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc29.htm)
+### 2013 — `LCO` (Lei 12.850/2013)
+Lei das Organizações Criminosas: introduced colaboração premiada,
+ação controlada, infiltração de agentes. See
+`anticorrupcao-penal.md` §3.
 
-Proposed in [1992](lei/199.org::*Art%202)
+### 2015 — `CPC` (Lei 13.105/2015)
+New Código de Processo Civil, effective March 2016:
 
-### [10](lei/1.org::*Art%200).259/2001 - Juizados Especiais, Justiça Federal
+- Unified appeal deadlines to 15 days (except embargos de declaração).
+- Business days instead of calendar days (`CPC.219`).
+- Precedent regime: tribunals must standardize jurisprudência
+  (`CPC.926`); judges must follow STF/STJ precedent (`CPC.927`).
+- Heightened reasoning requirements (`CPC.489`): must address all
+  arguments and explain why precedent applies or is distinguishable.
+- **IRDR** — Incidente de Resolução de Demandas Repetitivas
+  (`CPC.976`).
+- Mandatory conciliation attempt.
+- Fines for procrastinating appeals.
+- See `processo-civil.md` for full treatment.
 
-### [10](lei/1.org::*Art%200).352/2001
+### 2019 — `LPC` (Lei 13.964/2019, Pacote Anticrime)
+Criminal-procedure reform. See `anticorrupcao-penal.md` §6:
 
-### [10](lei/1.org::*Art%200).358/2001
-
-### [10](lei/1.org::*Art%200).444/2002
-
-### EC [45/2004](http://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc45.htm)
-
-Introducing
-
-  - CNJ
-  - Repercussão geral
-  - Recurso extraordinário
-  - Súmula vinculante
-  - Razoável duração do processo
-
-Modifying
-
-  - Competências materiais
-  - Férias coletivas dos juízes
-
-### [11](lei/1.org::*Art%201).232/2005
-
-### [11](lei/1.org::*Art%201).187/2005 - Minirreforma do CPC, recurso de agravo
-
-### [11](lei/1.org::*Art%201).276/2006
-
-### [11](lei/1.org::*Art%201).277/2006
-
-### [11](lei/1.org::*Art%201).280/2006
-
-### [2009](lei/200.org::*Art%209) Juizados Especiais da Fazenda Pública (Estados, Municípios)
-
-### [12](lei/1.org::*Art%202).850/2013
-
-Introducing modern techniques in the fight against corruption (ação
-controlada, colaboração premiada, infiltração de agentes, captação
-ambiental de sinais eletromagnéticos etc)
-
-### [13](lei/1.org::*Art%203).105/2015 - New CPC
-
-[Soares - New Brazilian Code of Civil
-Procedure](https://blogs.loc.gov/law/2015/09/falqs-new-brazilian-code-of-civil-procedure/)
-
-  - [12](lei/1.org::*Art%202)/14/2014  
-    Approved by Congress
-  - 3/16/2015  
-    Signed by Dilma
-  - 3/16/2016  
-    Went into effect
-
-<!-- end list -->
-
-  - Procedural Times
-      - Prazo for filing appeal unified to [15](lei/1.org::*Art%205)
-        days, exept embargos de declaração (art.
-        [1003](lei/100.org::*Art%203)(5))
-      - Business days instead of calendar days (art.
-        [219](lei/21.org::*Art%209))
-  - Precedent
-      - TJs must standardize their jurisprudence, and keep stable and
-        coherent (art. [926](lei/92.org::*Art%206))
-      - Judges must follow STF sumulas vinculantes and constitutional
-        decisions (art. [927](lei/92.org::*Art%207))
-      - Judges must follow STJ on non-constituional matters
-  - Reasoning (art. [489](lei/48.org::*Art%209))
-      - Respond to all arguments put forward in the process
-      - Show why precedent fits
-      - Must argue why it is distinct if not applying precedent
-  - Incidente de Resolução de Demandas Repetitivas (art.
-    [976](lei/97.org::*Art%206))
-      - Can be done by appellate courts
-  - Procrastinating appeals punished with fines
-      - Fine of [110](lei/1.org::*Art%2010)% of claim
-      - Agravo de instrumento (art. 1.024(4))
-      - Embargos de declaração (art. 1.026(2))
-  - Must decide cases chronologically
-  - Mandatory reconciliation
-
-### [13](lei/1.org::*Art%203).256/2016 - New CPC
-
+- ANPP — acordo de não persecução penal (`CPP.28-A`).
+- Juiz das garantias (`CPP.3-A`) — separation of investigatory and
+  trial judges; upheld by STF (ADIs 6.298–6.305, Aug 2023),
+  implementation from 2024.
+- Tightened colaboração premiada formalities.
