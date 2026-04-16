@@ -1,93 +1,88 @@
 # Justiça Federal
 
-### General
+Two-tier federal court system: Tribunais Regionais Federais (TRFs,
+appellate) and varas federais (first instance). Hears cases involving
+the União, federal agencies, international treaties, and federal crimes.
+For **STJ** (superior federal court), see `cortes-superiores.md`. For
+**federal MP** (MPF, who prosecutes before federal courts), see
+`ministerio-publico.md`.
 
-Regulated by
-[CF106-117](lei/cf.org::*Seção%20IV%20-%20DOS%20TRIBUNAIS%20REGIONAIS%20FEDERAIS%20E%20DOS%20JUÍZES%20FEDERAIS)
-[Loman](lei/loman.org) [Lei de Organização da Justiça
-Federal](lei/l5010.org)
+**Topics / keywords**: Justiça Federal, TRF, vara federal, juiz federal,
+juiz substituto, competência federal, CF Art. 106–110, LOMAN, CJF,
+convênios federais, quinto constitucional, turma recursal.
 
-### TRF
+**Snapshot as of 2026**: 6 TRFs since `EC73-2014` created TRF6 (Minas
+Gerais, split from TRF1). Constitutional framework stable (`CF.106`–
+`CF.110`).
 
-1.  Nomeação
-    
-      - Mínimo sete juízes
-      - Nomeado pelo Presidente
-      - 30-60 anos
-      - Quinto dentre advogados e MP
-      - Os demais por antigüidade e merecimento, alternadamente
-    
-    [CF107](lei/cf.org::*Art.%20107)
+For the **improbidade** competence rule (federal funds → federal
+jurisdiction), see `improbidade.md` §3. For **procurement** cases
+involving federal funds, see `licitacoes.md`.
 
-2.  Corregedor
+---
 
-4.  Turmas
-    
-    1.  TRF3
-        
-        Art. 4º - O Desembargador Federal nomeado integra a Turma em que
-        tiver ocorrido a vaga ou a resultante de transferência (art.
-        31).
-        
-        Art. 31 - Os Desembargadores Federais do Tribunal têm direito de
-        transferir-se de uma Seção para a outra, ou de uma Turma para a
-        outra na mesma Seção, onde haja vaga, antes da posse do novo
-        Desembargador Federal do Tribunal, ou no caso de permuta.
-        Havendo mais de um pedido, terá preferência o do Desembargador
-        Federal mais antigo.
+## 1. Constitutional basis (`CF.106`–`CF.110`)
 
-### Juizes Federais
+### TRFs (`CF.107`)
 
-1.  Nomeação
-    
-      - Named by President from lista triplice
-      - List organized by "TFR"
-      - Over 25 years old
-    
-    ([Loman5](lei/loman.org::*Art.%205))
+- Minimum 7 judges (*desembargadores federais*), appointed by the
+  President.
+- Age 30–65; *quinto constitucional* (`CF.94`) applies (1/5 from OAB
+  and MPF). Remaining 4/5 promoted from federal judges by antiguidade
+  and merecimento, alternating.
+- **6 TRFs**: TRF1 (DF + Norte/parte do Nordeste), TRF2 (RJ/ES),
+  TRF3 (SP/MS), TRF4 (Sul), TRF5 (Nordeste), TRF6 (MG, created 2014).
+- Internal organization into *turmas* (panels), each with specialized
+  subject matter. Desembargadores are assigned to turmas; transfers
+  between turmas follow internal regimento rules.
 
-2.  Competencia
-    
-      - União ou empresa pública federal é parte
-      - Estado estrangeiro ou organismo internacional
-      - Crimes políticos e penais em detrimento de bens, serviços ou
-        interesse da União
-      - Convenção internacional
-      - Direitos humanos (PG pode suscitar incidente de deslocamento de
-        competência para a Justiça Federal)
-      - Trabalho
-      - Mandados de segurança e habeas data contra ato federal
-      - Direitos indígenas
-    
-    [CF109](lei/cf.org::*Art.%20109)
+### Varas federais
 
-2.  Live in comarca
-    
-      - Tem que residir na cidade da vara
-        [L5010-30](lei/l5010.org::*Art.%2030)
-    
-    Os Juízes Federais e os Juízes Federais Substitutos deverão residir
-    na cidade que fôr sede da Vara em que servirem, não podendo, quando
-    em exercício e nos dias de expediente, ausentar-se sem autorização
-    do Corregedor-Geral.
+- **Juízes federais** enter by concurso público (`CF.93.I`); must
+  reside in the city of their vara.
+- **Juízes substitutos**: share the caseload with the titular judge,
+  typically by case-number parity (odd/even). Rules vary by TRF:
+  - TRF1: Provimento/COGER 38/09 Art. 69
+  - TRF2: Resolução 26/09 Art. 1
+  - TRF3: Provimento COGE 64/05 Art. 141
+  - TRF4: Provimento 17/2013 Art. 55
+- **Empirical implication**: within a vara, the titular/substituto
+  division is quasi-random (based on case number), enabling judge
+  fixed-effect designs.
 
-2.  Juizes substitutos
-    
-    1.  Divide cases based on case number
-        
-          - 1ª Região: artigo 69 do Provimento/COGER 38/09
-          - 2ª Região: artigo 1º da Resolução 26/09
-          - 3ª Região: artigo 141 do Provimento COGE no 64/05
-          - 4ª Região: artigo 55, caput, do Provimento 17, de 15 de
-            março de 2013 — Consolidação Normativa da Corregedoria
-            Regional da 4ª Região
-          - 5ª Região (provision not found, bu known to use such a rule)
-        
-        [source1](https://www.conjur.com.br/2014-out-25/rogerio-tobias-carvalho-juiz-atuar-processo-outro)
-        [source2](https://www.conjur.com.br/2014-dez-15/jose-renato-juiz-substituto-mesma-estrutura-titular)
+### Federal competence (`CF.109`)
 
-### [TRF2](lei/trf.org::*Art%202)
+Non-exhaustive list of matters reserved to federal courts:
 
-  - [27](lei/2.org::*Art%207) desembargadores
-    [TRF2-1](lei/trf2.org::*Art.%201)
+- Cases where the União, federal autarquia, or federal public
+  enterprise is a party.
+- Disputes involving foreign states or international organizations.
+- Federal crimes (against federal property, services, or interests).
+- Crimes under international treaties when prosecution begins in Brazil.
+- Human-rights cases (PGR can request *incidente de deslocamento* to
+  federal jurisdiction).
+- Mandado de segurança and habeas data against federal authorities.
+- Indigenous rights.
 
+## 2. CJF — Conselho da Justiça Federal
+
+- Administrative oversight body for the Justiça Federal, operating
+  alongside the STJ. Governed by Lei 11.798/2008.
+- Coordinates administrative matters across TRFs.
+- Developed the **e-Proc** case-management system used by several
+  TRFs and some TJs (see `cnj-administracao-judicial.md` §4).
+
+## 3. Research design implications
+
+- **Federal vs. state jurisdiction** is determined by subject matter,
+  not by defendant status. When federal funds are at stake (convênios,
+  SUS transfers), improbidade actions go to federal courts even against
+  municipal officials.
+- **Case assignment** within a vara is quasi-random (titular/substituto
+  split by case number); across varas within a seção judiciária,
+  distribution is by electronic sortition.
+- **Caseload composition** is very different from state courts:
+  federal courts handle tax-enforcement cases (execuções fiscais da
+  União), social-security disputes (INSS), and federal-crime
+  prosecution. The overwhelming volume of social-security cases
+  (>50% in some seções) shapes aggregate statistics.
