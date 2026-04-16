@@ -593,6 +593,132 @@ def _extract_leaf_from_anchor(
 # Public entry point
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+# Fallback: class="Artigo" markup (no anchors)
+# ---------------------------------------------------------------------------
+#
+# Some older planalto pages use <p class="Artigo"> tags instead of
+# <a name="art..."> anchors. These are non-compilado pages without
+# revision tracking or <strike> markup. Each <p class="Artigo">
+# contains one structural unit whose type is determined from the text.
+
+# Article caput pattern: "Art. 1o", "Art. 10.", "Art. 19-M"
+_ART_CAPUT_RE = re.compile(
+    r'^Art\.\s*(\d+)(?:-([A-Z]))?'
+)
+# Paragraph pattern: "§ 1o", "§ 2º", "Parágrafo único"
+_PARA_RE = re.compile(
+    r'^§\s*(\d+)|^Parágrafo\s+único',
+    re.IGNORECASE,
+)
+# Inciso pattern: "I –", "II -", "XIV –"
+_INCISO_RE = re.compile(
+    r'^([IVXLCDM]+)\s*[–—\-]',
+)
+# Alínea pattern: "a)", "b)", "c)"
+_ALINEA_RE = re.compile(
+    r'^([a-z])\)',
+)
+
+
+def walk_html_artigo_class(html: str) -> list[Leaf]:
+    """Fallback parser for pages using <p class="Artigo"> markup."""
+    soup = BeautifulSoup(html, 'html.parser')
+    paragraphs = soup.find_all('p', class_='Artigo')
+    if not paragraphs:
+        return []
+
+    leaves: list[Leaf] = []
+    ordem = 0
+    # Current context
+    cur_article: Optional[int] = None
+    cur_letter: Optional[str] = None
+    cur_para: Optional[str] = None   # '§1', '§unico', or None (caput)
+    cur_inciso: Optional[str] = None  # 'I', 'II', etc.
+
+    for p in paragraphs:
+        raw = p.get_text(' ', strip=False)
+        text = normalize_text(raw)
+        if not text:
+            continue
+
+        annotations = parse_annotations(text)
+        if annotations:
+            text = ANNOTATION_RE.sub('', text).strip()
+            text = normalize_text(text)
+            text = text.rstrip('. ').strip()
+
+        # Determine structural type from text content
+        art_m = _ART_CAPUT_RE.match(text)
+        para_m = _PARA_RE.match(text)
+        inciso_m = _INCISO_RE.match(text)
+        alinea_m = _ALINEA_RE.match(text)
+
+        if art_m:
+            cur_article = int(art_m.group(1))
+            cur_letter = art_m.group(2) or None
+            cur_para = None
+            cur_inciso = None
+            path = 'caput'
+        elif para_m and cur_article is not None:
+            if para_m.group(1):
+                cur_para = f'§{para_m.group(1)}'
+            else:
+                cur_para = '§unico'
+            cur_inciso = None
+            path = cur_para
+        elif inciso_m and cur_article is not None:
+            roman = inciso_m.group(1).upper()
+            if is_roman(roman):
+                cur_inciso = roman
+                if cur_para:
+                    path = f'{cur_para}.{roman}'
+                else:
+                    path = roman
+            else:
+                continue
+        elif alinea_m and cur_article is not None:
+            letter = alinea_m.group(1)
+            if cur_inciso:
+                if cur_para:
+                    path = f'{cur_para}.{cur_inciso}.{letter}'
+                else:
+                    path = f'{cur_inciso}.{letter}'
+            elif cur_para:
+                path = f'{cur_para}.{letter}'
+            else:
+                path = letter
+        else:
+            # Unrecognized structure — skip
+            continue
+
+        if cur_article is None:
+            continue
+
+        ordem += 1
+        leaves.append(Leaf(
+            article=cur_article,
+            article_letter=cur_letter,
+            path=path,
+            text=text,
+            is_struck=False,
+            revision=None,
+            annotations=annotations,
+            annotation=merge_annotations(annotations),
+            ordem=ordem,
+            raw_anchor=f'artigo_class_{cur_article}_{path}',
+        ))
+
+    return leaves
+
+
 def parse_law_html(html: str) -> list[Leaf]:
-    """Parse a planalto consolidated law HTML into a list of leaves."""
-    return walk_html(html)
+    """Parse a planalto consolidated law HTML into a list of leaves.
+
+    Tries anchor-based parsing first; falls back to class="Artigo"
+    parsing for older pages without <a name="art..."> anchors.
+    """
+    leaves = walk_html(html)
+    if leaves:
+        return leaves
+    return walk_html_artigo_class(html)

@@ -494,6 +494,7 @@ LAW_CATALOG = [
     ('LC141',   '141',   '2012', 95,   'lei_complementar'),   # Gasto mínimo em saúde
     # Procedural / special courts
     ('LJE',     '9099',  '1995', 2304, 'lei'),                # Juizados Especiais
+    ('LJEFP',   '12153', '2009', 3112, 'lei'),                # Juizados Especiais da Fazenda Pública
     # Legal profession
     ('EOAB',    '8906',  '1994', 1430, 'lei'),                # Estatuto da OAB
     # Other

@@ -653,6 +653,21 @@ statutes:
     reforms: [lei_12414_2011]
     discussed_in: []
 
+  lei_12153_2009:
+    tipo: Lei
+    numero: "12153"
+    ano: 2009
+    apelido: LJEFP
+    titulo: Lei dos Juizados Especiais da Fazenda Pública
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2009/lei/l12153.htm
+    topics: [special_courts, access_to_justice, health_litigation]
+    key_articles:
+      - "Art. 2 (competência — até 60 SM)"
+      - "Art. 5 (partes legítimas)"
+      - "Art. 12 (cumprimento de obrigação de fazer)"
+    discussed_in: []
+
   lei_13709_2018:
     tipo: Lei
     numero: "13709"
