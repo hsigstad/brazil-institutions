@@ -58,10 +58,11 @@ were completed by the 2026-04-16 audit pass.
   table covering at least the largest 5–10 states if the data is
   retrievable from state constitutions. Effort: ~2 hours.
 
-- **`topics/justica-estadual.md`** — TJSP comarca count time series
-  (1832–present) and cross-state total-comarcas comparison table.
-  Flagged with inline TODO comments. Effort: ~1 hour per item if
-  data sources exist.
+- **`topics/justica-estadual.md`** — cross-state comarca/vara count
+  table from CNJ Justiça em Números (public data, no sharing issue).
+  TJSP historical comarca count could be assembled from ALESP
+  legislative archive (public decrees). Flagged with inline TODO
+  comments. Effort: ~1 hour per item.
 
 - ~~`CF.31.§1`~~ — resolved. Issue was missing DB, not a parse
   problem. Converted to backtick form (2026-04-16).

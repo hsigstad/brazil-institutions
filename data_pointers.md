@@ -243,18 +243,20 @@ These are the starting points before going to individual source portals.
 
 ### Comarcas and judicial organization
 
-- **Município→comarca mapping** (all states): available in
-  `Publicação - Impacts of Audits on Legal Outcomes/data/improbidade/municipio.csv`
-  (Dropbox). 5,855 municipalities, ~2,754 comarcas, with IBGE codes.
-  Snapshot date: check file metadata.
-- **TJSP historical comarca creation**: Decreto 9.775/1938 and
-  Lei 1.940/1952 PDFs in `Dropbox/org/media/judiciario/`. Cover the
-  earliest systematic comarca organization in São Paulo.
-- **TJRJ comarca history**: PDF in same directory.
-- **CNJ Justiça em Números**: annual comarca/vara counts per state are
-  published in the annexes. Cross-check against the municipality mapping
-  above for completeness.
-- **See**: [`topics/justica-estadual.md`](topics/justica-estadual.md) §3,
+- **CNJ Justiça em Números**: annual comarca and vara counts per state
+  are published in the report annexes. The authoritative public source
+  for cross-state comparison of judicial infrastructure.
+- **State COJs** (Códigos de Organização Judiciária): each state's
+  legislative assembly publishes the statute governing comarca
+  creation, classification by entrância, and vara allocation.
+  Thresholds (population, electors, feitos judiciais) vary by state
+  and era — see [`topics/justica-estadual.md`](topics/justica-estadual.md) §3
+  for a summary table.
+- **TJSP**: the largest state court publishes its current comarca/vara
+  structure on [tjsp.jus.br](https://www.tjsp.jus.br/). Historical
+  comarca creation decrees (Decreto 9.775/1938, Lei 1.940/1952) are
+  available via the ALESP legislative archive.
+- **See**: [`topics/justica-estadual.md`](topics/justica-estadual.md),
   [`topics/organizacao-historica.md`](topics/organizacao-historica.md) §4.
 
 ---
