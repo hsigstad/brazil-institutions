@@ -53,6 +53,54 @@ were completed by the 2026-04-16 audit pass.
 - ~~`CF.31.§1`~~ — resolved. Issue was missing DB, not a parse
   problem. Converted to backtick form (2026-04-16).
 
+## Annotated legislation — scraping project
+
+The TSE Código Eleitoral Anotado is freely available with clean,
+scrapeable HTML linking each CE article to TSE acórdãos, resoluções,
+and CF cross-references. Worth scraping into a structured DB so that
+`cite.py 'CE.35'` can optionally show the jurisprudence annotations.
+
+**Target**: <https://www.tse.jus.br/legislacao/codigo-eleitoral/codigo-eleitoral-1/codigo-eleitoral-lei-nb0-4.737-de-15-de-julho-de-1965>
+
+**HTML structure** (confirmed by inspection):
+- Article text: `<p class="texto-corrido">`
+- Annotations: `<ul><li class="marcador-quadrado">` or
+  `<ul class="marcadorTicado"><li>`
+- Citation patterns: `Ac.-TSE nº XXXXX/YYYY`, `Res.-TSE nº XXXXX/YYYY`,
+  `CF/1988, art. X`, `Lei nº X/YYYY, art. Z`
+
+**Proposed architecture**:
+```
+tools/tse_scraper/
+├── scrape_ce_anotado.py    # scraper
+├── ce_anotado.db           # SQLite: ~600 rows (200 arts × ~3 annotations)
+└── README.md
+```
+
+**DB schema**:
+```sql
+CREATE TABLE anotacao (
+    lei TEXT,           -- 'CE'
+    artigo INTEGER,     -- 22, 35
+    alinea TEXT,        -- 'a', 'b', NULL
+    tipo TEXT,          -- 'acordao', 'resolucao', 'cf', 'lei', 'lc'
+    referencia TEXT,    -- 'Ac.-TSE 23291/2004'
+    texto TEXT          -- full annotation text
+);
+```
+
+**Integration**: extend `cite.py` with `--annotations` flag to show
+jurisprudence cross-references alongside article text. Small DB,
+high value — turns CE lookups from "what does the article say?" to
+"what does the article say and how has TSE interpreted it?"
+
+**Other candidates** (lower priority, harder to scrape):
+- TSE SNE (8 thematic PDFs — would need PDF extraction)
+- Dizer o Direito blog (unstructured blog posts, not article-indexed)
+- No free annotated CF/CPC/CPP/CP/CLT/LIA exists
+
+Effort: ~2–3 hours for scraper + DB + cite.py integration.
+
 ## Audit progress
 
 Checklist for the topical-file audit pass (CLAUDE.md rules 1–9).

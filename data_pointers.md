@@ -241,6 +241,34 @@ These are the starting points before going to individual source portals.
 - **TSE**: <https://www.tse.jus.br/sai>
 - **Diários da Justiça Eleitoral** are scraped from each TRE.
 
+### Annotated legislation (legislação anotada)
+
+Freely available commented legislation with article-by-article
+jurisprudence cross-references:
+
+- **TSE Código Eleitoral Anotado** — the single best free resource.
+  Article-by-article annotations of `CE` (Lei 4.737/1965) with
+  TSE acórdãos, resoluções, and CF cross-references. Shows whether
+  provisions were received by CF/88, links to implementing rules.
+  **URL**: <https://www.tse.jus.br/legislacao/codigo-eleitoral/codigo-eleitoral-1/codigo-eleitoral-lei-nb0-4.737-de-15-de-julho-de-1965>.
+  HTML structure is clean and scrapeable (`<li class="marcador-quadrado">`
+  for annotations, `<p class="texto-corrido">` for article text).
+- **TSE Sistematização das Normas Eleitorais (SNE)** — consolidation of
+  all electoral norms across 8 thematic axes, identifying conflicts
+  and obsolete provisions. Free PDFs.
+  **URL**: <https://www.tse.jus.br/legislacao/sne/sistematizacao-das-normas-eleitorais>.
+- **Dizer o Direito** — free blog with STF/STJ decision summaries
+  organized by law/article. Not structured as annotated legislation
+  but effectively functions as one for recent jurisprudence. Archive
+  from 2011.
+  **URL**: <https://www.dizerodireito.com.br/>.
+
+**Not freely available**: annotated versions of CPC, CPP, CP, CLT,
+CF, or LIA exist only in paid platforms (RT Online, Vade Mecum
+Saraiva, JusBrasil Pro). LexML indexes legislation and jurisprudence
+separately but does not cross-reference them. Planalto.gov.br
+provides raw text with amendment notes only.
+
 ### Comarcas and judicial organization
 
 - **CNJ Justiça em Números**: annual comarca and vara counts per state
