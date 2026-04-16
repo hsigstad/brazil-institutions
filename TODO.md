@@ -69,7 +69,13 @@ Both integrated with `cite.py --annotations`.
 **Future candidates** (lower priority, harder to scrape):
 - TSE SNE (8 thematic PDFs — would need PDF extraction)
 - Dizer o Direito blog (unstructured blog posts, not article-indexed)
-- No free annotated CF/CPC/CPP/CP/CLT/LIA exists
+- **STJ** — all endpoints return 403; would need browser automation
+  (Playwright/Selenium) to access the jurisprudence search at
+  scon.stj.jus.br. Not worth the fragility for now.
+- **TST** — SPA at jurisprudencia.tst.jus.br has a REST API
+  (`/rest/pesquisa-textual`) but nginx blocks non-browser POSTs.
+  Same browser-automation requirement as STJ.
+- No free annotated CPC/CPP/CP/CLT/LIA exists in any scrapeable form
 
 ## Audit progress
 
