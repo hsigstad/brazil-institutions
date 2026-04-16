@@ -358,9 +358,64 @@ selection explicitly.
 
 ## 10. Operational baselines
 
-- **Workforce**: approximately 13,000 members across all MP branches (CNMP *MP: Um Retrato* 2023).
-- **Largest state MP**: MP-SP (~2,000 promotores across ~319 comarcas).
-- **Improbidade standing**: post-`L14230-2021`, MP has exclusive standing for improbidade actions; pre-2021, injured entities could also file, but MP filed the vast majority (~90%+).
-- **Data gap**: precise MP caseload statistics (IC-to-ACP conversion rates, case selection rates) are not systematically published. CNMP's *MP: Um Retrato* series has aggregate numbers but does not break out improbidade-specific pipeline statistics. Researchers seeking prosecution-rate denominators should expect to construct them from tribunal-side data, not MP-side reporting.
+### Workforce (2018)
 
-**Source**: CNMP *MP: Um Retrato* 2023 (workforce numbers).
+- **Total members seated**: ~13,100 (1ª instância ~11,100 + 2ª instância
+  ~1,850 + 3ª instância ~110). Vacancy rate ~19%.
+- **Members per 100k inhabitants**: ~6.3.
+- **Largest state MP**: MP-SP (~2,000 promotores across ~319 comarcas).
+- **Servers**: ~45,800 (including career, requisitados, and contracted).
+
+### Inquérito civil pipeline — MPEs (2018)
+
+Key flow numbers for state MPs (MPEs + MPDFT), base year 2018:
+
+| Movement | Count |
+|---|---|
+| IC/PP instaurados | ~161,700 |
+| IC/PP finalizados | ~260,400 |
+| Arquivamento sem TAC | ~90,400 |
+| Arquivamento com TAC | ~12,000 |
+| Petição inicial (ACP filed) | ~38,900 |
+| Recomendação | ~10,500 |
+| TAC firmado | ~26,960 |
+
+**Conversion rate**: of ~161,700 ICs instaurados, ~38,900 resulted in
+petição inicial (~24%). Most ICs are archived: ~90,400 without TAC
+(~56%), ~12,000 with TAC (~7%).
+
+### Top subjects in IC instaurations — MPEs (2018)
+
+| Subject | Count | Share |
+|---|---|---|
+| Improbidade administrativa | 30,128 | 18.6% |
+| Patrimônio público | 26,815 | 16.6% |
+| Meio ambiente | 26,365 | 16.3% |
+| Licitações | 13,580 | 8.4% |
+| Saúde | 12,551 | 7.8% |
+| Educação | 12,262 | 7.6% |
+| Direito do consumidor | 8,059 | 5.0% |
+| Ordem urbanística | 8,036 | 5.0% |
+| Pessoa com deficiência | 6,176 | 3.8% |
+| Servidor público civil | 3,098 | 1.9% |
+
+Improbidade + patrimônio público + licitações together = ~43.6% of
+all IC instaurations. These are the core corruption-adjacent subject
+categories.
+
+### MPF pipeline (2017)
+
+- IC/PP instaurados: ~65,400.
+- Petição inicial: ~4,400.
+- Conversion rate: ~6.7% (lower than MPEs, reflecting broader federal
+  scope and more complex cases).
+
+### Improbidade standing
+
+Post-`L14230-2021`, MP has exclusive standing for improbidade actions.
+Pre-2021, injured entities could also file but MP filed the vast
+majority (~90%+).
+
+**Source**: CNMP *MP: Um Retrato* dashboard, Tableau export (2018 base
+year for MPEs, 2017 for MPF). Workforce from CNMP *Atuação
+Administrativa* dashboard.
