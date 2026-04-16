@@ -359,7 +359,7 @@ súmulas as the operational rule.
 ```
 
 The `S` prefix mirrors `SV` (Súmula Vinculante), and the court code
-follows. If we add other courts (STJ, TST), they'll use `SSTJ`, `STST`
+follows. STJ uses `SSTJ` (see below); if we add TST, it'll use `STST`
 on the same pattern.
 
 ### What lookup returns
@@ -377,15 +377,56 @@ on the same pattern.
 - TSE súmulas are bulk-collected because the set is small (~72),
   the topical surface area covered by this repo is heavy in electoral
   law, and the verbatim text is short and stable.
-- **STJ, TST, and ordinary STF súmulas** are *not* bulk-collected.
-  When a topical file cites one (e.g., Súmula STJ 568, Súmula TST 331),
-  add an entry to a future `sumulas_<court>.yaml` by hand at that
-  point. The reference repo's job is making *cited* things resolvable,
+- **STJ súmulas** are added on demand to
+  [`sumulas_stj.yaml`](sumulas_stj.yaml) and resolved via `SSTJ<number>`
+  (e.g., `SSTJ359`, `SSTJ385`, `SSTJ404`). Currently 3 entries. Not
+  bulk-collected — add when a topical or project file cites one.
+- **TST and ordinary STF súmulas** are *not* yet collected.
+  When a topical file cites one (e.g., Súmula TST 331),
+  add an entry to a future `sumulas_<court>.yaml` by hand.
+  The reference repo's job is making *cited* things resolvable,
   not mirroring all of Brazilian jurisprudence.
 - When TSE cancels or revokes a súmula, re-run the scraper — TSE marks
   cancellations directly on the listing page, so the status flips
   automatically. Do not delete the entry — superseded súmulas remain
   citable for historical analysis.
+
+## Citing Súmulas STJ — backtick form for SSTJ
+
+STJ (Superior Tribunal de Justiça) súmulas are resolved against
+[`sumulas_stj.yaml`](sumulas_stj.yaml). Unlike SVs (bulk-collected) and
+TSE súmulas (bulk-collected), STJ súmulas are added **on demand** when
+cited by a topical file or project-level `institutions.md`.
+
+### Form
+
+```
+`SSTJ<number>`
+```
+
+```
+`SSTJ359`   ← notificação pelo órgão mantenedor antes da inscrição
+`SSTJ385`   ← dano moral x inscrição preexistente legítima
+`SSTJ404`   ← AR dispensável na carta de comunicação
+```
+
+### What lookup returns
+
+- **numero** — the STJ súmula number
+- **enunciado** — the verbatim text as published by STJ
+- **status** — `vigente`, `cancelada`, `revogada`, or `superada`
+- **aprovada** — approval date (YYYY-MM-DD)
+- **fonte** — canonical URL
+- **nota** — cross-references and context
+
+### Coverage and policy
+
+- Currently **3** entries (359, 385, 404 — all consumer-credit-registry
+  súmulas cited by `serasa/docs/institutions.md`).
+- Add entries when a topical or project file cites an STJ súmula. Do
+  not bulk-collect — STJ has ~700 súmulas and most are irrelevant.
+- When adding: copy the verbatim enunciado from the STJ portal, set
+  status, and include the approval date and a fonte URL.
 
 ### When to add a new case
 

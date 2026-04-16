@@ -92,6 +92,9 @@ keywords` line includes both Portuguese and English search terms.
 - [`glossario.md`](glossario.md) — Portuguese legal terms glossary. Look up *acórdão*, *súmula vinculante*, *trânsito em julgado*, *prevenção*, *parecer prévio*, etc.
 - [`leis_index.yaml`](leis_index.yaml) — Structured YAML index of statutes cited in this directory: status, key articles, topics, files where discussed.
 - [`jurisprudencia-stf.md`](jurisprudencia-stf.md) — Consolidated STF case file. STF Temas, ADIs, ADPFs, HCs cited elsewhere are described here once and cross-referenced.
+- [`sumulas_vinculantes.yaml`](sumulas_vinculantes.yaml) — All 63 STF Súmulas Vinculantes (verbatim). Resolve via `SV14`, `SV13`, etc.
+- [`sumulas_tse.yaml`](sumulas_tse.yaml) — All 72 TSE Súmulas (verbatim). Resolve via `STSE38`, `STSE47`, etc.
+- [`sumulas_stj.yaml`](sumulas_stj.yaml) — STJ Súmulas (on demand, currently 3). Resolve via `SSTJ359`, `SSTJ385`, etc.
 - [`pitfalls.md`](pitfalls.md) — Common mistakes about Brazilian institutions, paired ❌/✓ format. Read first when in doubt.
 - [`faq.md`](faq.md) — Common research questions mapped to topical files. Navigation aid by question, not by topic.
 - [`timeline.md`](timeline.md) — Date-anchored timeline of statutory and jurisprudential changes (1988 CF through 2026), with key cutoffs as design tools.

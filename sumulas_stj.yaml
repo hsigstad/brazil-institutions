@@ -1,0 +1,80 @@
+# Súmulas STJ — Superior Tribunal de Justiça
+#
+# STJ súmulas cited by topical files or project-level institutions.md
+# files in this workspace. Added on demand, not bulk-collected — STJ
+# has ~700 súmulas and only a subset is relevant to the topics covered
+# by this repository.
+#
+# Resolved via cite.py with bracket form `SSTJ359`, `SSTJ385`, etc.
+# Documented in CLAUDE.md.
+#
+# Sources:
+# - Verbatim enunciado from the STJ portal or official publications.
+# - Each entry cites its provenance in the `fonte` field.
+#
+# Status values:
+#   vigente   — currently in force
+#   cancelada — explicitly cancelled by STJ
+#   revogada  — formally revoked
+#   superada  — effectively overruled by later STJ or STF jurisprudence
+#
+# Fields:
+#   numero     — STJ súmula number (matches the bracket-form id, e.g., 359 → `SSTJ359`)
+#   enunciado  — verbatim text as published by STJ
+#   status     — vigente | cancelada | revogada | superada
+#   aprovada   — date the súmula was approved (YYYY-MM-DD)
+#   fonte      — canonical URL or publication reference
+#   nota       — optional; context or cross-references
+#
+# When adding entries:
+# - Only add súmulas actually cited in a topical or project file.
+# - Preserve verbatim text. Do not paraphrase or reformat.
+# - Include the approval date and a fonte URL when available.
+
+schema_version: 1
+last_updated: 2026-04-16
+
+sumulas:
+
+  SSTJ359:
+    numero: 359
+    enunciado: >-
+      Cabe ao órgão mantenedor do Cadastro de Proteção ao Crédito a
+      notificação do devedor antes de proceder à inscrição.
+    status: vigente
+    aprovada: "2008-08-13"
+    fonte: https://scon.stj.jus.br/SCON/sumulas/doc.jsp?livre=@num=%27359%27
+    nota: >-
+      Complemented by Súmula 404/STJ (AR dispensável). Applies to all
+      credit-protection registries (Serasa, SPC, Boa Vista). The
+      notification duty falls on the bureau, not on the creditor.
+      Cited in: serasa/docs/institutions.md §2.2.
+
+  SSTJ385:
+    numero: 385
+    enunciado: >-
+      Da anotação irregular em cadastro de proteção ao crédito, não cabe
+      indenização por dano moral, quando preexistente legítima inscrição,
+      ressalvado o direito ao cancelamento.
+    status: vigente
+    aprovada: "2009-05-27"
+    fonte: https://scon.stj.jus.br/SCON/sumulas/doc.jsp?livre=@num=%27385%27
+    nota: >-
+      Flexibilized by REsp 1.704.002/SP (2020): moral damages may be
+      awarded despite preexisting listing if the prior listing is itself
+      judicially contested and the consumer demonstrates verossimilhança.
+      Cited in: serasa/docs/institutions.md §2.3.
+
+  SSTJ404:
+    numero: 404
+    enunciado: >-
+      É dispensável o Aviso de Recebimento (AR) na carta de comunicação
+      ao consumidor sobre a negativação de seu nome em bancos de dados e
+      cadastros.
+    status: vigente
+    aprovada: "2009-10-28"
+    fonte: https://scon.stj.jus.br/SCON/sumulas/doc.jsp?livre=@num=%27404%27
+    nota: >-
+      Complements Súmula 359: the bureau must notify (S. 359) but proof
+      of receipt is not required (S. 404). Key precedent: REsp 783.907/RS.
+      Cited in: serasa/docs/institutions.md §2.2.
