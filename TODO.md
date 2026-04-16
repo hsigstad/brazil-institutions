@@ -82,7 +82,7 @@ suggested priority (most CF/LRF citations first), not mandatory.
 - [x] `topics/procedimentos-legais.md` — audited (2026-04-16), rules 1–9 complete
 - [x] `topics/prestacao-contas-eleitorais.md` — stub (27 lines), no actionable conversions
 - [x] `topics/processo-eleitoral.md` — audited (2026-04-16), rules 1–9 complete
-- [ ] `topics/partidos-e-sistema-eleitoral.md`
+- [x] `topics/partidos-e-sistema-eleitoral.md` — audited (2026-04-16), rules 1–9 complete
 - [ ] `topics/justica-eleitoral.md`
 - [ ] `topics/transparencia-dados.md`
 - [ ] `topics/cgu-controle-interno.md`
