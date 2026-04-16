@@ -1,147 +1,109 @@
-# Organização histórica do judiciário
+# Organização do judiciário — visão geral
 
-[source](https://en.wikipedia.org/wiki/Judiciary_of_Brazil)
+Structural overview of the Brazilian judiciary: how the branches and
+tiers fit together. This file is a map, not a deep treatment — each
+branch has its own topical file linked below. For **historical
+evolution** of the judiciary (1932 onwards), see
+`justica-eleitoral.md` (electoral zones history) and
+`reformas-judiciais.md` (reform timeline).
 
-### Justiça comum
+**Topics / keywords**: organização judiciária, Justiça Comum, Justiça
+Especializada, comarca, vara, entrância, instância, TJ, TRF, TRT, TRE,
+TSE, TST, STM, STJ, STF, CNJ.
 
-1.  Federal
-    
-    Jurisdiction (articles [108](lei/10.org::*Art%208) and
-    [109](lei/10.org::*Art%209) of Constitution):
-    
-      - When the Federal government have interest
-    
-      - Foreign governments
-    
-      - Political crimes
-    
-      - Crimes against the labour organization, including Slavery
-    
-      - Crimes on ships or aircrafts
-    
-      - Foreigners
-    
-      - Indigenous peoples
-    
-      - Varas federais :: Trial courts in major cities. Judicial
-        districts seções and subseções.
-    
-      - Tribunais Regionais Federais :: Second instance (five)
+**Snapshot as of 2026**: structure stable since `EC45-2004`. 6 TRFs
+(since `EC73-2014`); 27 TJs; 24 TRTs; 27 TREs.
 
-2.  States
-    
-    Divided into comarcas (judicial districts) composed of one or more
-    municipalities.
-    
-    1.  Vara
-        
-        Trial court. At least one per comarca. In larger comarcas
-        usually specialized (crime, family, etc). Has a judge and may
-        have a substitute judge. Jury when crimes against life.
-    
-    3.  Tribunal de Justiça
-        
-        Second, and highest instance. Some states (including São Paulo)
-        used to have parallel Court of Appeals (Tribunal de Alçada), but
-        was removed by the [45](lei/4.org::*Art%205)th Constitutional
-        Amendment. Usually made by three judges, called desembargadores.
-        Large courts usually divided into civil and criminal chambers.
-        Controls constitutionality of statutes passed by municipalities.
-        Organizes the notary and civil registration services. Some
-        states also have installed separate Military Courts of Justice.
+---
 
-### Justiça especializada
+## 1. Justiça Comum
 
-Specialized courts. All federal.
+### Federal (`CF.106`–`CF.110`)
 
-1.  Military courts
+Jurisdiction: cases involving the União, federal agencies, international
+matters, federal crimes. See `justica-federal.md`.
 
-3.  Labor courts
-    
-      - Varas do trabalho  
-        First instance
-    
-      - Tribunais Regionais do Trabalho  
-        Second instance. Also some direct jurisdiction such as over
-        conflicts between trade unions and employers.
-    
-      - Tribunal Superior do Trabalho  
-        Highest appellate court.
+- **Varas federais** — first instance. Organized in *seções judiciárias*
+  (one per state) and *subseções*.
+- **Tribunais Regionais Federais (TRFs)** — appellate. 6 circuits.
 
-2.  Electoral courts
-    
-    Created in [1932](lei/193.org::*Art%202), dissolved in
-    [1937](lei/193.org::*Art%207), reinstalled in
-    [1945](lei/194.org::*Art%205). Governed by Constitution and
-    Electoral Code of [1964](lei/196.org::*Art%204). Also organizes
-    elections.
-    
-      - Tribunal Regional Eleitoral
-    
-      - Tribunal Superior Eleitoral
+### Estadual (`CF.125`–`CF.126`)
 
-### Supremo Tribunal Federal
+Residual jurisdiction: everything not assigned to federal, labor,
+electoral, or military courts. The largest branch by volume. See
+`justica-estadual.md`.
 
-Constitutional court.
+- **Varas** — first instance. At least one per *comarca*. Specialized
+  in larger comarcas (cível, criminal, família, fazenda pública).
+  A comarca is a geographic unit typically matching one or more
+  municípios.
+- **Tribunal de Justiça (TJ)** — appellate. One per state. Organized
+  into *câmaras* (cíveis, criminais). Composed of *desembargadores*.
+  Former *Tribunais de Alçada* (parallel appellate courts) were
+  abolished by `EC45-2004`.
 
-  - Recurso Extraordinário  
-    Extraordinary Appeal. When judgements of second instance courts
-    violate the Constitution.
+### Entrância system
 
-  - Ação Declaratória de Inconstitucionalidade  
-    Declaring federal or state law unconstitutional
+State courts are organized in *entrâncias* — tiers based on comarca
+size. Typical structure: **inicial → intermediária → final** (capital).
+Judges advance between entrâncias via promoção (antiguidade or
+merecimento). See `carreira-juizes.md`.
 
-Other original jurisdiction includes extradition.
+---
 
-11 judges. Appointed by the President, approved by the Senate. Mandatory
-retirement age of [75](lei/7.org::*Art%205).
+## 2. Justiça Especializada (all federal)
 
-The President and Vice-president of the Court are elected by their peers
-for a term of two years by secret ballot. Re-election for a consecutive
-term is not allowed. By tradition, the members of the Court always elect
-as president the most senior minister of the Court that has not yet
-served as President, to avoid politicization of the Court.
+### Trabalho (`CF.111`–`CF.116`)
 
-the Court selects as vice-president for a certain term the minister who,
-according to that tradition, will be selected president in the
-succeeding term
+Employment and labor disputes. See `justica-trabalho.md`.
 
-1.  Conselho Nacional de Justiça
-    
-    Created in [2004](lei/200.org::*Art%204) by Constitutional
-    Amendment. Administrative control over the Judiciary (except the
-    Supreme Federal Court). Some disciplinary powers over judges, but
-    cannot remove them from office, which can only be performed by their
-    own Courts or by final decision on a judicial procedure.
+- **Varas do Trabalho** — first instance.
+- **Tribunais Regionais do Trabalho (TRTs)** — appellate. 24 regions.
+- **Tribunal Superior do Trabalho (TST)** — national superior court.
 
-### Superior Tribunal de Justiça
+### Eleitoral (`CF.118`–`CF.121`)
 
-Brazilian highest court in non-constitutional issues concerning both
-states and Federal ordinary courts.
+Electoral registration, campaign disputes, election crimes. Also
+organizes elections. See `justica-eleitoral.md`, `processo-eleitoral.md`.
 
-  - Recurso Especial  
-    Special Appeal. When judgement of a second instance court offends a
-    federal statute disposition or when two or more second instance
-    courts make different rulings on the same federal statute.
+- **Juízes eleitorais** — first instance (state judges serving
+  temporarily).
+- **Tribunais Regionais Eleitorais (TREs)** — one per state.
+- **Tribunal Superior Eleitoral (TSE)** — apex.
 
-Decides over most jurisdiction conflicts.
+Created 1932, dissolved 1937 (Estado Novo), reinstated 1945.
 
-Decides only questions of law
+### Militar (`CF.122`–`CF.124`)
 
-Minimum [33](lei/3.org::*Art%203) judges. Appointed by the president
-from lista triplice (again from lista sextupla from lawyers and MP). A
-third from Tribunais Regionais Federais judges, a third from Tribunais
-de Justiça, a third alternatingly from lawyers and members of Ministério
-Público (MP) Federal, Estadual
+Military criminal jurisdiction.
 
-[wiki](https://pt.wikipedia.org/wiki/Superior_Tribunal_de_Justi%C3%A7a)
+- **Auditorias militares** — first instance.
+- **Tribunais Militares** — some states have state-level military
+  courts.
+- **Superior Tribunal Militar (STM)** — apex. 15 ministros
+  (5 civilian, 10 military).
 
-## Judicial districts
+---
 
-[Criterias for creating
-comarcas](https://www.conjur.com.br/2009-nov-01/segunda-leitura-criterios-criacao-varas-comarcas)
-since colonial times
+## 3. Tribunais Superiores
 
-Difference between [comarca, vara, entrancia,
-instancia](http://www.cnj.jus.br/noticias/cnj/82385-cnj-servico-saiba-a-diferenca-entre-comarca-vara-entrancia-e-instancia)
+- **STF** (`CF.101`–`CF.103`): constitutional court. 11 ministros.
+- **STJ** (`CF.104`–`CF.105`): uniform interpretation of federal law.
+  33 ministros.
+- **CNJ** (`CF.103-B`): administrative oversight. 15 conselheiros.
 
+See `cortes-superiores.md` for composition and competence detail.
+
+---
+
+## 4. Key concepts
+
+- **Comarca**: geographic unit of state-court jurisdiction, typically
+  matching one or more municípios. Defined by state legislation.
+- **Vara**: the court unit within a comarca (or seção judiciária),
+  staffed by one titular judge and (usually) one substitute.
+- **Entrância**: tier in the state-court system reflecting comarca size.
+- **Instância**: hierarchical level (first instance = vara; second
+  instance = TJ/TRF/TRT; superior instance = STJ/TST; constitutional
+  = STF).
+- **Foro**: the geographic or functional location where a case is filed.
