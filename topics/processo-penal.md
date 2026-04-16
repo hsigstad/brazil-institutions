@@ -1,145 +1,123 @@
 # Processo penal
 
-## General
+Criminal procedure under the Código de Processo Penal (`CPP`,
+DL 3.689/1941). This file covers the procedural framework — rito,
+recursos, prescrição. For **substantive criminal offenses** related to
+corruption, see `anticorrupcao-penal.md`. For **electoral crimes**, see
+`processo-eleitoral.md` §8.
 
-### Prova
+**Topics / keywords**: processo penal, CPP, rito ordinário, rito
+sumário, tribunal do júri, prova, nulidades, recursos penais, apelação,
+embargos, revisão criminal, habeas corpus, prescrição penal, prisão
+preventiva, DIPO, juiz das garantias.
 
-[CPP155-250](lei/cpp.org::*TÍTULO%20VII%20-%20DA%20PROVA)
+**Snapshot as of 2026**: `CPP` is the core procedural statute. The
+*Pacote Anticrime* (`LPC`, Lei 13.964/2019) introduced the ANPP
+(`CPP.28-A`) and the juiz das garantias (`CPP.3-A`); the latter was
+upheld by STF (ADIs 6.298–6.305, Aug 2023) with staggered
+implementation.
 
-### Indulto
+For **collaboration agreements** (colaboração premiada), see
+`anticorrupcao-penal.md` §3. For **foro privilegiado** in criminal
+cases, see `procedimentos-legais.md`.
 
-[CPP734-742](lei/cpp.org::*CAPÍTULO%20I%20-%20DA%20GRAÇA,%20DO%20INDULTO%20E%20DA%20ANISTIA)
+---
 
-### Nulidades
+## 1. Procedural phases
 
-[CPP563-573](lei/cpp.org::*TÍTULO%20I%20-%20DAS%20NULIDADES)
+### Processo comum (`CPP.394`–`CPP.501`)
 
-## Processo comum
+- **Rito ordinário**: crimes with penalty >4 years. Full instrução
+  with audiência de instrução e julgamento.
+- **Rito sumário**: crimes with penalty ≤4 years (not subject to rito
+  especial). Simplified procedure.
+- **Tribunal do júri**: crimes dolosos contra a vida (homicídio,
+  infanticídio, instigação ao suicídio). Two phases: judicium
+  accusationis (pronúncia) → judicium causae (júri popular).
 
-[CPP394-501](lei/cpp.org::*TÍTULO%20I%20-%20DO%20PROCESSO%20COMUM)
+### Crimes de responsabilidade de funcionários públicos (`CPP.513`–`CPP.518`)
 
-## Crimes de responsabilidade
+Special rito for crimes committed by public officials in the exercise
+of their functions. See also DL 201/1967 for specific prefeito crimes.
 
-[CPP513-518](lei/cpp.org::*CAPÍTULO%20II%20-%20DO%20PROCESSO%20E%20DO%20JULGAMENTO%20DOS%20CRIMES%20DE%20RESPONSABILIDADE%20DOS%20FUNCIONÁRIOS%20PÚBLICOS)
+## 2. Evidence (`CPP.155`–`CPP.250`)
 
-See DL201/67 for prefeitos
+- `CPP.155`: judge forms conviction from evidence produced in
+  adversarial proceedings (*contraditório judicial*); elements from
+  the inquérito alone cannot sustain a conviction (except *cautelares*,
+  *não repetíveis*, and *antecipadas*).
 
-## Recursos
+## 3. Nulidades (`CPP.563`–`CPP.573`)
 
-[CPP575-667](lei/cpp.org::*TÍTULO%20II%20-%20DOS%20RECURSOS%20EM%20GERAL)
+Procedural defects that may void acts. Distinction between absolute
+nulidades (violating fundamental guarantees — must be declared even
+without objection) and relative nulidades (must be raised timely or
+precluded).
 
-### Apelacao
+## 4. Recursos (`CPP.575`–`CPP.667`)
 
-[CPP593-607](lei/cpp.org::*CAPÍTULO%20III%20-%20DA%20APELAÇÃO)
+| Recurso | Base | Scope |
+|---|---|---|
+| Apelação | `CPP.593`–`CPP.607` | Against sentença; broad devolutive effect |
+| Embargos de declaração | `CPP.619`–`CPP.620` | Ambiguity, contradiction, omission |
+| Revisão criminal | `CPP.621`–`CPP.631` | Post-trânsito em julgado; in favor of defendant only |
+| Recurso extraordinário | `CPP.632`–`CPP.638` | Constitutional questions to STF |
+| Habeas corpus | `CPP.647`–`CPP.667` | Against unlawful constraint on liberty |
+| Indulto / anistia | `CPP.734`–`CPP.742` | Extinction of punishment |
 
-1.  Ordem da Votacao
-    
-    Regimento interno TJSP:
-    
-    Art. 152. Após os votos do relator e do revisor, se houver, serão
-    tomados os votos dos demais julgadores em ordem de antiguidade.
-    
-    The judges are listed in order of voting in the acordao in TJSP it
-    seems\! (At least revisor listed first)
+**Voting order in TJSP** (Regimento Interno Art. 152): relator votes
+first, then revisor (if any), then remaining judges by antiguidade.
 
-### Embargos da declaracao
+## 5. Prisão preventiva
 
-[CPP619-620](lei/cpp.org::*CAPÍTULO%20VI%20-%20DOS%20EMBARGOS)
+- No dedicated recurso against preventive detention; the remedy is
+  **habeas corpus**.
+- **DIPO** (in São Paulo): specialized vara handling flagrante receipts
+  and investigatory-phase cases until denúncia is offered.
 
-### Revisao
+## 6. Prescrição penal
 
-[CPP621-631](lei/cpp.org::*CAPÍTULO%20VII%20-%20DA%20REVISÃO)
+### Before trânsito em julgado (`CP.109`)
 
-### Recurso extraordinario
+Graduated by maximum penalty of the offense:
 
-[CPP632-638](lei/cpp.org::*CAPÍTULO%20VIII%20-%20DO%20RECURSO%20EXTRAORDINÁRIO)
+| Maximum penalty | Prescription period |
+|---|---|
+| >12 years | 20 years |
+| >8–12 years | 16 years |
+| >4–8 years | 12 years |
+| >2–4 years | 8 years |
+| 1–2 years | 4 years |
+| <1 year | 3 years |
 
-### Habeas corpus
+Clock starts from the day of the crime (`CP.111`).
 
-[CPP647-667](lei/cpp.org::*CAPÍTULO%20X%20-%20DO%20HABEAS%20CORPUS%20E%20SEU%20PROCESSO)
+### After trânsito em julgado (`CP.110`)
 
-## Prisão Preventiva
+- Based on **actual sentence imposed** (not maximum penalty).
+- Periods increase by 1/3 if the defendant is a *reincidente*.
+- Cannot start before the date of denúncia or queixa.
 
-### Dipo
+### Fine-only prescription (`CP.114`)
 
-Vara responsavel pelo recebimento de flagrantes e andamento dos feitos
-em fase de investigação, até eventual oferecimento de denúncia.
+- Fine as sole penalty: 2 years.
+- Fine as alternative or cumulative: same schedule as imprisonment.
 
-### Recursos
+### Reduction (`CP.115`)
 
-Não existe recurso exclusivo contra a decisão que decreta a prisão
-preventiva. A saída possível para evitá-la é pedindo um Habeas Corpus.
+Periods reduced by **half** if the defendant was <21 at the time of
+the crime or >70 at the time of sentença.
 
-## Prescrição
+### Impeditive causes (`CP.116`)
 
-[VIII - DA EXTINÇÃO DA
-PUNIBILIDADE](lei/cp.org::*TÍTULO%20VIII%20-%20DA%20EXTINÇÃO%20DA%20PUNIBILIDADE)
+Prescription paused while: a prejudicial question is pending in another
+proceeding; the defendant is serving a sentence abroad; or (post-
+trânsito) the defendant is imprisoned for another reason.
 
-### Antes de transitar em julgado
+### Interruptive causes (`CP.117`)
 
-CP109
-
-| Máximo da pena | Prazo |
-| -------------- | ----- |
-| 12             | 20    |
-| 8-12           | 16    |
-| 4-8            | 12    |
-| 2-4            | 8     |
-| 1-2            | 4     |
-| \-1            | 3     |
-
-Comeca a correr do dia do crime (CP111)
-
-### Depois de transitar em julgado
-
-CP110
-
-  - A pena aplicada em vez da pena maxima
-  - Prazos se aumentam de um terço, se o condenado é reincidente
-  - Nao pode ter por termo inicial data anterior à da denúncia ou queixa
-
-### Multa
-
-CP114
-
-| Condition                       | Prazo                  |
-| ------------------------------- | ---------------------- |
-| Multa a unica pena              | 2                      |
-| Multa alternativa ou cumulativa | Mesmo como para prisao |
-
-### Redução dos prazos
-
-CPP115
-
-Metade se
-
-  - \< 21 ao tempo do crime
-  - \> 70 na sentenca
-
-### Causas impeditivas
-
-CP116
-
-  - Questao em outro processo não resolvida
-  - Cumpre pena no estrangeiro
-  - Depois de passada em julgado a sentença condenatória, a prescrição
-    não corre durante o tempo em que o condenado está preso por outro
-    motivo.
-
-### Causas interruptivas
-
-  - I  
-    Recebimento da denúncia
-  - II  
-    Pronuncia
-  - III  
-    Decisão confirmatória da pronúncia
-  - IV  
-    Sentença ou acórdão condenatórios recorríveis
-  - V  
-    Cumprimento da pena
-  - VI  
-    Reincidência
-
-Interrompida a prescrição, salvo a hipótese do inciso V deste artigo,
-todo o prazo começa a correr, novamente, do dia da interrupção.
+Prescription restarted by: (I) receipt of denúncia, (II) pronúncia,
+(III) confirmatory decision of pronúncia, (IV) condemning sentença or
+acórdão subject to appeal, (V) commencement of sentence, (VI)
+reincidência. After interruption, the full period begins anew (except
+for cause V).
