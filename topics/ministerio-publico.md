@@ -2,7 +2,7 @@
 
 The Brazilian MP is a permanent institution, independent of the three
 branches, charged with defending the legal order, the democratic regime,
-and *interesses sociais e individuais indisponíveis* (CF/88 Art. 127).
+and *interesses sociais e individuais indisponíveis* (`CF.127`).
 It is neither "prosecutor" nor "attorney general" in the US sense — it
 is a functionally independent fourth institution with constitutional
 autonomy.
@@ -27,20 +27,17 @@ the exclusive holder of standing in improbidade actions (see
 `improbidade.md`). CNMP composition and rules updated periodically by
 constitutional amendment (EC 45/2004 created it).
 
-Compiled from personal research notes on the Ministério Público,
-complementing the constitutional overview in `funcoes-essenciais.md`.
-
 ---
 
-## 1. Constitutional framework (CF Arts. 127–130)
+## 1. Constitutional framework (`CF.127`–`CF.130`)
 
-### Mission (Art. 127)
+### Mission (`CF.127`)
 
 "Instituição permanente, essencial à função jurisdicional do Estado,
 incumbindo-lhe a defesa da ordem jurídica, do regime democrático e dos
 interesses sociais e individuais indisponíveis."
 
-Key principles (Art. 127 §1):
+Key principles (`CF.127.§1`):
 
 - **Unidade** — one institution speaking with one voice.
 - **Indivisibilidade** — members can substitute for each other without
@@ -48,28 +45,27 @@ Key principles (Art. 127 §1):
 - **Independência funcional** — each member acts according to conviction
   in the case before them; superiors cannot dictate legal positions.
 
-### Autonomy (Art. 127 §§2–6)
+### Autonomy (`CF.127.§2`–§6)
 
 - **Autonomia funcional e administrativa**.
 - Own budget proposal subject to LDO limits.
 - Independent financial management.
 
-### Functions (Art. 129)
+### Functions (`CF.129`)
 
-- **Criminal prosecution** (I): exclusive dominus litis of the public
-  criminal action.
-- **Civil defense of the public patrimony and social interests** (III):
-  via ação civil pública (Lei 7.347/1985) and ação de improbidade
-  administrativa (Lei 8.429/1992).
+- **Criminal prosecution** (`CF.129.I`): exclusive dominus litis of the
+  public criminal action.
+- **Civil defense of the public patrimony and social interests**
+  (`CF.129.III`): via ação civil pública (Lei 7.347/1985) and `LIA`.
 - **Defense of indigenous, minority, consumer, environment, cultural
-  heritage rights** (III, V).
+  heritage rights** (`CF.129.III`, `CF.129.V`).
 - **Inquérito civil**: exclusive investigative instrument for non-criminal
-  matters (III).
-- **Control of external police activity** (VII).
+  matters (`CF.129.III`).
+- **Control of external police activity** (`CF.129.VII`).
 - **Request of investigative measures and institution of inquérito
-  policial**, with requisição powers (VIII).
+  policial**, with requisição powers (`CF.129.VIII`).
 
-### Guarantees (Art. 128 §5 I)
+### Guarantees (`CF.128.§5.I`)
 
 Members of the MP enjoy:
 
@@ -78,7 +74,7 @@ Members of the MP enjoy:
   public-interest decision of the órgão colegiado competente).
 - **Irredutibilidade de subsídio**.
 
-### Vedações (Art. 128 §5 II)
+### Vedações (`CF.128.§5.II`)
 
 Members are forbidden from:
 
@@ -112,7 +108,7 @@ four specialized branches:
 
 **Chief**: **Procurador-Geral da República (PGR)**, appointed by the
 President from career members over 35, after Senate majority approval;
-2-year term, one reappointment allowed (CF Art. 128 §1). By tradition
+2-year term, one reappointment allowed (`CF.128.§1`). By tradition
 (post-Lula), the PGR is chosen from a *lista tríplice* elaborated by the
 ANPR (Associação Nacional dos Procuradores da República), though the
 tripla list has no legal force.
@@ -129,10 +125,8 @@ and each state's own Lei Orgânica.
   structure.
 - **Chief**: **Procurador-Geral de Justiça (PGJ)**, appointed by the
   governor from a *lista tríplice* elaborated by the MPE career members
-  (CF Art. 128 §3); 2-year term with one reappointment. In RJ, state law
-  requires choosing from the list; in other states the governor has more
-  discretion but typically respects the list.
-- **Destituição**: by majority of the state legislature (CF Art. 128 §4).
+  (`CF.128.§3`); 2-year term with one reappointment.
+- **Destituição**: by majority of the state legislature (`CF.128.§4`).
 
 ### Career structure (state MPs)
 
@@ -166,7 +160,7 @@ from the MPU/MPE career tracks.
   court proceedings. Issues pareceres on accounts, files
   representações, appeals TCE decisions internally.
 - **Career**: separate concurso; members are **Procuradores de Contas**.
-- **Constitutional basis**: CF Art. 130 extends MP guarantees and
+- **Constitutional basis**: `CF.130` extends MP guarantees and
   vedações "no que couber" to MPC members.
 - **Practical role**: in contas de prefeito cases, the MPC opinion
   precedes the conselheiro's vote on the parecer prévio (see
@@ -245,13 +239,13 @@ training to the promotores who hold cases in the field.
 
 ### Acordo de não persecução cível (improbidade)
 
-Post-Lei 14.230/2021 Art. 17-B: formal settlement between MP and
+`LIA.17-B from:L14230-2021`: formal settlement between MP and
 improbidade defendant, subject to judicial homologation. See
 `improbidade.md` §2.
 
 ### Acordo de não persecução penal (criminal)
 
-- **Legal basis**: CPP Art. 28-A, added by the *Pacote Anticrime*
+- **Legal basis**: `CPP.28-A`, added by the *Pacote Anticrime*
   (Lei 13.964/2019).
 - Alternative to criminal prosecution for offenses without violence,
   maximum penalty < 4 years, first-time offender conditions. Subject to
@@ -264,7 +258,7 @@ improbidade defendant, subject to judicial homologation. See
 
 ### Requisições
 
-- The MP has constitutional requisição powers (Art. 129 VI, VIII) to
+- The MP has constitutional requisição powers (`CF.129.VI`, `CF.129.VIII`) to
   demand documents, information, and investigative measures from public
   authorities, including instituição de inquérito policial.
 
@@ -282,10 +276,10 @@ improbidade defendant, subject to judicial homologation. See
   files the majority and must be heard as fiscal da lei in ACPs filed
   by others.
 
-### Ação de Improbidade Administrativa — Lei 8.429/1992
+### Ação de Improbidade Administrativa — `LIA`
 
-- Post-Lei 14.230/2021, the MP has **exclusive standing** (Art. 17
-  caput). See `improbidade.md` for full treatment.
+- Post-`L14230-2021`, the MP has **exclusive standing**
+  (`LIA.17 from:L14230-2021`). See `improbidade.md` for full treatment.
 
 ### Other instruments
 
@@ -298,10 +292,10 @@ improbidade defendant, subject to judicial homologation. See
 
 ## 7. CNMP — Conselho Nacional do Ministério Público
 
-Created by **EC 45/2004** (Reforma do Judiciário), analogous to the CNJ
+Created by `EC45-2004` (Reforma do Judiciário), analogous to the CNJ
 for the judiciary.
 
-- **Composition**: 14 members (CF Art. 130-A):
+- **Composition**: 14 members (`CF.130-A`):
   - PGR (presides).
   - 4 MPU members.
   - 3 MPE members.
@@ -349,13 +343,13 @@ selection explicitly.
 
 | Statute | Scope |
 |---|---|
-| CF/88 Arts. 127–130 | Constitutional framework of MP |
-| CF Art. 130-A | CNMP |
+| `CF.127`–`CF.130` | Constitutional framework of MP |
+| `CF.130-A` | CNMP |
 | LC 75/1993 | Lei Orgânica do MPU (federal MP) |
 | Lei 8.625/1993 | Lei Orgânica Nacional do MP (state MPs) |
 | Lei 7.347/1985 | Ação Civil Pública |
-| Lei 8.429/1992 (+ Lei 14.230/2021) | Improbidade administrativa |
+| `LIA` (+ `L14230-2021`) | Improbidade administrativa |
 | Lei 12.850/2013 | Organização criminosa, colaboração premiada |
-| Lei 13.964/2019 (Pacote Anticrime) | CPP Art. 28-A (ANPP criminal) |
+| Lei 13.964/2019 (Pacote Anticrime) | `CPP.28-A` (ANPP criminal) |
 
-**Sources**: [CF/1988](https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm); [LC 75/1993](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp75.htm); [Lei 8.625/1993](https://www.planalto.gov.br/ccivil_03/leis/l8625.htm).
+**Sources**: LC 75/1993; Lei 8.625/1993.

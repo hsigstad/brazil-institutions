@@ -81,7 +81,7 @@ suggested priority (most CF/LRF citations first), not mandatory.
 - [x] `topics/improbidade.md` — audited (2026-04-16), rules 1–9 complete
 - [x] `topics/federalismo-fiscal.md` — audited (2026-04-16), rules 1–9 complete
 - [x] `topics/tribunais-contas.md` — audited (2026-04-16), rules 1–9 complete
-- [ ] `topics/ministerio-publico.md`
+- [x] `topics/ministerio-publico.md` — audited (2026-04-16), rules 1–9 complete
 - [ ] `topics/licitacoes.md`
 - [ ] `topics/anticorrupcao-penal.md`
 - [ ] `topics/procedimentos-legais.md`
