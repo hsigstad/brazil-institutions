@@ -523,6 +523,80 @@ threshold could work for cases just above/below R$10,000.
 
 ---
 
+## 19. FUNDEB complementação — federal top-up threshold
+
+- **Source**: FUNDEB (EC 108/2020, Lei 14.113/2020). Federal government
+  tops up state-level FUNDEB funds when per-student spending falls
+  below a national minimum.
+- **Mechanism**: states whose FUNDEB per-student value falls below the
+  national complementação threshold receive federal top-up. Creates a
+  kink/notch at the threshold.
+- **Identifies**: effect of incremental education funding on student
+  outcomes, teacher salaries, school infrastructure.
+- **Caveats**: threshold moves annually; state-level sorting around the
+  cutoff is possible via enrollment manipulation.
+- **Canonical papers**: Gordon & Vegas (2005); Kosec (2014 *JDE*).
+- **See**: [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §2.
+
+---
+
+## 20. Judicial random case assignment — judge fixed effects
+
+- **Source**: CNJ case-assignment rules. Cases distributed by electronic
+  *sorteio* within groups of varas of the same competence.
+- **Mechanism**: quasi-random assignment of cases to judges within the
+  same vara-group. Prevenção creates persistence within a case but
+  does not affect initial assignment.
+- **Identifies**: effect of judge identity/characteristics on case
+  outcomes (duration, settlement rates, sentencing).
+- **Caveats**: specialization structures (cível vs. criminal, fazenda
+  pública) create non-random sorting by subject matter. Must document
+  the specialization structure when claiming random assignment.
+  Titular/substituto splits (by case-number parity) add a second
+  layer of quasi-randomness within a single vara.
+- **Canonical papers**: Abrams et al. (2012); for Brazil: various TJSP
+  studies exploiting vara-level random assignment.
+- **See**: [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md) §5,
+  [`topics/justica-federal.md`](topics/justica-federal.md) §1,
+  [`topics/justica-trabalho.md`](topics/justica-trabalho.md) §2.
+
+---
+
+## 21. Quinto constitucional — OAB/MP vs career judges
+
+- **Source**: `CF.94`. 1/5 of seats in TJs, TRFs, and TRTs reserved
+  for lawyers (OAB) and MP members.
+- **Mechanism**: within the same tribunal, some judges entered via
+  concurso (career track) and others via quinto (OAB/MP track).
+  Different professional formation, age at appointment, and career
+  incentives.
+- **Identifies**: effect of judge background (career vs. external
+  appointment) on judicial behavior, voting patterns, case outcomes.
+- **Caveats**: quinto judges are selected (not random); need to account
+  for selection on observables. Chambers/turmas may not be randomly
+  composed.
+- **See**: [`topics/carreira-juizes.md`](topics/carreira-juizes.md) §2,
+  [`topics/juizes.md`](topics/juizes.md) §3.
+
+---
+
+## 22. Municipal emancipation wave (1988–2000)
+
+- **Source**: CF/88 Art. 18 §4 (original) gave states authority to
+  create new municipalities by state law. ~1,438 new municípios
+  created between 1988 and 2000 before EC 15/1996 tightened the rules.
+- **Mechanism**: creation of new municipalities in response to state-
+  level legislative incentives (typically FPM capture — smaller
+  municipalities get higher per-capita FPM due to the step function).
+- **Identifies**: effects of government fragmentation on public goods,
+  fiscal outcomes, political competition.
+- **Caveats**: municipality creation is endogenous to local political
+  interests; need instruments or boundary-based designs.
+- **Canonical papers**: Litschig (2012 *JDE*); Arvate et al.
+- **See**: [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) §2.
+
+---
+
 ## How to add an entry
 
 When you find or use a new natural experiment in Brazilian institutions,
