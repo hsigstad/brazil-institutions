@@ -22,67 +22,57 @@ Jato as an institutional phenomenon effectively ended by 2021, but much
 of the jurisprudence and procedural innovation it produced (colaboração
 premiada framework, acordos de leniência practice) remains in force.
 
-Built from general knowledge and fragments in `licitacoes.md`,
-`network/docs/institutions.md`, and the relevant statute texts.
-
 ---
 
 ## 1. Code-level crimes of corruption (Código Penal)
 
-The Código Penal (DL 2.848/1940) contains the core offenses. Most are in
+`CP` (DL 2.848/1940) contains the core offenses. Most are in
 Title XI, "Dos Crimes contra a Administração Pública".
 
 ### Crimes committed by public officials (Título XI Cap. I)
 
-- **Peculato** (Art. 312): appropriation, by a public official, of money,
+- **Peculato** (`CP.312`): appropriation, by a public official, of money,
   valuables, or movable property of which they have custody due to
-  office. Penalty: 2–12 years + fine. Includes *peculato-desvio*
-  (diverting to benefit a third party), *peculato-furto* (stealing while
-  having access), *peculato culposo* (negligent).
-- **Inserção de dados falsos em sistema de informações** (Art. 313-A):
-  inserting or altering data in public information systems. Penalty:
-  2–12 years + fine.
-- **Concussão** (Art. 316): demanding, for oneself or another, direct or
-  indirect undue advantage based on office. Penalty: 2–12 years + fine.
-- **Excesso de exação** (Art. 316 §1): demanding tax known to be undue.
+  office. Penalty: 2–12 years + fine. Includes *peculato-desvio*,
+  *peculato-furto*, *peculato culposo*.
+- **Inserção de dados falsos** (`CP.313-A`): inserting or altering data
+  in public information systems. Penalty: 2–12 years + fine.
+- **Concussão** (`CP.316`): demanding undue advantage based on office.
+  Penalty: 2–12 years + fine.
+- **Excesso de exação** (`CP.316.§1`): demanding tax known to be undue.
   Penalty: 3–8 years + fine.
-- **Corrupção passiva** (Art. 317): soliciting or receiving, for oneself
-  or another, direct or indirect advantage in exchange for acting or not
-  acting on an official matter. Penalty: 2–12 years + fine. **Core
-  corruption offense from the official's side.**
-- **Prevaricação** (Art. 319): acting or omitting to act against an
+- **Corrupção passiva** (`CP.317`): soliciting or receiving advantage in
+  exchange for acting or not acting on an official matter. Penalty:
+  2–12 years + fine. **Core corruption offense from the official's side.**
+- **Prevaricação** (`CP.319`): acting or omitting to act against an
   express legal duty, to satisfy personal interest or feeling. Penalty:
   3 months – 1 year + fine.
-- **Advocacia administrativa** (Art. 321): patronizing a private interest
+- **Advocacia administrativa** (`CP.321`): patronizing a private interest
   before the administration using the office. Penalty: 1–3 months + fine.
 
 ### Crimes committed by private parties against the administration (Título XI Cap. II)
 
-- **Corrupção ativa** (Art. 333): offering or promising undue advantage
+- **Corrupção ativa** (`CP.333`): offering or promising undue advantage
   to a public official to induce them to act or omit to act. Penalty:
   2–12 years + fine. **Core corruption offense from the briber's side.**
-- **Descaminho / contrabando** (Arts. 334, 334-A): evading import taxes
-  or importing prohibited goods.
-- **Tráfico de influência** (Art. 332): soliciting advantage in exchange
+- **Descaminho / contrabando** (`CP.334`, `CP.334-A`): evading import
+  taxes or importing prohibited goods.
+- **Tráfico de influência** (`CP.332`): soliciting advantage in exchange
   for influencing a public official. Penalty: 2–5 years + fine.
 
 ### Crimes relating to public tenders and contracts
 
-Historically in **Lei 8.666/1993 Arts. 89–98** (procurement fraud,
+Historically in `L8666.89`–`L8666.95` (procurement fraud,
 unlawful dispensation, obstruction of competition — see `licitacoes.md`
-§1). **Lei 14.133/2021** moved these into the Código Penal as
-**Arts. 337-E to 337-P**, reformulated and in some cases with stiffer
-penalties. For conduct before the transition to Lei 14.133, the old
-Lei 8.666 articles continue to apply.
-
-**Source**: [Código Penal](https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm);
-[Lei 14.133/2021](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2021/lei/l14133.htm).
+§1). `L14133` moved these into `CP` as `CP.337-E` to `CP.337-P`,
+reformulated and in some cases with stiffer penalties. For conduct
+before the transition, the old `L8666` articles continue to apply.
 
 ---
 
-## 2. Lei 9.613/1998 — Lavagem de dinheiro
+## 2. `LL` — Lavagem de dinheiro
 
-The money-laundering statute. Reformed substantially by **Lei 12.683/2012**,
+The money-laundering statute. Reformed substantially by `LL2`,
 which greatly expanded its scope.
 
 ### Pre-2012 regime
@@ -119,7 +109,7 @@ which greatly expanded its scope.
 - Institutional home has moved: historically at MF, briefly at MJ, now
   at BACEN (post-Lei 13.974/2020).
 
-**Source**: [Lei 9.613/1998](https://www.planalto.gov.br/ccivil_03/leis/l9613.htm); [Lei 12.683/2012](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12683.htm).
+**Source**: `LL`; `LL2`.
 
 ---
 
@@ -186,61 +176,55 @@ the Lava Jato prosecutorial strategy.
   fundamento apenas nas declarações de agente colaborador."
 - Corroboration by other evidence is required.
 
-**Source**: [Lei 12.850/2013](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12850.htm); [Lei 13.964/2019](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm).
+**Source**: `LCO`; `LPC`.
 
 ---
 
-## 4. Lei 8.137/1990 — Crimes contra a ordem econômica e tributária
+## 4. `LCOT` — Crimes contra a ordem econômica e tributária
 
-### Ordem tributária (Arts. 1–2)
+### Ordem tributária (`LCOT.1`–`LCOT.2`)
 
-- **Sonegação fiscal** (Art. 1): supressing or reducing tribute via
+- **Sonegação fiscal** (`LCOT.1`): supressing or reducing tribute via
   specific fraudulent means (omitting information, falsifying documents,
   altering records). Penalty: 2–5 years + fine.
-- Lesser forms (Art. 2): submitting false declarations, failing to
+- Lesser forms (`LCOT.2`): submitting false declarations, failing to
   collect, etc. Penalty: 6 months – 2 years + fine.
 - **Extinction of punishment by payment** (Lei 10.684/2003 Art. 9 §2):
   full payment of the tax debt extinguishes the criminal action, at any
   point before sentença. This creates a substantial enforcement gap:
   wealthy defendants routinely escape criminal liability by paying.
 
-### Ordem econômica (Art. 4)
+### Ordem econômica (`LCOT.4`)
 
 - **Cartel formation**, abuse of market power, obtaining undue
   competitive advantages via fraudulent means. Penalty: 2–5 years + fine.
-- This is the **criminal side of cartel conduct**; the administrative
-  side is Lei 12.529/2011 (CADE). The same conduct can be prosecuted in
-  parallel.
-- Cited in the CADE cartel-prosecution framework (see `licitacoes.md` §4).
-
-**Source**: [Lei 8.137/1990](https://www.planalto.gov.br/ccivil_03/leis/l8137.htm).
+- Criminal side of cartel conduct; the administrative side is `LCADE`.
+  See `licitacoes.md` §4.
 
 ---
 
-## 5. Lei 12.846/2013 — Lei Anticorrupção (corporate liability)
+## 5. `LAC` — Lei Anticorrupção (corporate liability)
 
-The corporate anti-corruption statute. Creates administrative and civil
-(not criminal) liability of **legal entities** for acts against public
-administration. A structural complement to the Código Penal (which
-targets individuals) and to improbidade (which targets public officials
-+ individuals).
+Creates administrative and civil (not criminal) liability of **legal
+entities** for acts against public administration. Structural complement
+to `CP` (individuals) and `LIA` (public officials + individuals).
 
-### Scope (Art. 1)
+### Scope (`LAC.1`)
 
 - Applies to **Brazilian and foreign legal entities** operating in
   Brazil, including groups, foundations, societies, consórcios.
 - Does **not** replace individual liability — firms and individuals can
   both be sanctioned.
 
-### Liability standard (Art. 2)
+### Liability standard (`LAC.2`)
 
 - **Objective liability** (*responsabilidade objetiva*): no need to
   prove intent or negligence by the firm. If the act was committed in
   the firm's interest or benefit, liability attaches.
-- This is a **major departure** from traditional Brazilian corporate
-  liability doctrine and gives the statute unusual reach.
+- **Major departure** from traditional Brazilian corporate liability
+  doctrine — gives the statute unusual reach.
 
-### Prohibited acts (Art. 5)
+### Prohibited acts (`LAC.5`)
 
 Non-exhaustive:
 
@@ -251,19 +235,19 @@ Non-exhaustive:
   competition, creating fictional bidders, defrauding contracts.
 - Hindering investigations by public agencies.
 
-Note the explicit overlap with **procurement fraud** (Art. 5 IV) and
-with **corrupção ativa** (Art. 5 I) — the Lei Anticorrupção creates an
-administrative parallel to those criminal offenses targeting firms.
+Explicit overlap with **procurement fraud** (`LAC.5.IV`) and
+**corrupção ativa** (`LAC.5.I`) — creates an administrative parallel to
+those criminal offenses targeting firms.
 
-### Sanctions (Arts. 6, 19)
+### Sanctions (`LAC.6`, `LAC.19`)
 
-**Administrative** (Art. 6, applied by CGU or competent body):
+**Administrative** (`LAC.6`, applied by CGU or competent body):
 
 - Fine: **0.1% to 20% of gross revenue** of the year preceding the
   administrative proceeding. Floor: the advantage obtained.
 - Public publication of the sanction.
 
-**Judicial** (Art. 19, applied by MP/AGU-proposed judicial action):
+**Judicial** (`LAC.19`, applied by MP/AGU-proposed judicial action):
 
 - Loss of assets, rights, and values representing the advantage.
 - Partial suspension of activities.
@@ -271,51 +255,49 @@ administrative parallel to those criminal offenses targeting firms.
 - Prohibition from receiving incentives, subsidies, or loans from
   public banks (1–5 years).
 
-### Acordo de leniência (Arts. 16–17)
+### Acordo de leniência (`LAC.16`–`LAC.17`)
 
 - CGU can negotiate leniency with the firm in exchange for cooperation.
 - **Requirements**: first to come forward; cessation of the illicit
   conduct; admission of participation; full cooperation with
   investigation.
-- **Benefits**: reduction of fine up to 2/3; avoidance of Art. 6 II–IV
-  sanctions; protection from certain Lei 8.666 sanctions (Art. 87 III,
-  IV).
-- The leniency regime is distinct from the criminal colaboração
-  premiada of Lei 12.850/2013; firms and individuals may need parallel
-  agreements.
+- **Benefits**: reduction of fine up to 2/3; avoidance of `LAC.6` II–IV
+  sanctions; protection from certain `L8666` sanctions.
+- Distinct from the criminal colaboração premiada of `LCO`; firms and
+  individuals may need parallel agreements.
 
-### CEIS and CNEP (Art. 23)
+### CEIS and CNEP (`LAC.23`)
 
 - **CEIS — Cadastro Nacional de Empresas Inidôneas e Suspensas**: public
   list of firms barred from public contracting.
 - **CNEP — Cadastro Nacional de Empresas Punidas**: public list of firms
-  sanctioned specifically under Lei 12.846.
+  sanctioned specifically under `LAC`.
 - Both maintained by CGU. See `cgu-controle-interno.md` §4.
 
-### Compliance as mitigation (Art. 7 VIII)
+### Compliance as mitigation (`LAC.7.VIII`)
 
 - Existence of an effective integrity program (*programa de compliance*)
   within the firm is a mitigating factor in sanction calculation.
 - **Decreto 8.420/2015** (regulatório) specifies the compliance-program
   elements that CGU considers effective.
 
-**Source**: [Lei 12.846/2013](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm); [Decreto 8.420/2015](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/d8420.htm).
+**Source**: `LAC`; Decreto 8.420/2015.
 
 ---
 
-## 6. Pacote Anticrime — Lei 13.964/2019
+## 6. `LPC` — Pacote Anticrime
 
 Omnibus criminal-procedure reform. Key provisions relevant to corruption
 prosecution:
 
-- **ANPP — Acordo de não persecução penal** (CPP Art. 28-A): formal
+- **ANPP — Acordo de não persecução penal** (`CPP.28-A`): formal
   settlement in criminal cases. Available when: penalty min <4 years,
   no violence/grave threat, first-time offender, admission of facts,
   reparation of damages, voluntary restitution. Alternative to formal
   prosecution; subject to judicial homologation. **Does not apply to
   organized crime or crimes committed by public officials in the
   exercise of office** — limiting its reach in the corruption context.
-- **Juiz das garantias** (CPP Art. 3-A): mandates separation of
+- **Juiz das garantias** (`CPP.3-A`): mandates separation of
   investigatory and trial judges. Implementation has been staggered and
   challenged in the STF; effective from 2024 after STF ruling in
   ADIs 6,298–6,305 (Aug 2023).
@@ -324,7 +306,7 @@ prosecution:
   "plea bargain" is structurally different from US-style — judges retain
   substantial review power.
 
-**Source**: [Lei 13.964/2019](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm).
+**Source**: `LPC`.
 
 ---
 
@@ -335,14 +317,14 @@ proceedings** across different regimes:
 
 | Regime | Statute | Forum | Target | Sanction type |
 |---|---|---|---|---|
-| Criminal corruption | CP + Lei 8.137 + CP Arts. 337-E ss. | Criminal court | Individuals | Prison, fine |
-| Money laundering | Lei 9.613/98 | Criminal court | Individuals | Prison, fine |
-| Organized crime | Lei 12.850/13 | Criminal court | Individuals | Prison, fine |
-| Improbidade | Lei 8.429/92 (+ 14.230/21) | Civil court (TJ/TRF) | Public officials + individuals | Civil sanctions |
-| Cartel (admin) | Lei 12.529/11 | CADE | Firms + individuals | Admin fines |
-| Corporate anti-corruption | Lei 12.846/13 | CGU + judicial | Firms | Admin + judicial fines, restrictions |
-| Fiscal | LC 101/2000 + LOA | TCU/TCE/TCM | Administrators | Débitos, multas |
-| Electoral ineligibility | LC 64/90 | Câmara/MP → TSE | Individuals | Ficha Limpa |
+| Criminal corruption | `CP` + `LCOT` + `CP.337-E` ss. | Criminal court | Individuals | Prison, fine |
+| Money laundering | `LL` | Criminal court | Individuals | Prison, fine |
+| Organized crime | `LCO` | Criminal court | Individuals | Prison, fine |
+| Improbidade | `LIA` (+ `L14230-2021`) | Civil court (TJ/TRF) | Public officials + individuals | Civil sanctions |
+| Cartel (admin) | `LCADE` | CADE | Firms + individuals | Admin fines |
+| Corporate anti-corruption | `LAC` | CGU + judicial | Firms | Admin + judicial fines, restrictions |
+| Fiscal | `LRF` + LOA | TCU/TCE/TCM | Administrators | Débitos, multas |
+| Electoral ineligibility | `LI` | Câmara/MP → TSE | Individuals | Ficha Limpa |
 
 **Ne bis in idem** does not prevent these parallel proceedings because
 they are not the same "matéria" legally — criminal vs. civil vs.
@@ -362,10 +344,10 @@ the civil-prosecution perspective.
 
 ## 8. Key jurisprudence
 
-- **STF HC 126.292 (2016)**: permitted execution of prison sentence
+- `HC126292` (2016): permitted execution of prison sentence
   after second-instance confirmation, before trânsito em julgado.
   Central to Lava Jato convictions.
-- **STF ADC 43/44/54 (Nov 2019)**: reversed HC 126.292; restored
+- `ADC43` (Nov 2019): reversed `HC126292`; restored
   requirement of trânsito em julgado for prison execution. Triggered
   release of high-profile defendants including former President Lula.
 - **STF, Lula vs. Moro cases (2021)**: recognized former judge Sergio
@@ -404,15 +386,7 @@ legacy shapes the current enforcement landscape:
 
 ## 10. Sources and cross-references
 
-**Statutes**:
-- [Código Penal (DL 2.848/1940)](https://www.planalto.gov.br/ccivil_03/decreto-lei/del2848compilado.htm)
-- [CPP (DL 3.689/1941)](https://www.planalto.gov.br/ccivil_03/decreto-lei/del3689compilado.htm)
-- [Lei 8.137/1990](https://www.planalto.gov.br/ccivil_03/leis/l8137.htm) — crimes econômicos
-- [Lei 9.613/1998](https://www.planalto.gov.br/ccivil_03/leis/l9613.htm) — lavagem
-- [Lei 12.683/2012](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2012/lei/l12683.htm) — lavagem reform
-- [Lei 12.850/2013](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12850.htm) — organização criminosa + colaboração premiada
-- [Lei 12.846/2013](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/lei/l12846.htm) — Lei Anticorrupção
-- [Lei 13.964/2019](https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2019/lei/l13964.htm) — Pacote Anticrime
+**Statutes**: `CP`, `CPP`, `LCOT`, `LL`, `LL2`, `LCO`, `LAC`, `LPC`.
 
 **Cross-references in this directory**:
 - `improbidade.md` — civil side, parallel regime

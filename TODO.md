@@ -27,13 +27,8 @@ adding; do not fabricate from memory.
   Effort: ~30 min (one YAML entry + one description block in
   `jurisprudencia-stf.md`).
 
-- **ADI 2797** — STF Plenário, decided 2005-09-15, Rel. Min.
-  Sepúlveda Pertence. Declared unconstitutional § 2º of CPP Art. 84
-  (introduced by Lei 10.628/2002), which had attempted to create a
-  foro privilegiado for improbidade actions. Reaffirmed by `Pet3240`
-  in 2018. Currently flagged inline in `topics/procedimentos-legais.md`,
-  `topics/improbidade.md`, and the `nota` field of `Pet3240` in
-  `jurisprudencia_index.yaml`. Effort: ~30 min.
+- ~~**ADI 2797**~~ — added to `jurisprudencia_index.yaml` and
+  `jurisprudencia-stf.md` (2026-04-16).
 
 ## Statute catalog — prose mentions to sweep
 
@@ -83,7 +78,7 @@ suggested priority (most CF/LRF citations first), not mandatory.
 - [x] `topics/tribunais-contas.md` — audited (2026-04-16), rules 1–9 complete
 - [x] `topics/ministerio-publico.md` — audited (2026-04-16), rules 1–9 complete
 - [x] `topics/licitacoes.md` — audited (2026-04-16), rules 1–9 complete
-- [ ] `topics/anticorrupcao-penal.md`
+- [x] `topics/anticorrupcao-penal.md` — audited (2026-04-16), rules 1–9 complete
 - [ ] `topics/procedimentos-legais.md`
 - [ ] `topics/prestacao-contas-eleitorais.md`
 - [ ] `topics/processo-eleitoral.md`
