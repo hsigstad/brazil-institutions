@@ -1,88 +1,67 @@
 # Funções essenciais à justiça
 
-## MP
+Constitutional framework for the four institutions classified by
+CF/88 Title IV Chapter IV as essential to the administration of
+justice: Ministério Público, Advocacia Pública, Advocacia (private),
+and Defensoria Pública. This file is a brief constitutional map;
+for **MP structure and operations**, see `ministerio-publico.md`.
+For **judicial guarantees** (parallel to MP guarantees), see
+`juizes.md`.
 
-### General
+**Topics / keywords**: funções essenciais, Ministério Público,
+Advocacia-Geral da União, AGU, procuradoria estadual, advocacia,
+OAB, Defensoria Pública, DPU, DPE, CF Art. 127–135, LOMAN.
 
-Regulated by
-[C127-130](lei/constituicao.org::*Seção%20I%20-%20DO%20MINISTÉRIO%20PÚBLICO)
-and [Lonmp](lei/lonmp.org)
+**Snapshot as of 2026**: constitutional structure stable since
+`EC45-2004` (Reforma do Judiciário). Defensoria Pública gained
+constitutional autonomy via `EC80-2014`.
 
-### Garantias
+---
 
-  - Vitaliciedade após de dois anos
-  - Inamovibilidade
-  - Irredutibilidade de subsídio
+## 1. Ministério Público (`CF.127`–`CF.130`)
 
-[CF128](lei/cf.org::*Art.%20128) §5 I
+Covered in detail in `ministerio-publico.md`. Constitutional
+highlights:
 
-### Vedações
+- **Mission** (`CF.127`): defense of legal order, democratic regime,
+  and *interesses sociais e individuais indisponíveis*.
+- **Guarantees** (`CF.128.§5.I`): vitaliciedade, inamovibilidade,
+  irredutibilidade — parallel to judicial guarantees.
+- **Vedações** (`CF.128.§5.II`): cannot practice advocacia, hold
+  other public office (except teaching), or engage in political
+  activity.
+- **PGR** (`CF.128.§1`): appointed by President, confirmed by Senate.
+- **PGJ** (`CF.128.§3`): appointed by governor from *lista tríplice*.
+- **MP de Contas** (`CF.130`): separate branch acting before audit
+  courts.
 
-  - Receber honorãrios ou custas processuais
-  - Exercer a advocacia
-  - Participar de sociedade comercial
-  - Exercer outra função pũblica, salve magistério
-  - Exercer atividade político
-  - Receber auxílios
+## 2. Advocacia Pública (`CF.131`–`CF.132`)
 
-[CF128](lei/cf.org::*Art.%20128) §5 II
+- **AGU — Advocacia-Geral da União** (`CF.131`): represents the União
+  judicially and extrajudicially; provides legal advice to the federal
+  Executivo. Headed by the Advogado-Geral da União, appointed by the
+  President (libre nomeação, no Senate confirmation).
+- **Procuradorias estaduais** (`CF.132`): each state has its own
+  *Procuradoria-Geral do Estado* representing the state in judicial
+  matters. Organized by state law; entry by concurso.
 
-### PG federal
+## 3. Advocacia privada (`CF.133`)
 
-1.  Nomeação
-    
-      - Presidente
-      - Integrante da carreira
-      - \> 30 anos
-      - Aprovação pela maioria do Senado
-      - Mandato: dois anos. Permitida a recondução
-    
-    [CF128](lei/cf.org::*Art.%20128) §1
-    
-    1.  Lista triplice
-        
-          - Feita pela Associação Nacional dos Procuradores da República
-          - Não existe previsão legal
-          - Mas desde o governo Lula, a manifestação da categoria tem
-            sido prestigiada
-              - Lula e Dilma Rousseff indicaram os mais votados, Michel
-                Temer indicou Dodge, que foi a segunda da lista.
+- The advocate is "indispensável à administração da justiça" and
+  "inviolável por seus atos e manifestações no exercício da profissão"
+  within legal limits.
+- Regulated by the **Estatuto da OAB** (`EOAB`, Lei 8.906/1994).
+- The *quinto constitucional* (`CF.94`) channels OAB members into 1/5
+  of tribunal seats.
 
-2.  Destituição
-    
-      - Iniciada do Presidente
-      - Autorização da maioria do Senado
-    
-    [CF128](lei/cf.org::*Art.%20128) §2
+## 4. Defensoria Pública (`CF.134`–`CF.135`)
 
-### PG estadual
-
-1.  Nomeação
-    
-      - Lista tríplice formado do MP
-      - Integrantes da carreira
-      - Nomeado pelo governador
-          - RJ: Obrigado a escolher entre lista triplice por lei
-            estadual
-      - Mandato: dois anos. Permitida a recondução
-    
-    [CF128](lei/cf.org::*Art.%20128) §3
-
-2.  Destituição
-    
-      - Maioria do Poder Legislativo
-    
-    [CF128](lei/cf.org::*Art.%20128) §4
-
-## Advocacia publica
-
-[C130-131](lei/constituicao.org::*Seção%20II%20-%20DA%20ADVOCACIA%20PÚBLICA)
-
-## Advocacia
-
-[C133](lei/constituicao.org::*Seção%20III%20-%20Da%20Advocacia)
-
-## Defensoria
-
-[C134-135](lei/constituicao.org::*Seção%20IV%20-%20Da%20Defensoria%20Pública)
-
+- **DPU — Defensoria Pública da União** and **DPE — Defensorias
+  Públicas Estaduais**: provide free legal assistance to those who
+  cannot afford private counsel.
+- `EC80-2014` gave the Defensoria constitutional autonomy (functional,
+  administrative, and budgetary), paralleling MP autonomy.
+- Entry by concurso público. Members enjoy functional independence.
+- **Legitimidade para ACP**: the Defensoria has standing to file ações
+  civis públicas on behalf of vulnerable populations (affirmed by
+  STF, ADI 3.943/2015).
