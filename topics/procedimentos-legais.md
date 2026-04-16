@@ -18,33 +18,12 @@ and a statute of limitations affects the party's procedural rights,
 although there is some controversy over their definition
 
 These limitation periods vary according to the subject matter of the
-claim, and can be up to a maximum of ten years (Article
-[205](lei/20.org::*Art%205), Civil Code)
+claim, and can be up to a maximum of ten years (`CC.205`).
 
-**From penal code:**
-
-Art. [109](lei/10.org::*Art%209). A prescrição, antes de transitar em
-julgado a sentença final, salvo o disposto no § 1o do art.
-[110](lei/11.org::*Art%200) deste Código, regula-se pelo máximo da pena
-privativa de liberdade cominada ao crime, verificando-se: (Redação dada
-pela Lei nº [12](lei/1.org::*Art%202).234, de
-[2010](lei/201.org::*Art%200)).
-
-I - em vinte anos, se o máximo da pena é superior a doze;
-
-II - em dezesseis anos, se o máximo da pena é superior a oito anos e não
-excede a doze;
-
-III - em doze anos, se o máximo da pena é superior a quatro anos e não
-excede a oito;
-
-IV - em oito anos, se o máximo da pena é superior a dois anos e não
-excede a quatro;
-
-V - em quatro anos, se o máximo da pena é igual a um ano ou, sendo
-superior, não excede a dois;
-
-VI - em 3 (três) anos, se o máximo da pena é inferior a 1 (um) ano.
+**Criminal prescription** (`CP.109`): graduated by maximum penalty —
+20 years (>12 yr penalty), 16 years (>8), 12 years (>4), 8 years (>2),
+4 years (≥1), 3 years (<1). See also `CP.110` (post-sentença
+prescription based on actual sentence imposed).
 
 ### Foro privilegiado
 
@@ -60,10 +39,9 @@ level provisions.
   Barroso, 10–1): improbidade administrativa is *civil*, so the foro
   provisions in `CF.102`/`CF.105` do not extend to it. Even authorities
   with criminal foro respond to improbidade actions in first instance.
-  Reaffirms **ADI 2797** (2005, Rel. Sepúlveda Pertence), which had
+  Reaffirms `ADI2797` (2005, Rel. Sepúlveda Pertence), which had
   already declared unconstitutional the legislative attempt in
-  Lei 10.628/2002 to create foro for improbidade via § 2º of CPP
-  Art. 84.
+  Lei 10.628/2002 to create foro for improbidade via `CPP.84` § 2º.
 - **Restricted to mandate-period crimes connected to the office.**
   In **AP 937 QO** (Plenário, 2018-05-03, Rel. Roberto Barroso),
   decided one week before Pet 3240, STF restricted criminal foro

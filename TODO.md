@@ -79,7 +79,7 @@ suggested priority (most CF/LRF citations first), not mandatory.
 - [x] `topics/ministerio-publico.md` — audited (2026-04-16), rules 1–9 complete
 - [x] `topics/licitacoes.md` — audited (2026-04-16), rules 1–9 complete
 - [x] `topics/anticorrupcao-penal.md` — audited (2026-04-16), rules 1–9 complete
-- [ ] `topics/procedimentos-legais.md`
+- [x] `topics/procedimentos-legais.md` — audited (2026-04-16), rules 1–9 complete
 - [ ] `topics/prestacao-contas-eleitorais.md`
 - [ ] `topics/processo-eleitoral.md`
 - [ ] `topics/partidos-e-sistema-eleitoral.md`
