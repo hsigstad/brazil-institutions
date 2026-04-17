@@ -36,7 +36,7 @@ The repository is organized into two flat tiers:
   `quasi-experimentos.md`, `data_pointers.md`), and YAML data indices
   (`leis_index.yaml`, `jurisprudencia_index.yaml`,
   `sumulas_vinculantes.yaml`, `sumulas_tse.yaml`).
-- **`topics/`**: all 26 topical files (one per institution / area).
+- **`topics/`**: all 32 topical files (one per institution / area).
   Cross-references between topical files are bare filenames
   (`licitacoes.md`, not `topics/licitacoes.md`) because they're
   siblings inside `topics/`. References from a topical file *out* to
@@ -303,184 +303,7 @@ Same policy as for statute citations:
   `jurisprudencia-stf.md`.** The YAML index is metadata, not a
   duplicate of the case description.
 
-## Citing Súmulas Vinculantes — backtick form for SVs
-
-The backtick grammar also accepts STF Súmulas Vinculantes by number,
-resolved against [`sumulas_vinculantes.yaml`](sumulas_vinculantes.yaml)
-through `cite.py`. The YAML stores the **verbatim enunciado** as
-published by STF, so a lookup returns the exact text — no
-paraphrasing, no transcription risk.
-
-### Form
-
-```
-`SV<number>`
-```
-
-```
-`SV14`    ← acesso amplo da defesa aos elementos de prova
-`SV13`    ← nepotismo
-`SV37`    ← atualização monetária / honorários
-`SV47`    ← natureza alimentar dos honorários
-`SV9`     ← (cancelada — verifique status antes de citar)
-```
-
-### What lookup returns
-
-- **numero** — the SV number
-- **enunciado** — the verbatim text as published by STF
-- **status** — `vigente`, `cancelada`, or `revogada`
-- **fonte** — canonical STF portal URL
-- **publicacao** — DOU/DJE date (currently null for most entries; not
-  auto-extracted from the STF portal — fill by hand when known)
-
-### Coverage and policy
-
-- All **63** STF Súmulas Vinculantes are present (the closed set as
-  of the 2026-04-09 scrape). SV 9 is the only one currently
-  `cancelada`.
-- Súmulas vinculantes are a closed, small, high-importance set —
-  binding under CF Art. 103-A. Worth bulk collection.
-- When STF cancels or revokes a SV, update the YAML entry's `status`
-  field and add a `nota` line explaining the change. Do not delete the
-  entry — superseded SVs remain citable for historical analysis.
-
-## Citing Súmulas TSE — backtick form for STSE
-
-The bracket grammar also accepts TSE (Tribunal Superior Eleitoral)
-súmulas by number, resolved against [`sumulas_tse.yaml`](sumulas_tse.yaml).
-TSE súmulas are non-binding (the electoral justice system has no
-equivalent of súmula vinculante) but highly persuasive — TSE is the
-final word on electoral law and lower electoral courts treat its
-súmulas as the operational rule.
-
-### Form
-
-```
-`STSE<number>`
-```
-
-```
-`STSE38`    ← litisconsórcio passivo necessário em ações majoritárias
-`STSE47`    ← inelegibilidade superveniente (RCED)
-`STSE62`    ← limites do pedido pelos fatos imputados
-`STSE30`    ← dissídio jurisprudencial conforme TSE
-`STSE1`     ← (cancelada — verifique status antes de citar)
-```
-
-The `S` prefix mirrors `SV` (Súmula Vinculante), and the court code
-follows. STJ uses `SSTJ` (see below); if we add TST, it'll use `STST`
-on the same pattern.
-
-### What lookup returns
-
-- **numero** — the TSE súmula number
-- **enunciado** — the verbatim text as published by TSE
-- **status** — `vigente`, `cancelada`, `revogada`, or `alterada`
-- **fonte** — canonical TSE listing URL (TSE doesn't expose stable
-  per-súmula URLs, so all entries point to the listing index)
-
-### Coverage and policy
-
-- All **72** numbered TSE súmulas are present (scrape of 2026-04-09).
-  7 are currently `cancelada` (1, 7, 8, 14, 16, 17, 21).
-- TSE súmulas are bulk-collected because the set is small (~72),
-  the topical surface area covered by this repo is heavy in electoral
-  law, and the verbatim text is short and stable.
-- **STJ súmulas** are added on demand to
-  [`sumulas_stj.yaml`](sumulas_stj.yaml) and resolved via `SSTJ<number>`
-  (e.g., `SSTJ359`, `SSTJ385`, `SSTJ404`). Currently 3 entries. Not
-  bulk-collected — add when a topical or project file cites one.
-- **TST súmulas** are bulk-collected in
-  [`sumulas_tst.yaml`](sumulas_tst.yaml) and resolved via `STST<number>`
-  (e.g., `STST331`, `STST1`). All 463 numbered TST súmulas present
-  (scrape of 2026-04-16 via Playwright). 117 vigente, 161 cancelada,
-  185 alterada.
-- **Ordinary STF súmulas** are *not* yet collected.
-  When a topical file cites one, add an entry to a future
-  `sumulas_stf.yaml` by hand.
-- When TSE cancels or revokes a súmula, re-run the scraper — TSE marks
-  cancellations directly on the listing page, so the status flips
-  automatically. Do not delete the entry — superseded súmulas remain
-  citable for historical analysis.
-
-## Citing Súmulas STJ — backtick form for SSTJ
-
-STJ (Superior Tribunal de Justiça) súmulas are resolved against
-[`sumulas_stj.yaml`](sumulas_stj.yaml). Unlike SVs (bulk-collected) and
-TSE súmulas (bulk-collected), STJ súmulas are added **on demand** when
-cited by a topical file or project-level `institutions.md`.
-
-### Form
-
-```
-`SSTJ<number>`
-```
-
-```
-`SSTJ359`   ← notificação pelo órgão mantenedor antes da inscrição
-`SSTJ385`   ← dano moral x inscrição preexistente legítima
-`SSTJ404`   ← AR dispensável na carta de comunicação
-```
-
-### What lookup returns
-
-- **numero** — the STJ súmula number
-- **enunciado** — the verbatim text as published by STJ
-- **status** — `vigente`, `cancelada`, `revogada`, or `superada`
-- **aprovada** — approval date (YYYY-MM-DD)
-- **fonte** — canonical URL
-- **nota** — cross-references and context
-
-### Coverage and policy
-
-- Currently **3** entries (359, 385, 404 — all consumer-credit-registry
-  súmulas cited by `serasa/docs/institutions.md`).
-- Add entries when a topical or project file cites an STJ súmula. Do
-  not bulk-collect — STJ has ~700 súmulas and most are irrelevant.
-- When adding: copy the verbatim enunciado from the STJ portal, set
-  status, and include the approval date and a fonte URL.
-
-## Citing Súmulas TST — backtick form for STST
-
-TST (Tribunal Superior do Trabalho) súmulas are bulk-collected in
-[`sumulas_tst.yaml`](sumulas_tst.yaml) and resolved via `STST<number>`.
-TST súmulas are non-binding but operationally authoritative in the
-Justiça do Trabalho — labor courts treat them as the working rule.
-
-### Form
-
-```
-`STST<number>`
-```
-
-```
-`STST331`   ← terceirização (the most-cited labor súmula)
-`STST1`     ← prazo judicial (sexta-feira)
-`STST443`   ← dispensa discriminatória
-`STST2`     ← (cancelada — verifique status antes de citar)
-```
-
-### What lookup returns
-
-- **numero** — the TST súmula number
-- **titulo** — short title
-- **enunciado** — the verbatim text
-- **status** — `vigente`, `cancelada`, `alterada`, `convertida`,
-  `incorporada`
-- **publicacao** — publication date
-- **historico** — amendment history
-- **precedentes** — count of underlying precedente decisions
-
-### Coverage and policy
-
-- All **463** numbered TST súmulas present (scrape of 2026-04-16 via
-  Playwright). 117 vigente, 161 cancelada, 185 alterada.
-- Scraper uses Playwright (browser automation) because TST's nginx
-  blocks non-browser API access. Re-run with
-  `python3 tools/tst_scraper/scraper.py all`.
-
-### When to add a new case
+### When to add a new STF case
 
 When a topical file cites a previously-unseen STF case:
 
@@ -492,6 +315,64 @@ When a topical file cites a previously-unseen STF case:
    `status: superada` and fill `superado_por`.
 4. Cross-reference both ways: `discussed_in` in the YAML, and a
    `Cited in:` line in `jurisprudencia-stf.md`.
+
+## Citing súmulas — backtick form for court digests
+
+Súmulas (condensed doctrinal statements) from four courts resolve
+through `cite.py` against dedicated YAML files. Grammar is uniform:
+`` `S<CourtCode><number>` ``. Each YAML stores the **verbatim
+enunciado** as published by the court — no paraphrasing, no
+transcription risk. Only STF Súmulas Vinculantes bind (`CF.103-A`);
+the others are formally non-binding but treated as operational rules
+by lower courts in their respective systems.
+
+| Prefix | Source YAML | Court | Coverage (as of 2026-04-16) | Collection |
+|---|---|---|---|---|
+| `SV`   | `sumulas_vinculantes.yaml` | STF (vinculantes) | 63 total; 1 cancelada (SV 9) | Bulk |
+| `STSE` | `sumulas_tse.yaml`         | TSE (eleitoral)   | 72 total; 7 cancelada | Bulk |
+| `STST` | `sumulas_tst.yaml`         | TST (trabalho)    | 463 total (117 vigente / 161 cancelada / 185 alterada) | Bulk (Playwright) |
+| `SSTJ` | `sumulas_stj.yaml`         | STJ (comum)       | 3 entries (on-demand only) | On-demand |
+
+Possible `status` values: `vigente`, `cancelada`, `revogada`,
+`alterada` (TSE, TST), `superada` (STJ), `convertida`, `incorporada`
+(TST).
+
+### Examples
+
+```
+`SV14`      ← acesso amplo da defesa aos elementos de prova
+`SV13`      ← nepotismo
+`STSE38`    ← litisconsórcio passivo em ações majoritárias
+`STSE47`    ← inelegibilidade superveniente (RCED)
+`STST331`   ← terceirização (the most-cited labor súmula)
+`SSTJ359`   ← notificação antes da inscrição (consumer credit)
+`SV9`       ← (cancelada — verifique status antes de citar)
+```
+
+### Lookup fields
+
+All four YAMLs expose `numero`, `enunciado`, `status`, `fonte`.
+Additional fields vary: SSTJ adds `aprovada` and `nota`; STST adds
+`titulo`, `publicacao`, `historico`, `precedentes`; SV has a
+`publicacao` slot (mostly null — fill by hand when known). TSE's
+`fonte` is the listing index, not per-súmula (TSE doesn't expose
+stable per-súmula URLs).
+
+### Collection policy
+
+- **SV, STSE, STST bulk-collected.** Small or manageable closed sets,
+  high relevance to topical coverage. Re-run the respective scrapers
+  to refresh status. The TST scraper uses Playwright because nginx
+  blocks non-browser API access (`python3 tools/tst_scraper/scraper.py all`).
+- **STJ on-demand.** STJ has ~700 súmulas and most are irrelevant.
+  Add to `sumulas_stj.yaml` only when a topical or project file cites
+  one; copy the verbatim enunciado from the STJ portal and include
+  approval date + fonte URL.
+- **Ordinary STF súmulas** are not yet collected. Add to a future
+  `sumulas_stf.yaml` by hand when first cited.
+- When a court cancels or revokes a súmula, update `status` and add a
+  `nota` — do **not** delete. Superseded súmulas remain citable for
+  historical analysis.
 
 ## What belongs in a topical file
 
@@ -530,7 +411,7 @@ body is whatever the substance demands.
 - **Substantive law specific to this topic.** Structure of the
   statute, key articles, vintage-anchored citations via `cite.py`.
   Characterize what's there and explain *why it matters*; do not
-  paraphrase the statute text — that's what `artigos.db` is for.
+  paraphrase the statute text — that's what `institutions.db` is for.
 - **Jurisprudence specific to this topic.** STF/TSE/STJ cases that
   shape interpretation. Use the backtick form (`` `Tema1199` ``) when
   the case is in `jurisprudencia_index.yaml`; describe the canonical
@@ -585,181 +466,15 @@ body is whatever the substance demands.
 
 ### When auditing an existing topical file
 
-These rules apply when an agent (sandboxed or otherwise) is asked to
-*bring an existing file into compliance* with the content rules
-above. They are stricter than the rules for normal edits, because
-audits run with less human oversight per change and the failure modes
-are subtle.
-
-1. **Verify every backtick citation before adding it.**
-   For any new `` `LIA.10` ``, `` `Tema1199` ``, etc. you write into
-   the file, run `tools/leis_artigos/cite.py 'X'` first and confirm
-   it returns a row. A citation **resolves** if `cite.py` exits 0
-   and prints at least one `--- <header>` / text-body pair. A
-   citation **fails** if `cite.py` exits non-zero or prints
-   "No rows match" — revert to prose mention. If it doesn't
-   resolve, use prose mention instead — do **not** invent the
-   citation, do **not** add a speculative entry to
-   `jurisprudencia_index.yaml` or `leis_index.yaml`, and do **not**
-   modify the YAML indices in any way during a topical audit.
-
-2. **Audit ≠ expand scope.**
-   The goal is to bring the file into compliance with the rules,
-   not to add new substantive content the rules now permit. If you
-   feel an audited file is missing a fact, a case, or a statute,
-   leave a `<!-- TODO: consider adding X -->` comment and report it.
-   Do not add the content yourself.
-
-3. **Preserve voice; prefer terse.**
-   Match the existing register: terse, citation-dense,
-   research-design-framed, Portuguese where translation loses
-   meaning. Do **not** rewrite content that already passes the
-   rules just to use different wording. Reword only sections you
-   are restructuring, fixing, or tightening per rule 8.
-
-4. **Apply the load-bearing test alongside the deletion test.**
-   The deletion test catches generic procedure that doesn't belong
-   in a topical file. But before deleting any section that fails
-   it, ask the second question: *does this carry a research-design
-   hook?* — a ratio, a threshold, a timing fact, a selection
-   effect, a structural number that matters for empirical work.
-   If yes, keep it even if it looks like statute paraphrase.
-   Example: `LIA.12`'s 14/12/4-year sanction structure paraphrases
-   the statute, but the ratio is the load-bearing fact that
-   determines which category the MP charges under, so it stays.
-
-5. **Flag factual uncertainty; do not silently rewrite.**
-   If a claim in the existing file looks wrong but you cannot
-   verify it against `cite.py` (statutes), `jurisprudencia_index.yaml`
-   (cases), or a primary source you can fetch, leave a
-   `<!-- TODO: verify — original claim was X -->` marker and skip
-   the rewrite. Do **not** rewrite from memory; do **not** delete
-   on suspicion alone. The point of these files is correctness;
-   silently introduced errors are worse than uncited claims.
-
-6. **Topical audits do not modify other files** (with one
-   exception). When auditing `topics/X.md`, do not edit `CLAUDE.md`,
-   `README.md`, `siglas.md`, `glossario.md`, `jurisprudencia-stf.md`,
-   any YAML index, or any other topical file. If you find a needed
-   update elsewhere (e.g., a stub in `procedimentos-legais.md` is out
-   of date, or `jurisprudencia_index.yaml` is missing a case the
-   audited file references), flag it in your report and stop.
-   Cross-file changes need the human to coordinate.
-   **Exception:** after committing the audit, mark the file `[x]` in
-   `TODO.md` §"Audit progress" — this is bookkeeping, not a
-   substantive change. Include it in the same commit.
-
-7. **One file per commit.**
-   Each topical-file audit produces exactly one commit. The commit
-   message names the file, summarizes which rules were applied
-   (deletion test → which sections cut; verification → which
-   citations checked; etc.), and lists any TODO markers added.
-   Don't bundle multiple files. The user reviews each diff
-   independently, and the cost of a bad audit should never exceed
-   one file's worth of damage. Multiple files may be audited in a
-   single session, but always commit one file before starting the
-   next. Between files, verify the previous commit is clean
-   (`git status` shows no uncommitted changes) before proceeding.
-   Stop after 5 files or when quality visibly degrades (e.g.,
-   post-edit verification shows regressions) — whichever comes
-   first.
-
-8. **Tighten prose.**
-   The primary audience is an LLM agent, not a human reading for
-   narrative flow. Apply these cuts:
-   - **Preambles that restate the heading.** If a section heading
-     says "Contas de governo vs. contas de gestão", the first
-     sentence should not say "The distinction between contas de
-     governo and contas de gestão matters because..." — start with
-     the substance.
-   - **Worked examples of a single municipality / case history**
-     that illustrate a general point but don't carry a
-     research-design hook. One-line mentions are fine; multi-paragraph
-     narratives of how Pedralva/MG reformed its Lei Orgânica are not.
-   - **Statements of the obvious for the audience.** "For empirical
-     work, the legal rule is at best a noisy proxy" — an agent doing
-     research design already knows this.
-   - **Redundant restatement.** If a table and the surrounding prose
-     say the same thing, keep whichever is more compact and cut the
-     other.
-   - **External links that duplicate a cataloged citation.** If `LRF`
-     resolves via `cite.py`, a trailing planalto.gov.br link to the
-     same law is clutter.
-   The goal is to tighten each file without losing any load-bearing
-   content. When in doubt whether something is redundant or
-   load-bearing, keep it — false negatives (leaving clutter) are
-   cheaper than false positives (deleting substance). Do not set a
-   percentage-reduction target; some files are already tight and
-   forcing cuts leads to substance loss.
-
-9. **Convert prose statute references to backtick form.**
-   When a file mentions a statute in prose (e.g., "LRF Arts. 19–20",
-   "CF Art. 31 §2") and the backtick form resolves via `cite.py`,
-   convert it (e.g., `` `LRF.19` ``, `` `CF.31.§2` ``). Run `cite.py`
-   to confirm resolution before converting — do not guess. If the
-   citation doesn't resolve (uncataloged law, missing article), leave
-   the prose mention as-is.
-
-These guard rails are a contract: if an audit run produces output
-that breaks any of them, the audit failed and the diff should be
-discarded, not partially applied.
-
-### Audit workflow — practical steps
-
-This section describes the concrete steps an agent should follow when
-running a topical-file audit. The rules above (1–9) define *what* to
-do; this section defines *how*.
-
-1. **Pick the file.** Check `TODO.md` §"Audit progress" for the next
-   unaudited file (process in the order listed). If all are marked
-   done, stop. If the file is under ~50 lines, it's a stub: run
-   `--find-in`, convert any citations that resolve, and move on —
-   don't try to tighten a file that has nothing to tighten.
-
-2. **Baseline check.** Run
-   `python3 tools/leis_artigos/cite.py --find-in topics/X.md` to
-   list every citation the file already contains and whether it
-   resolves. Note any that fail — these need investigation (typo?
-   uncataloged law?) but do **not** delete them.
-
-3. **Read the file end-to-end.** Identify sections to tighten
-   (rule 8), prose statute/case references to convert (rule 9),
-   and content that fails the deletion test (rule 4).
-
-4. **For each new backtick citation you write**, run
-   `python3 tools/leis_artigos/cite.py '<citation>'` and confirm it
-   returns a row. Do this *before* editing, not after. Calling
-   `cite.py` many times per file is expected and fine (it's a local
-   SQLite lookup). Do not batch or skip verification to save time.
-
-5. **Scope check for large files.** If `--find-in` (step 2) reports
-   more than ~40 prose citations to convert, prioritize the
-   most-cited laws (CF, LRF, LIA, LE, CP, etc.) and leave
-   low-frequency or ambiguous conversions for a second pass. Flag
-   skipped conversions in the report. The goal is reliable
-   conversions, not exhaustive ones.
-
-6. **Edit the file.** Apply rules 1–9. One pass, all changes in one
-   commit.
-
-7. **Post-edit verification.** Run `--find-in` again on the edited
-   file. Every citation that resolved before should still resolve;
-   every new citation should resolve. If any new citation fails,
-   revert that specific citation to prose (targeted edit, not a
-   whole-file revert) and note the regression in the report.
-
-8. **Commit.** One file, one commit. The commit message should
-   summarize: which rules were applied, approximate line reduction,
-   any TODO markers added, any cross-file issues flagged.
-
-9. **Report.** After committing, output a structured summary:
-   - **File**: `topics/X.md`
-   - **Lines**: before → after (reduction %)
-   - **Citations converted**: list of prose → backtick conversions
-   - **Citations that didn't resolve**: list (left as prose)
-   - **TODOs added**: list
-   - **Cross-file issues**: anything that needs human coordination
-     (missing YAML entries, stale cross-references, etc.)
+Audits — bringing an existing `topics/X.md` into compliance with the
+content rules above — run under stricter guardrails than normal
+edits. **Before starting a topical-file audit, read
+[`AUDITING.md`](AUDITING.md).** It covers the nine audit-specific
+rules (citation verification, preserve voice, one file per commit,
+etc.) and the practical workflow (baseline `--find-in` check,
+per-citation verification, post-edit regression check, structured
+report). The rules are a contract — breaking any of them means the
+audit failed and the diff should be discarded, not partially applied.
 
 ## Things to avoid
 
