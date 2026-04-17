@@ -357,11 +357,33 @@ def parse_annotations(text: str) -> list[Annotation]:
         numero = m.group('numero')
         if numero:
             numero = numero.replace('.', '')
+        ano = m.group('ano')
+        # Fallback: the main regex anchors <ano> right after "de ", so it
+        # fails on variants seen in planalto HTML — "de 4 de junho de
+        # 2024", "de 19.1.1982", "de 10.12.97" (2-digit), "de 15/08/95:"
+        # (slashes), "de1997" (no space), "de 2 019" / "de 2.010" (split
+        # year from HTML whitespace glitches), "de 1º . 6 .19 7 6"
+        # (extreme whitespace). Rescue by concatenating all remaining
+        # digits after stripping the lei numero, then taking the last 4
+        # as a 4-digit year (if 1800–2100) or the last 2 as a 2-digit
+        # year (1940–1999 / 2000–2039).
+        if not ano:
+            text = m.group(0)
+            if numero:
+                if len(numero) >= 4:
+                    text = text.replace(f'{numero[:-3]}.{numero[-3:]}', '', 1)
+                text = text.replace(numero, '', 1)
+            digits = re.sub(r'\D', '', text)
+            if len(digits) >= 4 and 1800 <= int(digits[-4:]) <= 2100:
+                ano = digits[-4:]
+            elif len(digits) >= 2:
+                yy = int(digits[-2:])
+                ano = str(1900 + yy) if yy >= 40 else str(2000 + yy)
         out.append(Annotation(
             kind=_annotation_kind(m.group('kind')),
             lei_tipo=_normalize_lei_tipo(m.group('lei_tipo')),
             lei_numero=numero,
-            lei_ano=m.group('ano'),
+            lei_ano=ano,
             raw_text=m.group(0),
         ))
     return out

@@ -113,11 +113,15 @@ def find_planalto_lei(
 
 
 def _catalog_fonte_id(entry) -> str:
-    """Build the original fonte_id for a catalog entry."""
+    """Build the original fonte_id for a catalog entry.
+
+    Catalog entries can be 4-, 5-, or 6-tuples (see build.py).
+    We only need (numero, ano, tipo) — positions 1, 2, and (optionally) 4.
+    """
     if len(entry) == 4:
         _, numero, ano, _ = entry
         return f'L{numero}-{ano}'
-    _, numero, ano, _, tipo = entry
+    numero, ano, tipo = entry[1], entry[2], entry[4]
     prefix_map = {
         'lei': 'L', 'lei_complementar': 'LC',
         'medida_provisoria': 'MP', 'decreto_lei': 'DL',
