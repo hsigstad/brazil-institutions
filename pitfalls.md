@@ -390,9 +390,9 @@ the "❌" forms below, switch to the corresponding "✓" form.
 ### ❌ "An empty result from cite.py means the law doesn't exist"
 ### ✓ It may mean the law isn't cataloged, or the path is wrong
 
-- Only ~37 laws are currently cataloged in `artigos.db`. Many
-  important laws (CF, CLT, EC amendments, sectoral statutes) are
-  not yet in the article DB. Their citations parse but don't resolve.
+- Only ~50 laws are currently cataloged in `institutions.db`. Many
+  important laws (CLT, EC amendments, sectoral statutes) are not yet
+  in the article DB. Their citations parse but don't resolve.
 - An empty result for a cataloged law means either (a) the path
   doesn't exist in that article (try the article without the path
   to see what's available), (b) the law's parser couldn't extract

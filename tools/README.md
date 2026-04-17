@@ -40,7 +40,7 @@ table where each row is one **leaf** of an article (caput,
 parágrafo, inciso, alínea, item) with its current text, amendment
 history, and date-versioned tracking.
 
-Currently catalogs 37 federal laws (as of 2026), including LIA,
+Currently catalogs 52 federal laws (as of 2026), including LIA,
 L8666, L14133, LE, CC, CPC, CPP, CE, LRF, LFL, LAI, LGPD, LAC, LCO,
 LP, LPP, and many others. See `leis_artigos/README.md` for the full
 catalog and lookup instructions.
@@ -54,6 +54,9 @@ catalog and lookup instructions.
   + path, with date-versioned and source-versioned options.
 - `build.py` — rebuilds `artigos.db` from the planalto raw scrape.
   Maintainer-only; needs `planalto_legislacao.db`.
+- `build_institutions.py` — merges `artigos.db`, `cf_stf_anotada.db`,
+  and `ce_anotado.db` into the distributable `institutions.db`
+  (the release asset).
 - `parser.py` — parses planalto consolidated HTML into structured
   leaves. Used by `build.py`.
 - `amendments_parser.py`, `build_amendments.py`,
@@ -67,23 +70,25 @@ catalog and lookup instructions.
 Downloads federal legislation from planalto.gov.br into
 `planalto_legislacao.db` (a SQLite mirror). The article DB
 (`leis_artigos/`) is built from this. Maintainer-only; the
-prebuilt `artigos.db` is shipped via Dropbox so most users
-don't need to scrape.
+prebuilt `institutions.db` is shipped as a GitHub release asset so
+most users don't need to scrape.
 
 ## Running the tools
 
-The article DB lives outside the repo by convention:
+Databases live outside the repo by convention:
 
 ```
-~/research/data/planalto/planalto_legislacao.db   # raw planalto scrape
-~/research/data/lei/artigos.db                    # parsed article-level DB
+~/research/data/institutions.db                   # consolidated release DB (cite.py reads this)
+~/research/data/lei/artigos.db                    # intermediate article-level DB (build.py output)
+~/research/data/planalto/planalto_legislacao.db   # raw planalto scrape (build input)
 ```
 
 Override with environment variables:
 
 ```bash
+export INSTITUTIONS_DB=/path/to/institutions.db    # used by cite.py
+export ARTIGOS_DB=/path/to/artigos.db              # used by build.py, build_amendments.py, lookup.py
 export PLANALTO_DB=/path/to/planalto_legislacao.db
-export ARTIGOS_DB=/path/to/artigos.db
 ```
 
 Or pass `--db` / `--artigos-db` / `--planalto-db` on the CLI.
@@ -93,10 +98,12 @@ Or pass `--db` / `--artigos-db` / `--planalto-db` on the CLI.
 **End user** (you have the institutions reference and want to look
 up exact text):
 
-1. Download `artigos.db` from the Dropbox link in
-   `leis_artigos/README.md` and place at `~/research/data/lei/artigos.db`.
-2. Use `lookup.py` or `cite.py` to query.
-3. You do **not** need `planalto_scraper/` or `build.py`.
+1. Download `institutions.db` from the latest
+   [GitHub release](https://github.com/hsigstad/brazil-institutions/releases)
+   and place at `~/research/data/institutions.db`.
+2. Use `cite.py` to query.
+3. You do **not** need `planalto_scraper/`, `build.py`, or the
+   individual scraper DBs.
 
 **Maintainer** (you want to add laws to the catalog or fix parser
 bugs):
@@ -108,6 +115,9 @@ bugs):
 3. Run `leis_artigos/build.py` to rebuild `artigos.db`.
 4. Run `leis_artigos/build_amendments.py` to populate the
    `amendment` table.
+5. Run `leis_artigos/build_institutions.py` to merge
+   `artigos.db` + `cf_stf_anotada.db` + `ce_anotado.db` into
+   `institutions.db`, and upload to a new release.
 
 ## Why these tools live in this repo
 
@@ -118,6 +128,8 @@ discoverable from the same place. Shipping the code here keeps the
 contract local: the format used in the prose is the format the tools
 parse.
 
-The actual database files (`artigos.db`, `planalto_legislacao.db`)
-do **not** live in this repo — they're build artifacts, distributed
-separately via Dropbox.
+The actual database files (`institutions.db`, `artigos.db`,
+`planalto_legislacao.db`) do **not** live in this repo — they're
+build artifacts. `institutions.db` is distributed via GitHub
+releases; the intermediate build artifacts stay on the maintainer's
+machine.

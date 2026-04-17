@@ -266,8 +266,9 @@ jurisprudence cross-references:
 - **STF "A Constituição e o Supremo"** — article-by-article annotated
   CF with STF decisions (ADIs, repercussão geral, julgados correlatos).
   Clean JSON API. **Scraped** into `tools/stf_constituicao/cf_stf_anotada.db`
-  (1,758 annotations, 183 articles, 1,655 case citations). Integrated
-  with `cite.py 'CF.109' --annotations`.
+  (1,758 annotations, 183 articles, 1,655 case citations) and merged into
+  `institutions.db` as `cf_stf_anotacao`. Integrated with
+  `cite.py 'CF.109' --annotations`.
   **URL**: <https://constituicao.stf.jus.br/>.
 
 **Not freely available**: annotated CPC, CPP, CP, CLT, or LIA exist
@@ -292,7 +293,7 @@ notes only.
   comarca creation decrees (Decreto 9.775/1938, Lei 1.940/1952) are
   available via the ALESP legislative archive.
 - **See**: [`topics/justica-estadual.md`](topics/justica-estadual.md),
-  [`topics/organizacao-historica.md`](topics/organizacao-historica.md) §4.
+  [`topics/organizacao-judiciario.md`](topics/organizacao-judiciario.md) §4.
 
 ---
 
@@ -587,8 +588,10 @@ notes only.
 - **Useful for**: foundational firm-level data; linkable to
   procurement (Comprasnet, Audesp), employment (RAIS), and political
   donations (TSE).
-- **See**: [`pipelines/cnpj`](../../pipelines/cnpj/) for one
-  community-maintained snapshotting effort.
+- **Snapshots**: for a historical CNPJ state rather than the current
+  registry, community mirrors of the Receita Federal bulk downloads
+  are the typical path — search GitHub for "cnpj brasil" to find
+  current maintainers.
 
 ### Receita Federal — sócios (corporate ownership)
 

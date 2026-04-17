@@ -15,8 +15,6 @@ and related topics.
   article; TSE jurisprudence mapped to each Electoral Code article
 - **463 TST súmulas**, 72 TSE súmulas, 63 STF Súmulas Vinculantes,
   3 STJ súmulas — all resolvable via cite.py
-- **22 quasi-experiment designs** cataloged from the Brazilian
-  empirical literature
 - **Common-pitfalls list** so you don't make the mistakes everyone
   makes about Brazilian institutions
 
@@ -50,9 +48,14 @@ python3 tools/leis_artigos/cite.py 'CE.35' --annotations
 python3 tools/leis_artigos/cite.py --find-in topics/improbidade.md
 ```
 
-The citation resolver works without the statute-text database (which
-is built separately via the Planalto scraper). Jurisprudence, súmula,
-and annotation lookups use YAML/SQLite files shipped in this repo.
+Statute and annotation lookups (`LIA.9`, `CF.37 --annotations`) need
+`institutions.db` — the consolidated SQLite database bundling statute
+text + STF/TSE annotations. Download it from the latest
+[release](https://github.com/hsigstad/brazil-institutions/releases)
+and place it at `~/research/data/institutions.db`, or set the
+`INSTITUTIONS_DB` env var. Jurisprudence and súmula lookups (`Tema1199`,
+`SV14`, `STSE38`) work without the database — they use YAML indices
+shipped in the repo.
 
 ## Using with LLM agents
 

@@ -14,10 +14,10 @@ for the citation format.
 
 If you just want to look up exact statutory text:
 
-1. **Download the database** from Dropbox:
-   <https://www.dropbox.com/scl/fi/0hgxqa6eh19ya7cz4qzys/artigos.db?rlkey=0xdsfoh9kzt5he3tqlyt5qyob&dl=1>
-2. **Place at the default location**: `~/research/data/lei/artigos.db`
-   (or set `ARTIGOS_DB` env var to your chosen path).
+1. **Download `institutions.db`** from the latest
+   [GitHub release](https://github.com/hsigstad/brazil-institutions/releases).
+2. **Place at the default location**: `~/research/data/institutions.db`
+   (or set `INSTITUTIONS_DB` env var to your chosen path).
 3. **Query**:
 
    ```bash
@@ -26,7 +26,8 @@ If you just want to look up exact statutory text:
    python3 cite.py '`LE.11.§10@2024-12-31`'
    python3 cite.py '`LIA.10 from:L14230-2021`'
 
-   # Or use the lower-level lookup CLI
+   # Or use the lower-level lookup CLI (still reads from the
+   # intermediate artigos.db — see "Maintainer" below)
    python3 lookup.py LIA 9
    python3 lookup.py LIA 9 --path II
    python3 lookup.py LE 36-A --as-of 2010-01-01
@@ -37,10 +38,22 @@ You do **not** need the planalto scraper or the build pipeline.
 
 ## Database
 
-**Default location**: `~/research/data/lei/artigos.db`
+`cite.py` reads from the consolidated `institutions.db` (the release
+asset). `lookup.py` and `build.py` still read/write the intermediate
+`artigos.db` — that stage exists so the amendment-tracking and
+reparsing loop doesn't have to rebuild the annotation tables on
+every iteration.
 
-Override with the `ARTIGOS_DB` environment variable or the `--db`
-CLI flag.
+**Default locations**:
+
+| DB | Path | Used by |
+|---|---|---|
+| `institutions.db` | `~/research/data/institutions.db` | `cite.py` (end-user lookup) |
+| `artigos.db`      | `~/research/data/lei/artigos.db`  | `build.py`, `build_amendments.py`, `lookup.py`, `fix_dates_from_amendments.py`, `find_amending.py` (maintainer only) |
+| `planalto_legislacao.db` | `~/research/data/planalto/planalto_legislacao.db` | `build.py` input (raw planalto scrape) |
+
+Override with `INSTITUTIONS_DB`, `ARTIGOS_DB`, `PLANALTO_DB` env
+vars or the corresponding CLI flags.
 
 ### `artigo` table schema
 
@@ -85,16 +98,24 @@ consolidated targets).
 
 ## Catalog (as of 2026)
 
-37 laws cataloged. Apelidos used in the backtick-form citations:
+52 laws cataloged. Apelidos used in the backtick-form citations:
 
 | apelido | lei | scope |
 |---|---|---|
 | **CC** | Lei 10.406/2002 | Código Civil |
+| **CDC** | Lei 8.078/1990 | Código de Defesa do Consumidor |
 | **CE** | Lei 4.737/1965 | Código Eleitoral |
+| **CF** | CF/1988 | Constituição Federal |
+| **CLT** | DL 5.452/1943 | Consolidação das Leis do Trabalho |
+| **CP** | DL 2.848/1940 | Código Penal |
 | **CPC** | Lei 13.105/2015 | Código de Processo Civil |
+| **CPC1973** | Lei 5.869/1973 | CPC anterior (para citações históricas) |
 | **CPP** | DL 3.689/1941 | Código de Processo Penal |
+| **CTN** | Lei 5.172/1966 | Código Tributário Nacional |
+| **EOAB** | Lei 8.906/1994 | Estatuto da OAB |
 | **L8112** | Lei 8.112/1990 | RJU servidores federais |
 | **L8666** | Lei 8.666/1993 | Lei de Licitações antiga |
+| **L12414** | Lei 12.414/2011 | Cadastro Positivo |
 | **L12891** | Lei 12.891/2013 | Modificações ao CE e LE |
 | **L13019** | Lei 13.019/2014 | Lei das OSCs |
 | **L13165** | Lei 13.165/2015 | Minirreforma eleitoral |
@@ -106,6 +127,10 @@ consolidated targets).
 | **LACP** | Lei 7.347/1985 | Lei da Ação Civil Pública |
 | **LAI** | Lei 12.527/2011 | Lei de Acesso à Informação |
 | **LAP** | Lei 4.717/1965 | Lei da Ação Popular |
+| **LC62** | LC 62/1989 | Fundos de Participação — critérios de rateio |
+| **LC141** | LC 141/2012 | Gasto mínimo em saúde |
+| **LC143** | LC 143/2013 | Ajustes ao rateio do FPE |
+| **LC166** | LC 166/2019 | Ajustes ao FPM |
 | **LCADE** | Lei 12.529/2011 | Lei do CADE / Defesa da Concorrência |
 | **LCMP** | LC 75/1993 | Lei Orgânica do MPU |
 | **LCO** | Lei 12.850/2013 | Lei das Organizações Criminosas |
@@ -116,6 +141,8 @@ consolidated targets).
 | **LGPD** | Lei 13.709/2018 | Lei Geral de Proteção de Dados |
 | **LI** | LC 64/1990 | Lei das Inelegibilidades |
 | **LIA** | Lei 8.429/1992 | Lei de Improbidade Administrativa |
+| **LJE** | Lei 9.099/1995 | Lei dos Juizados Especiais |
+| **LJEFP** | Lei 12.153/2009 | Juizados Especiais da Fazenda Pública |
 | **LL** | Lei 9.613/1998 | Lei de Lavagem |
 | **LL2** | Lei 12.683/2012 | Reforma da Lei de Lavagem |
 | **LOMAN** | LC 35/1979 | Lei Orgânica da Magistratura Nacional |
@@ -125,6 +152,7 @@ consolidated targets).
 | **LPC** | Lei 13.964/2019 | Pacote Anticrime |
 | **LPP** | Lei 9.096/1995 | Lei dos Partidos Políticos |
 | **LRF** | LC 101/2000 | Lei de Responsabilidade Fiscal |
+| **LSUS** | Lei 8.080/1990 | Lei Orgânica do SUS |
 | **RDC** | Lei 12.462/2011 | Regime Diferenciado de Contratações |
 
 The full mapping with metadata, statuses, and reform relationships is
