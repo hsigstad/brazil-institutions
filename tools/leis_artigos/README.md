@@ -98,7 +98,7 @@ consolidated targets).
 
 ## Catalog (as of 2026)
 
-52 laws cataloged. Apelidos used in the backtick-form citations:
+62 laws cataloged. Apelidos used in the backtick-form citations:
 
 | apelido | lei | scope |
 |---|---|---|
@@ -154,6 +154,16 @@ consolidated targets).
 | **LRF** | LC 101/2000 | Lei de Responsabilidade Fiscal |
 | **LSUS** | Lei 8.080/1990 | Lei Orgânica do SUS |
 | **RDC** | Lei 12.462/2011 | Regime Diferenciado de Contratações |
+| **L6360** | Lei 6.360/1976 | Vigilância Sanitária (medicamentos) |
+| **L8142** | Lei 8.142/1990 | Participação no SUS + transferências |
+| **L9656** | Lei 9.656/1998 | Planos de saúde / ANS |
+| **L12401** | Lei 12.401/2011 | CONITEC / RENAME (amende LSUS) |
+| **L14454** | Lei 14.454/2022 | Rol da ANS exemplificativo |
+| **EC29** | EC 29/2000 | Gasto mínimo em saúde |
+| **EC86** | EC 86/2015 | Orçamento impositivo |
+| **EC95** | EC 95/2016 | Teto de gastos |
+| **EC113** | EC 113/2021 | Precatórios e teto de gastos |
+| **EC126** | EC 126/2022 | PEC da Transição |
 
 The full mapping with metadata, statuses, and reform relationships is
 in [`../../leis_index.yaml`](../../leis_index.yaml).

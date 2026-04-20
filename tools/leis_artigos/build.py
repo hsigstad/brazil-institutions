@@ -495,6 +495,19 @@ LAW_CATALOG = [
     # Health
     ('LSUS',    '8080',  '1990', 2771, 'lei'),                # Lei Orgânica do SUS
     ('LC141',   '141',   '2012', 95,   'lei_complementar'),   # Gasto mínimo em saúde
+    # Planalto scraper recorded wrong numero (1908) for L9656; hardcode id and date.
+    ('L9656',   '9656',  '1998', 52228, 'lei', '1998-06-03'), # Planos de saúde / ANS
+    ('L14454',  '14454', '2022', 888,  'lei'),                # Rol da ANS exemplificativo
+    ('L12401',  '12401', '2011', 4726, 'lei'),                # CONITEC / RENAME (amende LSUS)
+    # Planalto scraper recorded wrong numero (5991) for L6360; hardcode id.
+    ('L6360',   '6360',  '1976', 12161, 'lei'),               # Vigilância sanitária
+    ('L8142',   '8142',  '1990', 2723, 'lei'),                # Participação SUS + transferências
+    # Emendas Constitucionais — scraper stored empty numero; hardcode id + date.
+    ('EC29',    '29',    '2000', 435,  'emenda_constitucional', '2000-09-13'),  # Gasto mínimo em saúde
+    ('EC86',    '86',    '2015', 310,  'emenda_constitucional', '2015-03-17'),  # Orçamento impositivo
+    ('EC95',    '95',    '2016', 381,  'emenda_constitucional', '2016-12-15'),  # Teto de gastos
+    ('EC113',   '113',   '2021', 422,  'emenda_constitucional', '2021-12-08'),  # Precatórios
+    ('EC126',   '126',   '2022', 341,  'emenda_constitucional', '2022-12-21'),  # PEC da Transição
     # Procedural / special courts
     ('LJE',     '9099',  '1995', 2304, 'lei'),                # Juizados Especiais
     ('LJEFP',   '12153', '2009', 3112, 'lei'),                # Juizados Especiais da Fazenda Pública

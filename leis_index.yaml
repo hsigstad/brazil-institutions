@@ -23,7 +23,7 @@
 #   (e.g., [[Lei 13.709/2018 Art. 7]]).
 
 schema_version: 1
-last_updated: 2026-04-09
+last_updated: 2026-04-20
 
 statutes:
 
@@ -995,6 +995,137 @@ statutes:
     url: https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11798.htm
     topics: [judicial_organization]
     discussed_in: [topics/justica-federal.md]
+
+  # Health legislation — federal statutes referenced in research/projects/saude/.
+  # Administrative norms (ANVISA RDCs, ANS resoluções, SAES portarias, CONITEC
+  # recommendations) stay in projects/saude/data/saudelegis/saudelegis.db;
+  # those are not leis and don't parse into the artigo/path schema.
+
+  lei_6360_1976:
+    tipo: Lei
+    numero: "6360"
+    ano: 1976
+    apelido: L6360
+    titulo: Vigilância Sanitária (medicamentos, insumos farmacêuticos, correlatos)
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l6360.htm
+    topics: [health, sanitary_surveillance, ANVISA, medicamentos]
+    discussed_in: []
+
+  lei_8142_1990:
+    tipo: Lei
+    numero: "8142"
+    ano: 1990
+    apelido: L8142
+    titulo: Participação da comunidade no SUS e transferências intergovernamentais
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/l8142.htm
+    topics: [health, SUS, fiscal_federalism]
+    key_articles:
+      - "Art. 1 (conferências e conselhos de saúde)"
+      - "Arts. 2-4 (transferências fundo a fundo)"
+    discussed_in: []
+
+  lei_9656_1998:
+    tipo: Lei
+    numero: "9656"
+    ano: 1998
+    apelido: L9656
+    titulo: Planos e Seguros Privados de Assistência à Saúde
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l9656.htm
+    topics: [health, private_health_plans, ANS]
+    key_articles:
+      - "Art. 1 (definições — planos de saúde, operadoras)"
+      - "Art. 10 (plano-referência, rol de procedimentos)"
+      - "Art. 12 (exigências mínimas de cobertura)"
+      - "Art. 35-C (urgência e emergência)"
+    reformed_by: [lei_14454_2022]
+    discussed_in: []
+
+  lei_12401_2011:
+    tipo: Lei
+    numero: "12401"
+    ano: 2011
+    apelido: L12401
+    titulo: Assistência terapêutica e incorporação de tecnologia em saúde no SUS (CONITEC/RENAME)
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2011/lei/l12401.htm
+    topics: [health, SUS, CONITEC, RENAME, medicamentos]
+    reforms: [lei_8080_1990]
+    notes: "Introduziu Arts. 19-M a 19-U na Lei 8.080/1990"
+    discussed_in: []
+
+  lei_14454_2022:
+    tipo: Lei
+    numero: "14454"
+    ano: 2022
+    apelido: L14454
+    titulo: Rol da ANS exemplificativo (reação à SV da Segunda Seção do STJ)
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2022/lei/l14454.htm
+    topics: [health, private_health_plans, ANS]
+    reforms: [lei_9656_1998]
+    notes: "Altera Lei 9.656/1998 Art. 10 para tornar o rol da ANS exemplificativo mediante critérios"
+    discussed_in: []
+
+  ec_29_2000:
+    tipo: Emenda Constitucional
+    numero: "29"
+    ano: 2000
+    apelido: EC29
+    titulo: Gasto mínimo em saúde (União, estados, municípios)
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc29.htm
+    topics: [constitutional_amendment, health, fiscal_federalism]
+    notes: "Alterou CF Art. 198; regulamentada pela LC 141/2012"
+    discussed_in: []
+
+  ec_86_2015:
+    tipo: Emenda Constitucional
+    numero: "86"
+    ano: 2015
+    apelido: EC86
+    titulo: Orçamento impositivo; altera cálculo do mínimo federal em saúde
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc86.htm
+    topics: [constitutional_amendment, health, fiscal_federalism, orçamento_impositivo]
+    notes: "Vinculação da União à RCL (13,2% em 2016, escalonando até 15% em 2020)"
+    discussed_in: []
+
+  ec_95_2016:
+    tipo: Emenda Constitucional
+    numero: "95"
+    ano: 2016
+    apelido: EC95
+    titulo: Novo Regime Fiscal (teto de gastos)
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc95.htm
+    topics: [constitutional_amendment, fiscal_rules, health, education]
+    notes: "Teto de gastos 2017-2036; substituído pelo arcabouço fiscal (LC 200/2023)"
+    discussed_in: []
+
+  ec_113_2021:
+    tipo: Emenda Constitucional
+    numero: "113"
+    ano: 2021
+    apelido: EC113
+    titulo: Pagamento de precatórios e teto de gastos com saúde e educação
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc113.htm
+    topics: [constitutional_amendment, precatorios, health, education]
+    discussed_in: []
+
+  ec_126_2022:
+    tipo: Emenda Constitucional
+    numero: "126"
+    ano: 2022
+    apelido: EC126
+    titulo: PEC da Transição — excepciona Bolsa Família e saúde do teto
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc126.htm
+    topics: [constitutional_amendment, fiscal_rules, health, social_policy]
+    discussed_in: []
 
 # Topic glossary (controlled vocabulary used in the topics field above)
 # Useful for grep-based filtering: e.g., "topics:.*federalism" finds
