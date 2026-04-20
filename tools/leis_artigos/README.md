@@ -98,7 +98,7 @@ consolidated targets).
 
 ## Catalog (as of 2026)
 
-62 laws cataloged. Apelidos used in the backtick-form citations:
+68 laws cataloged. Apelidos used in the backtick-form citations:
 
 | apelido | lei | scope |
 |---|---|---|
@@ -164,6 +164,12 @@ consolidated targets).
 | **EC95** | EC 95/2016 | Teto de gastos |
 | **EC113** | EC 113/2021 | Precatórios e teto de gastos |
 | **EC126** | EC 126/2022 | PEC da Transição |
+| **LRT** | Lei 13.467/2017 | Reforma Trabalhista (CLT) |
+| **EC76** | EC 76/2013 | Voto aberto em cassação e vetos |
+| **DL1881** | DL 1.881/1981 | FPM — coeficientes por faixa |
+| **LANS** | Lei 9.961/2000 | Cria a ANS |
+| **LC200** | LC 200/2023 | Arcabouço Fiscal |
+| **L8213** | Lei 8.213/1991 | Previdência Social (NTEP em Art. 21-A) |
 
 The full mapping with metadata, statuses, and reform relationships is
 in [`../../leis_index.yaml`](../../leis_index.yaml).

@@ -142,9 +142,12 @@ statutes:
     tipo: Decreto-Lei
     numero: "1881"
     ano: 1981
+    apelido: DL1881
     titulo: Distribuição do Fundo de Participação dos Municípios
     status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/decreto-lei/del1881.htm
     topics: [federalism, FPM]
+    notes: "Cria a classificação de coeficientes por faixa populacional que produz as descontinuidades RDD usadas em pesquisa empírica."
     discussed_in: [topics/federalismo-fiscal.md]
 
   lei_7347_1985:
@@ -199,6 +202,7 @@ statutes:
     tipo: Lei
     numero: "8213"
     ano: 1991
+    apelido: L8213
     titulo: Plano de Benefícios da Previdência Social
     status: vigente_com_modificacoes
     url: https://www.planalto.gov.br/ccivil_03/leis/l8213cons.htm
@@ -825,6 +829,7 @@ statutes:
     tipo: Emenda Constitucional
     numero: "76"
     ano: 2013
+    apelido: EC76
     titulo: Voto aberto para cassação e vetos no Congresso
     status: vigente
     url: https://www.planalto.gov.br/ccivil_03/constituicao/emendas/emc/emc76.htm
@@ -995,6 +1000,29 @@ statutes:
     url: https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11798.htm
     topics: [judicial_organization]
     discussed_in: [topics/justica-federal.md]
+
+  lei_9961_2000:
+    tipo: Lei
+    numero: "9961"
+    ano: 2000
+    apelido: LANS
+    titulo: Criação da Agência Nacional de Saúde Suplementar (ANS)
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l9961.htm
+    topics: [health, private_health_plans, ANS, regulatory_agencies]
+    discussed_in: []
+
+  lc_200_2023:
+    tipo: Lei Complementar
+    numero: "200"
+    ano: 2023
+    apelido: LC200
+    titulo: Novo Arcabouço Fiscal (regras fiscais sustentáveis)
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp200.htm
+    topics: [fiscal_rules, health, education, fiscal_federalism]
+    notes: "Substitui o teto de gastos da EC 95/2016; restaura piso de 15% da RCL para saúde."
+    discussed_in: []
 
   # Health legislation — federal statutes referenced in research/projects/saude/.
   # Administrative norms (ANVISA RDCs, ANS resoluções, SAES portarias, CONITEC

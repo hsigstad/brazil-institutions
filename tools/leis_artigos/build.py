@@ -516,6 +516,19 @@ LAW_CATALOG = [
     # Other
     ('LGPD',    '13709', '2018', None, 'lei'),                # LGPD
     ('L13019',  '13019', '2014', None, 'lei'),                # MROSC
+    # Labor reform — identification shock for projects/lawsuit
+    ('LRT',     '13467', '2017', 14068, 'lei'),               # Reforma Trabalhista
+    # Congressional open-vote amendment — identification shock for projects/segredo
+    ('EC76',    '76',    '2013', 346,  'emenda_constitucional', '2013-11-28'),
+    # FPM coefficient brackets — RDD cutoff instrument
+    # Scraper stored wrong numero (5172) and wrong data; hardcode both.
+    ('DL1881',  '1881',  '1981', 16938, 'decreto_lei', '1981-08-27'),
+    # ANS regulatory-agency founding law
+    ('LANS',    '9961',  '2000', 13667, 'lei'),
+    # New arcabouço fiscal (replaces EC 95 teto)
+    ('LC200',   '200',   '2023', 53,    'lei_complementar'),
+    # Previdência / NTEP — scraper stored wrong numero (357); hardcode id.
+    ('L8213',   '8213',  '1991', 4059,  'lei'),
 ]
 
 
