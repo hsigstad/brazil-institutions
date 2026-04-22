@@ -460,3 +460,175 @@ cases:
     related_leis: [CF, L13709-2018]
     supera: []
     superado_por: null
+
+  # ---------------------------------------------------------------------
+  # 9. Matéria tributária
+  # ---------------------------------------------------------------------
+
+  Tema69:
+    tipo: repercussao_geral
+    numero: 69
+    processo: RE 574.706
+    aliases: [RE574706]
+    relator: Cármen Lúcia
+    decidido: 2017-03-15
+    votacao: 6x4
+    tema: ICMS fora da base de cálculo do PIS/COFINS
+    status: modulada
+    holding_short: >
+      ICMS não compõe a base de cálculo de PIS e COFINS. O imposto
+      destacado na nota fiscal é receita transitória, não
+      faturamento/receita bruta para fins de CF Art. 195 I b.
+    discussed_in: [topics/direito-tributario.md, jurisprudencia-stf.md]
+    related_leis: [CF]
+    supera: []
+    superado_por: null
+    complementado_por: [Tema881]
+    fonte: https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=69
+
+  Tema881:
+    tipo: repercussao_geral
+    numero: 881
+    processo: RE 574.706 ED
+    aliases: [RE574706ED]
+    decidido: 2021-05-13
+    tema: modulação do Tema 69 — ICMS fora da base do PIS/COFINS
+    status: vigente
+    holding_short: >
+      Efeitos do Tema 69 produzem-se a partir de 15/03/2017 (data do
+      julgamento de mérito), ressalvadas ações judiciais e procedimentos
+      administrativos protocolados até essa data. O ICMS a excluir é o
+      destacado na nota fiscal, não o efetivamente recolhido.
+    discussed_in: [topics/direito-tributario.md, jurisprudencia-stf.md]
+    related_leis: [CF]
+    complementa: [Tema69]
+    supera: []
+    superado_por: null
+    fonte: https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=881
+
+  Tema4:
+    tipo: repercussao_geral
+    numero: 4
+    processo: RE 566.621
+    aliases: [RE566621]
+    relator: Ellen Gracie
+    decidido: 2011-08-04
+    tema: retroatividade da LC 118 — prescrição em repetição de indébito
+    status: vigente
+    holding_short: >
+      LC 118/2005 Art. 3 tem caráter inovador, não interpretativo.
+      Aplica-se apenas a ações ajuizadas após 09/06/2005 (término da
+      vacatio). Antes dessa data vale a regra anterior (5+5 anos).
+    discussed_in: [topics/direito-tributario.md, topics/divida-ativa.md, jurisprudencia-stf.md]
+    related_leis: [CTN, LC118]
+    supera: []
+    superado_por: null
+    fonte: https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=4
+
+  ADI5135:
+    tipo: ADI
+    numero: 5135
+    processo: ADI 5.135 / DF
+    aliases: []
+    relator: Roberto Barroso
+    decidido: 2016-11-09
+    votacao: maioria
+    tema: protesto de CDA — constitucionalidade
+    status: vigente
+    holding_short: >
+      Declarada constitucional a inclusão das CDAs no rol de títulos
+      passíveis de protesto extrajudicial (Lei 9.492/1997 Art. 1
+      parágrafo único, incluído pela L12767/2012). Protesto é cobrança
+      extrajudicial legítima, não sanção política, e preserva ampla
+      defesa em ação anulatória posterior.
+    discussed_in: [topics/divida-ativa.md, jurisprudencia-stf.md]
+    related_leis: []
+    supera: []
+    superado_por: null
+    fonte: https://portal.stf.jus.br/processos/detalhe.asp?incidente=4628755
+
+  ADI6040:
+    tipo: ADI
+    numero: 6040
+    processo: ADI 6.040 / DF
+    aliases: [ADI6055]
+    processos: [ADI 6.040, ADI 6.055]
+    relator: Marco Aurélio
+    redator_acordao: Roberto Barroso
+    decidido: 2020-12-09
+    tema: averbação pré-executória — constitucionalidade parcial
+    status: vigente
+    holding_short: >
+      Parcial procedência. Arts. 20-B a 20-E da L10522 (inseridos por
+      L13606) mantidos, com interpretação conforme: averbação
+      administrativa gera efeito de presunção de fraude análogo ao
+      CTN.185, mas não equivale a indisponibilidade integral sem
+      ordem judicial. Notificação prévia, protesto e regulamentação
+      permaneceram íntegros.
+    discussed_in: [topics/divida-ativa.md, jurisprudencia-stf.md]
+    related_leis: [L10522, L13606]
+    complementa: [ADI5135]
+    supera: []
+    superado_por: null
+    fonte: https://portal.stf.jus.br/processos/detalhe.asp?incidente=5587455
+
+  ADI7053:
+    tipo: ADI
+    numero: 7053
+    processo: ADI 7.053 / DF
+    aliases: []
+    tema: atos normativos PGFN sobre averbação pré-executória
+    status: pendente
+    holding_short: >
+      ADI contra as Portarias PGFN que regulamentaram a averbação
+      pré-executória após as ADIs 6.040 e 6.055. Contestação: os atos
+      normativos excederam a interpretação conforme do STF (2020),
+      reintroduzindo efeitos de indisponibilidade que a Corte havia
+      afastado. Verificar status no portal STF antes de citar como
+      resolvida.
+    discussed_in: [topics/divida-ativa.md, jurisprudencia-stf.md]
+    related_leis: [L10522, L13606]
+    complementa: [ADI6040]
+    supera: []
+    superado_por: null
+    fonte: https://portal.stf.jus.br/
+
+  Tema566:
+    tipo: repetitivo_stj
+    numero: 566
+    processo: REsp 1.340.553 / RS
+    aliases: [REsp1340553]
+    relator: Mauro Campbell Marques
+    tribunal: STJ
+    decidido: 2018-09-12
+    tema: prescrição intercorrente em execução fiscal (LEF.40)
+    status: vigente
+    holding_short: >
+      Rito operacional da prescrição intercorrente na EF: (1) não
+      localizado devedor/bens, suspensão por 1 ano; (2) findo, arquivamento
+      sem baixa, de onde corre prescrição quinquenal; (3) diligências
+      protelatórias não interrompem; (4) reconhecimento de ofício após
+      intimar Fazenda.
+    discussed_in: [topics/execucao-fiscal.md, topics/direito-tributario.md, jurisprudencia-stf.md]
+    related_leis: [LEF, CTN]
+    supera: []
+    superado_por: null
+    fonte: https://www.stj.jus.br/repetitivos/temas_repetitivos/
+
+  Tema1115:
+    tipo: repetitivo_stj
+    numero: 1115
+    tribunal: STJ
+    decidido: 2022
+    tema: 360 dias para decisão administrativa em matéria tributária
+    status: vigente
+    holding_short: >
+      Prazo de 360 dias do L11457.24 é cogente e direito subjetivo do
+      contribuinte. Descumprimento autoriza MS para compelir decisão;
+      não extingue o crédito nem altera a suspensão da exigibilidade
+      durante o PAF.
+    discussed_in: [topics/processo-administrativo-fiscal.md, jurisprudencia-stf.md]
+    related_leis: [L11457]
+    supera: []
+    superado_por: null
+    fonte: https://www.stj.jus.br/repetitivos/temas_repetitivos/

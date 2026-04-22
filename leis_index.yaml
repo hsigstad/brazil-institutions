@@ -50,7 +50,7 @@ statutes:
       - "Art. 196 (saúde)"
       - "Art. 198 §2 (gasto mínimo em saúde)"
       - "Art. 212-A (FUNDEB)"
-    discussed_in: [topics/contas-municipais.md, topics/federalismo-fiscal.md, topics/ministerio-publico.md, topics/cgu-controle-interno.md, topics/partidos-e-sistema-eleitoral.md, topics/transparencia-dados.md, topics/cnj-administracao-judicial.md]
+    discussed_in: [topics/contas-municipais.md, topics/federalismo-fiscal.md, topics/direito-tributario.md, topics/ministerio-publico.md, topics/cgu-controle-interno.md, topics/partidos-e-sistema-eleitoral.md, topics/transparencia-dados.md, topics/cnj-administracao-judicial.md]
 
   dl_2848_1940:
     tipo: Decreto-Lei
@@ -143,7 +143,7 @@ statutes:
       - "Art. 185-A (indisponibilidade judicial de bens)"
       - "Arts. 201-204 (dívida ativa, CDA, presunção de liquidez e certeza)"
       - "Art. 206 (certidão positiva com efeitos de negativa)"
-    discussed_in: [topics/federalismo-fiscal.md]
+    discussed_in: [topics/federalismo-fiscal.md, topics/direito-tributario.md, topics/processo-administrativo-fiscal.md, topics/divida-ativa.md, topics/execucao-fiscal.md]
 
   dl_1881_1981:
     tipo: Decreto-Lei
@@ -203,7 +203,7 @@ statutes:
     key_articles:
       - "Art. 1 (sonegação)"
       - "Art. 4 (cartel criminal)"
-    discussed_in: [topics/anticorrupcao-penal.md, topics/licitacoes.md, topics/improbidade.md]
+    discussed_in: [topics/anticorrupcao-penal.md, topics/licitacoes.md, topics/improbidade.md, topics/processo-administrativo-fiscal.md, topics/direito-tributario.md]
 
   lei_8213_1991:
     tipo: Lei
@@ -1187,7 +1187,7 @@ statutes:
       - "Art. 11 (ordem de penhora)"
       - "Art. 16 (embargos à execução — 30 dias, exige garantia)"
       - "Art. 40 (suspensão e arquivamento; prescrição intercorrente)"
-    discussed_in: [topics/processo-civil.md]
+    discussed_in: [topics/execucao-fiscal.md, topics/divida-ativa.md, topics/processo-civil.md]
 
   lei_8397_1992:
     tipo: Lei
@@ -1204,7 +1204,7 @@ statutes:
       - "Art. 4 (efeito — indisponibilidade de bens até o limite da dívida)"
       - "Art. 7 (concessão liminar)"
       - "Art. 15 (caducidade — não propositura da execução fiscal em 60 dias)"
-    discussed_in: []
+    discussed_in: [topics/execucao-fiscal.md]
 
   lei_10522_2002:
     tipo: Lei
@@ -1227,7 +1227,7 @@ statutes:
       - "Art. 20-E (regulamentação, incluído por L13606)"
     reformed_by: [lei_13606_2018]
     notes: "Parser limitation: Arts. 20-C e 20-D not present in planalto's consolidated L10522 HTML (only 20-B and 20-E ingested as separate rows); full texts exist inline within `L13606.25` via the inserting Art. 25. Consulte o texto consolidado diretamente para 20-C / 20-D."
-    discussed_in: []
+    discussed_in: [topics/divida-ativa.md, topics/execucao-fiscal.md]
 
   lei_13606_2018:
     tipo: Lei
@@ -1242,7 +1242,199 @@ statutes:
       - "Art. 25 (insere Arts. 20-B a 20-E na L 10.522/2002)"
     reforms: [lei_10522_2002]
     notes: "Art. 20-E teve constitucionalidade da averbação pré-executória questionada em ADIs (6.040, 6.055); STF reconheceu constitucionalidade parcial em 2020"
-    discussed_in: []
+    discussed_in: [topics/divida-ativa.md, topics/execucao-fiscal.md]
+
+  # Tax law — substantive tributo frameworks (ICMS, ISS) and statutes
+  # adjacent to CTN (cataloged earlier) that define administração
+  # tributária federal, contribuições previdenciárias, and the
+  # insolvency interface. These are the non-execução-fiscal layer
+  # of the tax system.
+
+  lc_87_1996:
+    tipo: Lei Complementar
+    numero: "87"
+    ano: 1996
+    apelido: LCKandir
+    titulo: Lei Kandir — ICMS (normas gerais)
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/LCP/Lcp87.htm
+    topics: [tax_law, ICMS, federalism]
+    key_articles:
+      - "Art. 2 (fato gerador do ICMS)"
+      - "Art. 4 (contribuinte)"
+      - "Art. 11 (local da operação — competência entre estados)"
+      - "Art. 12 (momento do fato gerador)"
+      - "Art. 13 (base de cálculo)"
+      - "Art. 19-20 (não-cumulatividade)"
+      - "Art. 32 (desoneração de exportações — compensação Kandir aos estados)"
+    notes: "Regulamenta CF.155.II. Será gradualmente substituída por IBS (EC132-2023; transição 2026-2033)."
+    discussed_in: [topics/direito-tributario.md, topics/federalismo-fiscal.md]
+
+  lc_116_2003:
+    tipo: Lei Complementar
+    numero: "116"
+    ano: 2003
+    apelido: LCISS
+    titulo: ISS — Imposto Sobre Serviços (normas gerais)
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/LCP/Lcp116.htm
+    topics: [tax_law, ISS, federalism]
+    key_articles:
+      - "Art. 1 (fato gerador — prestação de serviços listados)"
+      - "Art. 3 (local do serviço — regra de competência entre municípios)"
+      - "Art. 6 (responsabilidade tributária do tomador)"
+      - "Art. 8 (alíquota máxima 5%)"
+      - "Art. 8-A (alíquota mínima 2%, incluído por LC 157/2016 — resposta à guerra fiscal)"
+    notes: "Regulamenta CF.156.III. Lista anexa enumera ~200 serviços tributáveis. Será substituída por IBS (EC132-2023; transição 2026-2033)."
+    discussed_in: [topics/direito-tributario.md, topics/federalismo-fiscal.md]
+
+  lei_8212_1991:
+    tipo: Lei
+    numero: "8212"
+    ano: 1991
+    apelido: LOSS
+    titulo: Plano de Custeio da Seguridade Social
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l8212cons.htm
+    topics: [social_security, tax_law, tax_administration]
+    key_articles:
+      - "Art. 11 (fontes de custeio — contribuições previdenciárias)"
+      - "Art. 20-22 (contribuições de empregado e empregador)"
+      - "Art. 33 (competência arrecadatória da RFB, pós-L11457)"
+      - "Art. 45 (decadência — declarado inconstitucional por SV 8)"
+      - "Art. 46 (prescrição — declarado inconstitucional por SV 8)"
+    notes: "Arts. 45-46 declarados inconstitucionais pela SV 8 — prazos previdenciários seguem CTN (5 anos). Competência arrecadatória foi transferida à RFB pela L11457."
+    discussed_in: [topics/direito-tributario.md, topics/processo-administrativo-fiscal.md]
+
+  lei_9430_1996:
+    tipo: Lei
+    numero: "9430"
+    ano: 1996
+    apelido: L9430
+    titulo: Legislação tributária federal (IRPJ, CSLL, administração tributária)
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l9430.htm
+    topics: [tax_law, tax_administration]
+    key_articles:
+      - "Art. 1-9 (apuração IRPJ)"
+      - "Art. 28 (CSLL — apuração comum com IRPJ)"
+      - "Art. 44 (multa qualificada 150% — sonegação, fraude, conluio)"
+      - "Art. 61 (juros SELIC sobre débitos federais)"
+      - "Art. 74 (compensação de créditos tributários federais — PER/DCOMP)"
+      - "Art. 83 (representação fiscal para fins penais — encaminhamento ao MPF após definitividade)"
+    notes: "Art. 83 coordena contencioso administrativo e penal tributário — ver SV 24 (tipicidade de crime material tributário exige lançamento definitivo)."
+    discussed_in: [topics/processo-administrativo-fiscal.md, topics/direito-tributario.md]
+
+  lc_118_2005:
+    tipo: Lei Complementar
+    numero: "118"
+    ano: 2005
+    apelido: LC118
+    titulo: Adequação do CTN à Nova Lei de Falências + reforma da prescrição
+    status: vigente
+    url: https://www.planalto.gov.br/ccivil_03/leis/LCP/Lcp118.htm
+    topics: [tax_law, tax_enforcement, insolvency]
+    key_articles:
+      - "Art. 1 (altera CTN.174.I — despacho que ordena citação interrompe prescrição, antes era a citação pessoal)"
+      - "Art. 1 (altera CTN.185 — fraude à execução fiscal presumida desde inscrição em dívida ativa)"
+      - "Art. 1 (introduz CTN.185-A — indisponibilidade judicial de bens via Bacenjud/Sisbajud)"
+    reforms: [ctn_1966]
+    notes: "STF em RE 566.621 (Tema 4) limitou retroatividade da regra de prescrição: aplica-se a ações ajuizadas após 9 jun 2005. Antes dessa data, prazo do CTN.168 (10 anos)."
+    discussed_in: [topics/direito-tributario.md, topics/divida-ativa.md, topics/execucao-fiscal.md]
+
+  # Tax administration and pre-judicial collection — PAF, RFB organization,
+  # PGFN (AGU), administrative process subsidiário, and transação tributária.
+  # Together with the execução fiscal block above, these cover the full
+  # ciclo do crédito: lançamento → impugnação → dívida ativa → cobrança.
+
+  decreto_70235_1972:
+    tipo: Decreto
+    numero: "70235"
+    ano: 1972
+    apelido: PAF
+    titulo: Processo Administrativo Fiscal (PAF federal)
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/decreto/d70235cons.htm
+    topics: [tax_administration, tax_procedure]
+    key_articles:
+      - "Art. 7-9 (início do procedimento fiscal, auto de infração, notificação de lançamento)"
+      - "Art. 14-17 (impugnação do contribuinte — prazo 30 dias)"
+      - "Art. 25 (julgamento em 1ª instância pelas DRJs e em 2ª instância pelo CARF)"
+      - "Art. 33 (recurso especial à Câmara Superior do CARF)"
+      - "Art. 42 (decisão definitiva — encerra contencioso administrativo e abre prazo de cobrança)"
+    notes: "Força de lei conferida pelo DL 822/1969. Aplica-se apenas ao contencioso administrativo federal (tributos administrados pela RFB); estados e municípios têm PATs próprios. L9784 aplica-se subsidiariamente quando o PAF é silente."
+    discussed_in: [topics/processo-administrativo-fiscal.md]
+
+  lei_9784_1999:
+    tipo: Lei
+    numero: "9784"
+    ano: 1999
+    apelido: LPA
+    titulo: Lei do Processo Administrativo Federal
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/l9784.htm
+    topics: [administrative_law, tax_administration]
+    key_articles:
+      - "Art. 2 (princípios — legalidade, finalidade, motivação, razoabilidade, proporcionalidade, moralidade, ampla defesa, contraditório, segurança jurídica, interesse público, eficiência)"
+      - "Art. 26-28 (intimação)"
+      - "Art. 50 (motivação obrigatória)"
+      - "Art. 53-55 (autotutela — anulação por ilegalidade, revogação por conveniência)"
+      - "Art. 54 (decadência de 5 anos para anular ato administrativo favorável ao administrado de boa-fé)"
+      - "Art. 56-65 (recursos administrativos)"
+      - "Art. 69 (aplicação subsidiária aos processos administrativos específicos)"
+    notes: "Subsidiária ao PAF (Decreto 70.235/72) quando este é silente. Art. 54 (decadência decenal para anular ato favorável) foi expandido por jurisprudência para vários contextos."
+    discussed_in: [topics/processo-administrativo-fiscal.md]
+
+  lei_11457_2007:
+    tipo: Lei
+    numero: "11457"
+    ano: 2007
+    apelido: L11457
+    titulo: Cria a Receita Federal do Brasil (super-Receita)
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2007/lei/l11457.htm
+    topics: [tax_administration, social_security, RFB]
+    key_articles:
+      - "Art. 1 (cria RFB, fundindo SRF + arrecadação da Secretaria da Receita Previdenciária do INSS)"
+      - "Art. 2 (competências da RFB)"
+      - "Art. 16 (transfere à PGFN a cobrança das contribuições previdenciárias)"
+      - "Art. 24 (prazo de 360 dias para decisão administrativa em matéria tributária — STJ Tema 1.115)"
+    notes: "A transferência da cobrança previdenciária à PGFN (Art. 16) explica por que execuções fiscais previdenciárias tramitam hoje na Justiça Federal (não na JE), e por que o estoque de EFs federais cresceu rapidamente pós-2007."
+    discussed_in: [topics/processo-administrativo-fiscal.md, topics/execucao-fiscal.md]
+
+  lc_73_1993:
+    tipo: Lei Complementar
+    numero: "73"
+    ano: 1993
+    apelido: LOAGU
+    titulo: Lei Orgânica da Advocacia-Geral da União (AGU + PGFN)
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/leis/LCP/Lcp73.htm
+    topics: [public_administration, tax_enforcement, functions]
+    key_articles:
+      - "Art. 1-2 (AGU representa a União em juízo)"
+      - "Art. 12 (PGFN integra AGU — competências: apuração de liquidez e certeza de créditos da União, inscrição em dívida ativa, cobrança judicial e extrajudicial)"
+      - "Art. 13 (consultoria jurídica do Ministério da Fazenda)"
+    notes: "PGFN (Procuradoria-Geral da Fazenda Nacional) detém monopólio da inscrição em dívida ativa federal e do ajuizamento de execuções fiscais da União. Estados e municípios têm PGE e PGM com funções análogas."
+    discussed_in: [topics/divida-ativa.md, topics/execucao-fiscal.md, topics/funcoes-essenciais.md]
+
+  lei_13988_2020:
+    tipo: Lei
+    numero: "13988"
+    ano: 2020
+    apelido: LTT
+    titulo: Transação em Matéria Tributária
+    status: vigente_com_modificacoes
+    url: https://www.planalto.gov.br/ccivil_03/_ato2019-2022/2020/lei/l13988.htm
+    topics: [tax_administration, tax_enforcement]
+    key_articles:
+      - "Art. 1 (regulamenta CTN.171 — transação como modalidade de extinção do crédito tributário)"
+      - "Art. 2 (modalidades — transação por adesão ao edital + transação individual)"
+      - "Art. 11 (descontos de até 65%, prazo de até 120 meses, garantias)"
+      - "Art. 14 (transação de contencioso tributário de relevante e disseminada controvérsia — CARF-judicial)"
+      - "Art. 28 (voto de qualidade no CARF — redação original favorecia contribuinte em caso de empate)"
+    notes: "Mudança estrutural pós-2020 em como a PGFN administra estoque de dívida ativa federal (editais periódicos de adesão). Art. 28 na redação original extinguiu o voto de qualidade pró-Fazenda no CARF (2020-2023); Lei 14.689/2023 restaurou, com contrapartidas de perdão de multas e juros quando o empate prevalece."
+    discussed_in: [topics/divida-ativa.md, topics/processo-administrativo-fiscal.md]
 
 # Topic glossary (controlled vocabulary used in the topics field above)
 # Useful for grep-based filtering: e.g., "topics:.*federalism" finds
@@ -1299,13 +1491,21 @@ topics_vocabulary:
   - research_ethics
   - social_security
   - SUS
+  - tax_administration
   - tax_crimes
   - tax_enforcement
   - tax_law
+  - tax_procedure
   - tax_reform
+  - administrative_law
   - CADIN
   - dívida_ativa
   - federal_debt
+  - functions
+  - ICMS
+  - insolvency
+  - ISS
+  - RFB
   - TCU
   - TCE_SP
   - transparency

@@ -35,19 +35,24 @@ names, glossary.
 ## B
 
 - **BACEN** — Banco Central do Brasil. Central bank.
+- **Bacenjud** — Online asset-blocking system run jointly by CNJ and BACEN; succeeded by Sisbajud in 2020. → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md), [`topics/divida-ativa.md`](topics/divida-ativa.md)
 - **BNDES** — Banco Nacional de Desenvolvimento Econômico e Social. Federal development bank.
 
 ## C
 
 - **CADE** — Conselho Administrativo de Defesa Econômica. Antitrust authority. → [`topics/licitacoes.md`](topics/licitacoes.md), [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
+- **CADIN** — Cadastro Informativo de Créditos não Quitados do Setor Público Federal (Lei 10.522/2002). Federal registry of unpaid public credits; blocks access to federal credit and contracts. → [`topics/divida-ativa.md`](topics/divida-ativa.md)
 - **CAO** — Centro de Apoio Operacional. Thematic support unit within an MPE. → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
-- **CBS** — Contribuição sobre Bens e Serviços. Federal VAT under EC 132/2023 reform. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
+- **CARF** — Conselho Administrativo de Recursos Fiscais. Paritary federal tax-appeals body (Fazenda + contribuintes); 2nd instance of the PAF. → [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md)
+- **CBS** — Contribuição sobre Bens e Serviços. Federal VAT under EC 132/2023 reform. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md), [`topics/direito-tributario.md`](topics/direito-tributario.md)
 - **CC** — Código Civil (Lei 10.406/2002).
+- **CDA** — Certidão de Dívida Ativa. Extrajudicial executive title evidencing a tax or non-tax debt owed to a federative entity (`CTN.201`–`CTN.204`, `LEF.2`–`LEF.3`). → [`topics/divida-ativa.md`](topics/divida-ativa.md), [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
 - **CEAF** — Componente Especializado da Assistência Farmacêutica (SUS).
 - **CEIS** — Cadastro Nacional de Empresas Inidôneas e Suspensas. Public list of firms barred from contracting with the government. → [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md), [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **CESAF** — Componente Estratégico da Assistência Farmacêutica (SUS).
 - **CF** — Constituição Federal. The 1988 Brazilian Constitution.
 - **CFEM** — Compensação Financeira pela Exploração de Recursos Minerais. Mining royalty system. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
+- **CIDE** — Contribuição de Intervenção no Domínio Econômico (`CF.149`). Sector-specific regulatory contribution; CIDE-combustíveis is the most-used variant. → [`topics/direito-tributario.md`](topics/direito-tributario.md)
 - **CGE** — Controladoria-Geral do Estado. State-level analogue of CGU. → [`topics/controladorias-estaduais.md`](topics/controladorias-estaduais.md)
 - **CGM** — Controladoria-Geral do Município. Municipal analogue of CGU / CGE (large cities only). → [`topics/controladorias-estaduais.md`](topics/controladorias-estaduais.md)
 - **CONACI** — Conselho Nacional de Controle Interno. Voluntary cross-state coordination body for CGEs. → [`topics/controladorias-estaduais.md`](topics/controladorias-estaduais.md)
@@ -59,16 +64,21 @@ names, glossary.
 - **CNAE** — Classificação Nacional de Atividades Econômicas. Economic-activity classification.
 - **CNEP** — Cadastro Nacional de Empresas Punidas. Public list of firms sanctioned under Lei Anticorrupção. → [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md), [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **CNJ** — Conselho Nacional de Justiça. Judicial-council oversight body. → [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md), [`topics/cortes-superiores.md`](topics/cortes-superiores.md)
+- **CND** — Certidão Negativa de Débitos. Document attesting absence of tax debts; required for several public-sector transactions. → [`topics/divida-ativa.md`](topics/divida-ativa.md)
 - **CNMP** — Conselho Nacional do Ministério Público. MP oversight body. → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
 - **CNPJ** — Cadastro Nacional da Pessoa Jurídica. Federal firm registry (Receita Federal).
+- **COFINS** — Contribuição para o Financiamento da Seguridade Social. Federal turnover-based social contribution (being replaced by CBS under EC 132/2023). → [`topics/direito-tributario.md`](topics/direito-tributario.md)
 - **CPI / CPMI** — Comissão Parlamentar de Inquérito / Mista. Congressional committee of inquiry (CF Art. 58 §3; Lei 1.579/1952). → [`topics/controle-legislativo.md`](topics/controle-legislativo.md)
 - **COAF** — Conselho de Controle de Atividades Financeiras. Financial intelligence unit (AML). → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **CONITEC** — Comissão Nacional de Incorporação de Tecnologias no SUS. Health-tech incorporation body.
 - **COSIP** — Contribuição para Custeio do Serviço de Iluminação Pública. Municipal contribution for public lighting (CF Art. 149-A).
 - **CP** — Código Penal (DL 2.848/1940).
 - **CPC** — Código de Processo Civil. The 2015 NCPC (Lei 13.105/2015) replaced the 1973 version.
+- **CPEN** — Certidão Positiva com Efeitos de Negativa (`CTN.206`). Equivalent to CND when the debt is suspended or guaranteed. → [`topics/divida-ativa.md`](topics/divida-ativa.md)
 - **CPP** — Código de Processo Penal (DL 3.689/1941).
-- **CTN** — Código Tributário Nacional (Lei 5.172/1966).
+- **CSLL** — Contribuição Social sobre o Lucro Líquido (Lei 7.689/1988). Federal corporate-income-like contribution, apurada conjuntamente com o IRPJ. → [`topics/direito-tributario.md`](topics/direito-tributario.md)
+- **CSRF** — Câmara Superior de Recursos Fiscais. CARF's top division; decides recurso especial by divergência. → [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md)
+- **CTN** — Código Tributário Nacional (Lei 5.172/1966). cite.py apelido: `CTN`. → [`topics/direito-tributario.md`](topics/direito-tributario.md), [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
 - **CVM** — Comissão de Valores Mobiliários. Securities regulator.
 
 ## D
@@ -78,6 +88,7 @@ names, glossary.
 - **DL** — Decreto-Lei. Pre-1988 legislative instrument with statute force.
 - **DOU** — Diário Oficial da União. Federal official gazette.
 - **DPU** — Defensoria Pública da União. Federal public defender.
+- **DRJ** — Delegacia da Receita Federal de Julgamento. RFB 1st-instance administrative tribunal for tax impugnações. → [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md)
 
 ## E
 
@@ -131,25 +142,31 @@ names, glossary.
 - **LAI** — Lei de Acesso à Informação (Lei 12.527/2011). cite.py apelido: `LAI`. → [`topics/transparencia-dados.md`](topics/transparencia-dados.md)
 - **LC** — Lei Complementar. Supermajority statute, required for specific constitutional matters.
 - **LCADE** — Lei de Defesa da Concorrência (Lei 12.529/2011). Competition law / CADE. cite.py apelido: `LCADE`. → [`topics/licitacoes.md`](topics/licitacoes.md)
+- **LCF** — Lei da Medida Cautelar Fiscal (Lei 8.397/1992). cite.py apelido: `LCF`. → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
 - **LCO** — Lei das Organizações Criminosas (Lei 12.850/2013). Colaboração premiada framework. cite.py apelido: `LCO`. → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **LCOT** — Lei de Crimes contra a Ordem Tributária e Econômica (Lei 8.137/1990). cite.py apelido: `LCOT`. → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **LDO** — Lei de Diretrizes Orçamentárias. Annual budget guidelines (Art. 165 CF).
 - **LE** — Lei das Eleições (Lei 9.504/1997). cite.py apelido: `LE`. → [`topics/processo-eleitoral.md`](topics/processo-eleitoral.md), [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md)
+- **LEF** — Lei de Execuções Fiscais (Lei 6.830/1980). cite.py apelido: `LEF`. → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
 - **LFL** — Lei da Ficha Limpa (LC 135/2010). Amended LC 64/1990 to tighten inelegibility rules. cite.py apelido: `LFL`. → [`topics/contas-municipais.md`](topics/contas-municipais.md), [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md)
 - **LGPD** — Lei Geral de Proteção de Dados (Lei 13.709/2018). cite.py apelido: `LGPD`. → [`topics/transparencia-dados.md`](topics/transparencia-dados.md)
 - **LI** — Lei das Inelegibilidades (LC 64/1990). cite.py apelido: `LI`. → [`topics/processo-eleitoral.md`](topics/processo-eleitoral.md), [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md)
 - **LIA** — Lei de Improbidade Administrativa (Lei 8.429/1992). cite.py apelido: `LIA`. → [`topics/improbidade.md`](topics/improbidade.md)
 - **LL** — Lei de Lavagem de Dinheiro (Lei 9.613/1998). cite.py apelido: `LL`. → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **LOA** — Lei Orçamentária Anual. Annual budget law (Art. 165 CF).
+- **LOAGU** — Lei Orgânica da Advocacia-Geral da União (LC 73/1993). Structures the AGU and PGFN. cite.py apelido: `LOAGU`. → [`topics/divida-ativa.md`](topics/divida-ativa.md), [`topics/funcoes-essenciais.md`](topics/funcoes-essenciais.md)
 - **LOM** — Lei Orgânica Municipal. Each municipality's "constitution".
 - **LOMAN** — Lei Orgânica da Magistratura Nacional (LC 35/1979). cite.py apelido: `LOMAN`. → [`topics/carreira-juizes.md`](topics/carreira-juizes.md)
 - **LOMP / LOMPE** — Lei Orgânica do MP / MP Estadual. cite.py apelido: `LOMP`.
 - **LOMPU** — Lei Orgânica do MPU (LC 75/1993). cite.py apelido: `LCMP`. → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
 - **LONMP** — Lei Orgânica Nacional do MP (Lei 8.625/1993). → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
+- **LOSS** — Lei Orgânica da Seguridade Social (Lei 8.212/1991). Plano de custeio da seguridade social; fontes de contribuições previdenciárias. cite.py apelido: `LOSS`. → [`topics/direito-tributario.md`](topics/direito-tributario.md), [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md)
+- **LPA** — Lei do Processo Administrativo Federal (Lei 9.784/1999). cite.py apelido: `LPA`. → [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md)
 - **LPC** — Lei do Pacote Anticrime (Lei 13.964/2019). cite.py apelido: `LPC`. → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **LPP** — Lei dos Partidos Políticos (Lei 9.096/1995). cite.py apelido: `LPP`. → [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md)
 - **LRF** — Lei de Responsabilidade Fiscal (LC 101/2000). cite.py apelido: `LRF`. → [`topics/contas-municipais.md`](topics/contas-municipais.md), [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
 - **LRT** — Reforma Trabalhista (Lei 13.467/2017). cite.py apelido: `LRT`. → [`topics/justica-trabalho.md`](topics/justica-trabalho.md)
+- **LTT** — Lei da Transação Tributária (Lei 13.988/2020). cite.py apelido: `LTT`. → [`topics/divida-ativa.md`](topics/divida-ativa.md), [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md)
 
 ## M
 
@@ -183,14 +200,20 @@ names, glossary.
 
 - **PAB** — Piso de Atenção Básica. SUS primary-care funding (pre-2017 structure).
 - **PAD** — Processo Administrativo Disciplinar. Federal civil-servant disciplinary process. → [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md)
-- **PEC** — Proposta de Emenda à Constituição. Constitutional-amendment proposal.
+- **PAF** — Processo Administrativo Fiscal (Decreto 70.235/1972). Federal tax administrative contencioso. cite.py apelido: `PAF`. → [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md)
+- **PAT** — Processo Administrativo Tributário. Generic label for state/municipal analogues of the federal PAF; each unit has its own legislation. → [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md)
 - **PC** — Polícia Civil. State judicial police, investigates common crimes under state jurisdiction (`CF.144.§4`). → [`topics/policias-estaduais.md`](topics/policias-estaduais.md)
+- **PEC** — Proposta de Emenda à Constituição. Constitutional-amendment proposal.
+- **PERT** — Programa Especial de Regularização Tributária (Lei 13.496/2017). One of the recurring federal Refis programs. → [`topics/divida-ativa.md`](topics/divida-ativa.md)
 - **PF** — Polícia Federal. Federal police. → [`topics/policia-federal.md`](topics/policia-federal.md)
-- **PIC** — Procedimento Investigatório Criminal. MP-led criminal investigation (CNMP Resolução 181/2017; STF `RE593727`, Tema 184). → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
-- **PM** — Polícia Militar. State ostensive/preventive police (`CF.144.§5`); força auxiliar e reserva do Exército. → [`topics/policias-estaduais.md`](topics/policias-estaduais.md)
 - **PFS** — Programa de Fiscalização por Sorteios. CGU's random municipal audit program (2003–2015) — canonical instrument in the Ferraz–Finan literature. → [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md)
-- **PG / PGE / PGM / PGR / PGJ** — Procurador-Geral / da Estado / do Município / da República / de Justiça.
+- **PG / PGE / PGM / PGR / PGJ** — Procurador-Geral / do Estado / do Município / da República / de Justiça.
+- **PGF** — Procuradoria-Geral Federal. AGU branch representing federal autarquias and fundações. Inscreve em dívida ativa não-tributária federal. → [`topics/divida-ativa.md`](topics/divida-ativa.md)
+- **PGFN** — Procuradoria-Geral da Fazenda Nacional. AGU branch with monopoly over inscrição em dívida ativa tributária federal and ajuizamento of federal EFs. → [`topics/divida-ativa.md`](topics/divida-ativa.md), [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
+- **PIC** — Procedimento Investigatório Criminal. MP-led criminal investigation (CNMP Resolução 181/2017; STF `RE593727`, Tema 184). → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
+- **PIS** — Programa de Integração Social (`CF.239`). Federal payroll-financed contribution (being replaced by CBS under EC 132/2023). → [`topics/direito-tributario.md`](topics/direito-tributario.md)
 - **PJe** — Processo Judicial Eletrônico. CNJ unified case-management platform (Res. 185/2013). → [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md)
+- **PM** — Polícia Militar. State ostensive/preventive police (`CF.144.§5`); força auxiliar e reserva do Exército. → [`topics/policias-estaduais.md`](topics/policias-estaduais.md)
 - **PPA** — Plano Plurianual. 4-year fiscal plan (Art. 165 CF).
 - **PSF** — Programa Saúde da Família. SUS family-health program.
 
@@ -205,9 +228,10 @@ names, glossary.
 - **RCED** — Recurso Contra Expedição de Diploma. Post-election challenge to a diploma. → [`topics/processo-eleitoral.md`](topics/processo-eleitoral.md)
 - **RDC** — Regime Diferenciado de Contratações (Lei 12.462/2011). Special procurement regime, replaced by Lei 14.133/2021.
 - **RE** — Recurso Extraordinário. Appeal to STF on constitutional questions.
+- **Refis** — Informal label for the recurring special federal tax-parcelamento programs (Lei 9.964/2000, Lei 10.684/2003, Lei 11.941/2009, Lei 13.496/2017, etc.). → [`topics/divida-ativa.md`](topics/divida-ativa.md)
 - **RENAME** — Relação Nacional de Medicamentos Essenciais. SUS essential-medications list.
 - **RESp** — Recurso Especial. Appeal to STJ on federal-law questions.
-- **RFB** — Receita Federal do Brasil. Federal tax administration.
+- **RFB** — Receita Federal do Brasil. Federal tax administration (super-Receita since Lei 11.457/2007, absorbing former SRF + INSS collection). → [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md)
 - **RGF** — Relatório de Gestão Fiscal. LRF quadrimestral fiscal compliance report. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
 - **RGPS** — Regime Geral de Previdência Social. General social-security regime.
 - **RIF** — Relatório de Inteligência Financeira. COAF financial-intelligence report. → [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
@@ -229,6 +253,7 @@ names, glossary.
 - **SIOPE** — Sistema de Informações sobre Orçamentos Públicos em Educação. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
 - **SIOPS** — Sistema de Informações sobre Orçamentos Públicos em Saúde. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md)
 - **SISAB** — Sistema de Informação em Saúde para a Atenção Básica (SUS).
+- **Sisbajud** — Sistema de Busca de Ativos do Poder Judiciário. CNJ online system for asset-blocking and patrimonial queries, successor of Bacenjud (2020); central tool in execução fiscal. → [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
 - **SISCOR** — Sistema de Correição do Poder Executivo Federal. CGU coordination system for federal disciplinary actions. → [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md)
 - **SPCE** — Sistema de Prestação de Contas Eleitorais. TSE campaign-finance filing system. → [`topics/prestacao-contas-eleitorais.md`](topics/prestacao-contas-eleitorais.md)
 - **SSTJ** — cite.py prefix for STJ Súmulas (e.g., `SSTJ359`). Resolved against [`sumulas_stj.yaml`](sumulas_stj.yaml).
@@ -248,6 +273,7 @@ names, glossary.
 - **TCM** — Tribunal de Contas do Município. Municipal audit court (only BA, GO, PA maintain active TCMs as of 2026; SP and RJ have municipal-level TCMs for the capitals).
 - **TCM-SP** — Tribunal de Contas do Município de São Paulo.
 - **TCU** — Tribunal de Contas da União. Federal audit court. → [`topics/tribunais-contas.md`](topics/tribunais-contas.md)
+- **TIT** — Tribunal de Impostos e Taxas (SP). São Paulo state tax-appeals tribunal; counterpart of the federal CARF at the state level. → [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md)
 - **TJ** — Tribunal de Justiça. State court of last resort. → [`topics/justica-estadual.md`](topics/justica-estadual.md)
 - **TJRS / TJSP / TJRJ / etc.** — Tribunal de Justiça of the corresponding state.
 - **TPU** — Tabelas Processuais Unificadas. CNJ unified case-classification schema (Res. 46/2007). → [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md)

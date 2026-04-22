@@ -355,7 +355,162 @@ modulated, overruled, or superseded by checking
 
 ---
 
-## 9. Quick reference table
+## 9. Matéria tributária
+
+Case law on the ICMS/PIS/COFINS base, prescription in tax matters, and
+extrajudicial collection instruments (protesto, averbação). Includes
+selected STJ repetitivos that operate alongside the STF jurisprudence
+in shaping execução fiscal practice.
+
+### `Tema69` — RE 574.706 — ICMS fora da base do PIS/COFINS
+
+- **Decided**: 15 March 2017, Plenário.
+- **Rel.**: Min. Cármen Lúcia.
+- **Votação**: 6×4.
+- **Holding**: O ICMS não compõe a base de cálculo das contribuições
+  PIS e COFINS. O imposto destacado na nota fiscal representa receita
+  transitória do sujeito passivo, que apenas a arrecada em favor do
+  Estado; não é faturamento/receita bruta para fins das contribuições
+  sociais do `CF.195.I.b`.
+- **Significance**: um dos julgamentos de maior impacto fiscal do
+  STF. Gerou passivo estimado em centenas de bilhões de reais em
+  compensações e repetições de indébito. Reverberou em múltiplas
+  "teses filhotes" — exclusão do ICMS-ST, do ISS, do próprio PIS/COFINS
+  de suas próprias bases, etc. — nem todas acolhidas pelo STF.
+- **Modulação**: ver `Tema881` abaixo.
+- **Cited in**: [`topics/direito-tributario.md`](topics/direito-tributario.md) §5.
+
+### `Tema881` — RE 574.706 ED — Modulação do Tema 69
+
+- **Decided**: 13 May 2021.
+- **Holding**: Os efeitos do `Tema69` produzem-se a partir de
+  **15/03/2017** (data do julgamento de mérito), ressalvadas as ações
+  judiciais e os procedimentos administrativos **protocolados até
+  15/03/2017**, que podem recuperar indébitos desde o quinquênio
+  anterior. Confirmada a tese de que o ICMS excluído da base é o
+  **destacado na nota fiscal**, não o efetivamente recolhido.
+- **Significance**: resolveu a disputa central sobre os efeitos
+  temporais — contribuintes que haviam ajuizado antes do julgamento
+  preservaram o direito integral à repetição; os que ajuizaram depois
+  ficaram restritos ao período pós-2017.
+- **Cited in**: [`topics/direito-tributario.md`](topics/direito-tributario.md) §5.
+
+### `Tema4` — RE 566.621 — Retroatividade da LC 118
+
+- **Decided**: 4 August 2011.
+- **Rel.**: Min. Ellen Gracie.
+- **Holding**: A nova regra introduzida por `LC118.3` — segundo a qual
+  a extinção do crédito em lançamento por homologação ocorre no
+  momento do pagamento antecipado, reduzindo o prazo para pleitear
+  repetição de indébito de "5+5" para 5 anos — **tem caráter
+  inovador, não interpretativo**. Sua aplicação vale apenas para
+  ações ajuizadas **após o término da vacatio legis (09/06/2005)**.
+  Para ações protocoladas antes dessa data, aplica-se a regra antiga
+  (5 anos do fato gerador + 5 anos da extinção do crédito =
+  efetivamente 10 anos).
+- **Significance**: fixa o marco temporal da prescrição para recuperar
+  tributos pagos indevidamente — ponto operacional para qualquer
+  litígio de repetição de indébito. Diretamente relacionado à
+  prescrição em execução fiscal, uma vez que antecipou o marco de
+  presunção de fraude à execução (`CTN.185`) para a inscrição em
+  dívida ativa, via `LC118.2`–`LC118.3`.
+- **Cited in**: [`topics/direito-tributario.md`](topics/direito-tributario.md) §5,
+  [`topics/divida-ativa.md`](topics/divida-ativa.md).
+
+### `ADI5135` — Protesto de CDA constitucional
+
+- **Decided**: 9 November 2016, Plenário.
+- **Rel.**: Min. Roberto Barroso.
+- **Votação**: maioria.
+- **Holding**: Declarada **constitucional** a inclusão das certidões
+  de dívida ativa no rol de títulos passíveis de protesto
+  extrajudicial (Lei 9.492/1997 Art. 1º, §único, incluído pela
+  `L12767/2012`). Protesto de CDA é forma legítima de cobrança
+  extrajudicial, não viola devido processo legal nem é sanção
+  política, e preserva ampla defesa em ação anulatória posterior.
+- **Significance**: validou o instrumento extrajudicial que hoje é
+  central à estratégia de cobrança da PGFN para créditos de baixo
+  para médio valor — desloca pressão de cobrança para fora do
+  Judiciário, sem formalização de execução fiscal. Também
+  constitucionalizou a prática de negativação do devedor em registros
+  de crédito via protesto.
+- **Cited in**: [`topics/divida-ativa.md`](topics/divida-ativa.md) §4.
+
+### `ADI6040` / `ADI6055` — Averbação pré-executória parcialmente constitucional
+
+- **Decided**: 9 December 2020, Plenário (julgadas conjuntamente).
+- **Rel.**: Min. Marco Aurélio (redator p/ acórdão Min. Roberto Barroso).
+- **Holding**: Parcial procedência. Os Arts. 20-B a 20-E da `L10522`
+  (incluídos por `L13606.25`) foram mantidos na sua maior parte, **com
+  interpretação conforme** para limitar o alcance da averbação
+  pré-executória. A averbação pode ser realizada administrativamente
+  pela PGFN mas **não pode equivaler a indisponibilidade integral
+  sem ordem judicial** — seu efeito primário é o de tornar a
+  alienação posterior presumidamente fraudulenta, análogo ao
+  `CTN.185`. Notificação prévia do devedor, protesto da CDA, e
+  regulamentação permaneceram íntegros.
+- **Significance**: definiu os limites do instituto. Desde o
+  julgamento, a PGFN opera a averbação com ressalvas — o instrumento
+  funciona mais como sinalização patrimonial a terceiros do que
+  como penhora administrativa plena.
+- **Cited in**: [`topics/divida-ativa.md`](topics/divida-ativa.md) §5.
+
+### `ADI7053` — Atos normativos da PGFN sobre averbação (pendente)
+
+- **Status (2026)**: pendente de julgamento definitivo ou parcialmente
+  decidida; objeto são as Portarias PGFN que regulamentaram os
+  Arts. 20-B a 20-E da `L10522` depois das `ADI6040` / `ADI6055`.
+  Contestação central: os atos normativos excederam a interpretação
+  conforme fixada pelo STF em 2020, reintroduzindo efeitos de
+  indisponibilidade que a Corte havia afastado.
+- **Why it matters**: desfecho define se a PGFN pode efetivamente
+  operar a averbação como instrumento de constrição patrimonial ou
+  apenas como registro de fraude presumida. Verificar portal STF antes
+  de citar como resolvida.
+- **Cited in**: [`topics/divida-ativa.md`](topics/divida-ativa.md) §5.
+
+### `Tema566` (STJ, repetitivo) — REsp 1.340.553 — Prescrição intercorrente em EF
+
+- **Tribunal**: Superior Tribunal de Justiça, Primeira Seção.
+- **Decided**: 12 September 2018.
+- **Rel.**: Min. Mauro Campbell Marques.
+- **Holding operacional** (`LEF.40`):
+  1. Não localizado o devedor ou bens, o juiz **suspende** a
+     execução por 1 ano. O termo inicial é a ciência inequívoca do
+     exequente.
+  2. Findo o prazo de 1 ano sem manifestação útil, segue **arquivamento
+     sem baixa** — e daí se inicia a prescrição intercorrente de
+     5 anos (`CTN.174`).
+  3. Diligências protelatórias ou genéricas **não interrompem** o
+     curso do prazo; apenas atos concretos capazes de resultar em
+     constrição patrimonial preservam a execução.
+  4. O juiz deve reconhecer a prescrição de ofício, após intimar a
+     Fazenda para se manifestar.
+- **Significance**: destravou o reconhecimento massivo de prescrição
+  intercorrente em estoque acumulado, sobretudo em EFs antigas da
+  Justiça Federal. Efeito material sobre a composição do estoque
+  histórico do CNJ e na série de extinções de EF pós-2018.
+- **Cited in**: [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md) §5,
+  [`topics/direito-tributario.md`](topics/direito-tributario.md) §5.
+
+### `Tema1115` (STJ, repetitivo) — Prazo de 360 dias para decisão administrativa
+
+- **Tribunal**: Superior Tribunal de Justiça, Primeira Seção.
+- **Decided**: 2022.
+- **Holding**: O prazo de **360 dias** do `L11457.24` para decisão
+  administrativa em matéria tributária é **direito subjetivo do
+  contribuinte** e tem caráter cogente. Seu descumprimento
+  autoriza impetração de mandado de segurança para compelir a
+  Administração a decidir, sem que isso cause extinção do crédito.
+- **Significance**: consolidou o mandado de segurança como
+  ferramenta rotineira contra a demora do CARF e das DRJs. Não altera
+  a suspensão da exigibilidade durante o PAF, mas limita o uso da
+  demora administrativa como forma de postergação.
+- **Cited in**: [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md) §6.
+
+---
+
+## 10. Quick reference table
 
 | Case | Theme | File |
 |---|---|---|
@@ -374,6 +529,14 @@ modulated, overruled, or superseded by checking
 | `HC127483` / HC 164.493 | Colaboração premiada | anticorrupcao-penal |
 | `ADI3931` | NTEP constitucional | (referenciado externamente) |
 | `ARE652777` | Salários de servidores públicos | transparencia-dados |
+| `Tema69` (RE 574.706) | ICMS fora da base do PIS/COFINS | direito-tributario |
+| `Tema881` (RE 574.706 ED) | Modulação do Tema 69 | direito-tributario |
+| `Tema4` (RE 566.621) | Retroatividade da LC 118 | direito-tributario, divida-ativa |
+| `ADI5135` | Protesto de CDA constitucional | divida-ativa |
+| `ADI6040` / `ADI6055` | Averbação pré-executória parcial | divida-ativa |
+| `ADI7053` | Atos PGFN sobre averbação (pendente) | divida-ativa |
+| `Tema566` (STJ, REsp 1.340.553) | Prescrição intercorrente em EF | execucao-fiscal |
+| `Tema1115` (STJ) | 360 dias para decisão administrativa | processo-administrativo-fiscal |
 
 ---
 

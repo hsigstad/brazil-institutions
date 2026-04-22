@@ -22,7 +22,7 @@ revoked CPC 1973 (Lei 5.869/1973) governs cases filed before
 
 For **ação civil pública**, see `ministerio-publico.md`. For
 **improbidade administrativa**, see `improbidade.md`. For **execução
-fiscal**, see `contas-municipais.md`.
+fiscal**, see `execucao-fiscal.md`.
 
 ---
 
@@ -229,20 +229,14 @@ contracts with specific enforceability). Debtor cited to pay within
 
 ### Execução fiscal
 
-Governed by LEF (Lei 6.830/1980), not the CPC, with CPC as
-subsidiary. See `contas-municipais.md` for TCE/execução fiscal
-interaction. Key features:
-
-- Filed by municipal, state, or federal fazenda for dívida ativa
-  (tax and non-tax debts already administratively constituted)
-- Debtor cited to pay or offer garantia within 5 days (LEF Art. 8)
-- Embargos à execução (30 days) require garantia unless debtor is
-  hipossuficiente
-- Penhora order: cash → bonds → precious metals → real property →
-  vehicles → other assets → rights (LEF Art. 11)
-- Suspension if debtor/assets not found; arquivamento after 1 year
-  suspended; prescrição intercorrente after 5 years archived
-  (LEF Art. 40, `CTN.174`)
+Governed by `LEF` (Lei 6.830/1980), with CPC as subsidiary (`LEF.1`).
+Sui generis rite: CDA as title, garantia do juízo for embargos,
+prescrição intercorrente (`LEF.40` + `Tema566`), redirecionamento ao
+sócio-gerente (`CTN.135.III` + STJ Súmula 435), penhora online via
+Sisbajud (`CTN.185-A`). See `execucao-fiscal.md` for full coverage;
+`divida-ativa.md` for the pre-judicial layer (inscrição, CDA,
+protesto, transação); and `direito-tributario.md` for the general
+rules on prescrição and responsabilidade that feed the rite.
 
 ## 10. Honorários and custas
 

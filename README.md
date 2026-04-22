@@ -8,13 +8,13 @@ and related topics.
 
 **What this gives you:**
 
-- **32 topical files** with inline statute and jurisprudence citations
+- **36 topical files** with inline statute and jurisprudence citations
 - **Citation resolver** (`cite.py`) that looks up any statute article,
   STF case, or súmula from a compact backtick citation
 - **Annotated legislation databases** — STF decisions mapped to each CF
   article; TSE jurisprudence mapped to each Electoral Code article
 - **463 TST súmulas**, 72 TSE súmulas, 63 STF Súmulas Vinculantes,
-  3 STJ súmulas — all resolvable via cite.py
+  11 STJ súmulas — all resolvable via cite.py
 - **Common-pitfalls list** so you don't make the mistakes everyone
   makes about Brazilian institutions
 
@@ -118,6 +118,13 @@ acronyms and [`glossario.md`](glossario.md) for Portuguese legal terms.
 - [`topics/partidos-e-sistema-eleitoral.md`](topics/partidos-e-sistema-eleitoral.md) — Open-list PR, coligações/federações, campaign finance, Ficha Limpa
 - [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md) — FPM, ICMS, SUS transfers, LRF limits
 
+### Tax system
+
+- [`topics/direito-tributario.md`](topics/direito-tributario.md) — CTN framework, lançamento, decadência/prescrição, responsabilidade, reforma tributária
+- [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md) — PAF, DRJ, CARF, voto de qualidade
+- [`topics/divida-ativa.md`](topics/divida-ativa.md) — inscrição em dívida ativa, CDA, PGFN, CADIN, protesto, averbação, transação
+- [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md) — LEF, penhora, embargos, prescrição intercorrente, medida cautelar fiscal
+
 ### Substantive areas
 
 - [`topics/licitacoes.md`](topics/licitacoes.md) — Procurement law, CADE cartel typology, bid-rigging
@@ -148,7 +155,7 @@ acronyms and [`glossario.md`](glossario.md) for Portuguese legal terms.
 | [`sumulas_vinculantes.yaml`](sumulas_vinculantes.yaml) | STF (binding) | 63 | `SV14` |
 | [`sumulas_tse.yaml`](sumulas_tse.yaml) | TSE | 72 | `STSE38` |
 | [`sumulas_tst.yaml`](sumulas_tst.yaml) | TST | 463 | `STST331` |
-| [`sumulas_stj.yaml`](sumulas_stj.yaml) | STJ (on demand) | 3 | `SSTJ359` |
+| [`sumulas_stj.yaml`](sumulas_stj.yaml) | STJ (on demand) | 11 | `SSTJ359` |
 
 ## Tools
 

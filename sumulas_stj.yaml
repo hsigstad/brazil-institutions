@@ -32,9 +32,117 @@
 # - Include the approval date and a fonte URL when available.
 
 schema_version: 1
-last_updated: 2026-04-16
+last_updated: 2026-04-22
 
 sumulas:
+
+  SSTJ106:
+    numero: 106
+    enunciado: >-
+      Proposta a ação no prazo fixado para o seu exercício, a demora
+      na citação, por motivos inerentes ao mecanismo da justiça, não
+      justifica o acolhimento da arguição de prescrição ou decadência.
+    status: vigente
+    fonte: https://scon.stj.jus.br/SCON/sumulas/doc.jsp?livre=@num=%27106%27
+    nota: >-
+      Aplicável amplamente em execução fiscal: se o ajuizamento
+      ocorre antes do termo prescricional mas a citação demora por
+      razões do Judiciário, não há prescrição. Referida em
+      topics/execucao-fiscal.md.
+
+  SSTJ392:
+    numero: 392
+    enunciado: >-
+      A Fazenda Pública pode substituir a certidão de dívida ativa
+      (CDA) até a prolação da sentença de embargos, quando se tratar
+      de correção de erro material ou formal, vedada a modificação do
+      sujeito passivo da execução.
+    status: vigente
+    fonte: https://scon.stj.jus.br/SCON/sumulas/doc.jsp?livre=@num=%27392%27
+    nota: >-
+      Limita o escopo de correção da CDA — erro material/formal sim,
+      mudança do réu não. Referida em topics/execucao-fiscal.md.
+
+  SSTJ393:
+    numero: 393
+    enunciado: >-
+      A exceção de pré-executividade é admissível na execução fiscal
+      relativamente às matérias conhecíveis de ofício que não demandem
+      dilação probatória.
+    status: vigente
+    fonte: https://scon.stj.jus.br/SCON/sumulas/doc.jsp?livre=@num=%27393%27
+    nota: >-
+      Fundamento central da defesa sem garantia do juízo. Matérias
+      típicas: prescrição, decadência, ilegitimidade, nulidade da CDA.
+      Referida em topics/execucao-fiscal.md.
+
+  SSTJ414:
+    numero: 414
+    enunciado: >-
+      A citação por edital na execução fiscal é cabível quando
+      frustradas as demais modalidades.
+    status: vigente
+    fonte: https://scon.stj.jus.br/SCON/sumulas/doc.jsp?livre=@num=%27414%27
+    nota: >-
+      Requer esgotamento prévio de Correios e oficial de justiça.
+      Referida em topics/execucao-fiscal.md.
+
+  SSTJ430:
+    numero: 430
+    enunciado: >-
+      O inadimplemento da obrigação tributária pela sociedade não gera,
+      por si só, a responsabilidade solidária do sócio-gerente.
+    status: vigente
+    fonte: https://scon.stj.jus.br/SCON/sumulas/doc.jsp?livre=@num=%27430%27
+    nota: >-
+      Contrapeso à S. 435. Redirecionamento exige conduta do
+      CTN.135 (excesso de poderes, infração à lei, dissolução
+      irregular), não basta a inadimplência. Referida em
+      topics/direito-tributario.md e topics/execucao-fiscal.md.
+
+  SSTJ435:
+    numero: 435
+    enunciado: >-
+      Presume-se dissolvida irregularmente a empresa que deixar de
+      funcionar no seu domicílio fiscal, sem comunicação aos órgãos
+      competentes, legitimando o redirecionamento da execução fiscal
+      para o sócio-gerente.
+    status: vigente
+    fonte: https://scon.stj.jus.br/SCON/sumulas/doc.jsp?livre=@num=%27435%27
+    nota: >-
+      Principal mecanismo prático de redirecionamento ao
+      sócio-gerente em EF. Combina com CTN.135.III. Referida em
+      topics/direito-tributario.md e topics/execucao-fiscal.md.
+
+  SSTJ436:
+    numero: 436
+    enunciado: >-
+      A entrega de declaração pelo contribuinte reconhecendo débito
+      fiscal constitui o crédito tributário, dispensada qualquer outra
+      providência por parte do fisco.
+    status: vigente
+    fonte: https://scon.stj.jus.br/SCON/sumulas/doc.jsp?livre=@num=%27436%27
+    nota: >-
+      Dispensa lançamento de ofício quando há declaração pelo
+      contribuinte — o débito declarado e não pago vai direto para
+      cobrança/dívida ativa. Referida em topics/execucao-fiscal.md.
+
+  SSTJ555:
+    numero: 555
+    enunciado: >-
+      Quando não houver declaração do débito, o prazo decadencial
+      quinquenal para o Fisco constituir o crédito tributário
+      conta-se exclusivamente na forma do art. 173, I, do CTN, nos
+      casos em que a legislação atribui ao sujeito passivo o dever
+      de antecipar o pagamento sem prévio exame da autoridade
+      administrativa.
+    status: vigente
+    fonte: https://scon.stj.jus.br/SCON/sumulas/doc.jsp?livre=@num=%27555%27
+    nota: >-
+      Regra decisiva para distinguir decadência do CTN.150.§4 (com
+      pagamento antecipado) vs CTN.173.I (sem pagamento ou sem
+      declaração). Referida em topics/direito-tributario.md e
+      topics/execucao-fiscal.md.
 
   SSTJ359:
     numero: 359
