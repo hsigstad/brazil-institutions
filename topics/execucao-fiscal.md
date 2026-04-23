@@ -70,6 +70,65 @@ Pós-reforma, foram todas absorvidas pela JF — parte do crescimento do
 estoque da JF nos anos 2010 reflete essa migração, não só ajuizamentos
 novos.
 
+### Organização interna — varas especializadas em EF
+
+Dentro de cada competência, a **especialização dos juízos** por matéria
+varia por tribunal, porte da comarca/subseção, e volume. Três modelos
+coexistem:
+
+1. **Vara especializada em execução fiscal**. Usada em comarcas/subseções
+   de grande volume. Exemplos:
+   - **TJSP, comarca da Capital**: tem **Vara das Execuções Fiscais
+     Estaduais** (ICMS, IPVA, ITCMD, multas estaduais) e **Vara das
+     Execuções Fiscais Municipais** (IPTU, ISS, ITBI, taxas
+     municipais). Esta última foi instalada em 10/11/2008 com
+     aproximadamente 2 milhões de processos em tramitação — 95% IPTU.
+     É um dos maiores juízos especializados do país em volume.
+   - **Justiça Federal, 1ª Subseção SP**: várias varas especializadas
+     em execução fiscal federal (10ª VEF, etc.); competência expandida
+     em dezembro/2024 para absorver municípios de outras subseções
+     (Sorocaba, Jundiaí, Osasco, Mauá, Barueri).
+2. **Vara especializada em Fazenda Pública** (matéria fazendária geral,
+   não apenas EF). Processa ações de improbidade, reintegração de posse,
+   danos morais contra o poder público, concursos públicos, e **EFs
+   também**. Modelo dominante em capitais de porte médio. Exemplos: TJMG
+   (Varas da Fazenda Pública e Autarquias, com rotinas padronizadas
+   desde 2013); TJRJ (Varas de Fazenda Pública).
+3. **Vara cível comum**. Em comarcas menores sem especialização, a
+   Fazenda Pública (incluindo EFs) tramita na vara cível única (ou
+   juízo único) ao lado de qualquer outra matéria. É a regra geral fora
+   das capitais e cidades grandes.
+
+Pontos relevantes para desenho empírico:
+
+- **Grau de especialização é heterogêneo intra-estado** — SP Capital
+  tem duas varas exclusivas de EF; Santos tem vara fazendária geral;
+  comarca pequena do interior tem juízo único. Comparações cross-vara
+  dentro de um mesmo TJ misturam **três modelos organizacionais
+  distintos**, não apenas variação de juiz.
+- **Vara especializada ≠ maior velocidade**. As varas especializadas
+  em EF (notadamente SP Capital) têm **estoques gigantes** acumulados;
+  a especialização é consequência do volume, não solução para ele. Não
+  é seguro assumir que "vara especializada" é proxy de throughput ou
+  qualidade.
+- **Redistribuição de competência** acontece por resoluções do TJ/TRF
+  (em 2024 a 1ª Subseção SP redistribuiu competência para absorver
+  outras subseções). Para séries temporais, atentar a resoluções que
+  mudam o arranjo — afetam composição de casos por vara sem
+  corresponder a mudanças substantivas.
+- **Juizados Especiais da Fazenda Pública** (Lei 12.153/2009) têm
+  competência para causas até 60 salários-mínimos em matéria
+  fazendária estadual/municipal, mas **execução fiscal é explicitamente
+  excluída** do JEFP (`L12153.2.§1.I`). EFs sempre tramitam na vara
+  comum (ou especializada em EF), nunca em juizado especial.
+
+**PROJECT-SPECIFIC — needs manual curation when used in study**:
+mapear o arranjo de especialização na amostra (quais comarcas têm
+vara exclusiva de EF vs. vara fazendária geral vs. vara cível) é
+pré-requisito para qualquer análise cross-vara de outcomes de EF. A
+informação vive em resoluções dos TJs/TRFs e em diretórios de varas
+nos portais dos tribunais; não há mapa consolidado público.
+
 ---
 
 ## 3. Rito da LEF
