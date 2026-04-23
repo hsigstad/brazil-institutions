@@ -78,6 +78,7 @@ acronyms and [`glossario.md`](glossario.md) for Portuguese legal terms.
 
 - [`topics/fluxo-corrupcao-municipal.md`](topics/fluxo-corrupcao-municipal.md) — Life cycle of a municipal corruption case: detection → TCE → câmara → MP → improbidade → sanctions → Ficha Limpa
 - [`topics/fluxo-transferencia-federal.md`](topics/fluxo-transferencia-federal.md) — How a federal transfer becomes a municipal expenditure: allocation → budget → procurement → audit → enforcement
+- [`topics/fluxo-credito-tributario.md`](topics/fluxo-credito-tributario.md) — Life cycle of a tax debt: fato gerador → lançamento → PAF → inscrição em dívida ativa → cobrança extrajudicial → execução fiscal → extinção
 
 ### Constitutional framework
 
