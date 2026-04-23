@@ -77,7 +77,9 @@ no longer be constituted.
 
 Once lançamento is notified to the contribuinte, the contestation
 channel is the processo administrativo fiscal (PAF federal: Decreto
-70.235/1972; estadual/municipal: leis próprias).
+70.235/1972; estadual/municipal: leis próprias — see
+`tribunais-administrativos-fiscais.md` for TIT-SP, CCMG, TARF, CMT-SP,
+CCM-Rio, and the general pattern).
 
 - **Impugnação**: 30 days after notificação to contest before the
   **DRJ** (Delegacia de Julgamento — 1ª instância administrativa).
@@ -269,7 +271,9 @@ See also:
 
 - `direito-tributario.md` — parte geral (lançamento, decadência,
   prescrição, responsabilidade, reforma tributária).
-- `processo-administrativo-fiscal.md` — detail on PAF/DRJ/CARF.
+- `processo-administrativo-fiscal.md` — detail on federal PAF/DRJ/CARF.
+- `tribunais-administrativos-fiscais.md` — state/municipal PATs
+  (TIT-SP, CCMG, Conselho RJ, TARF, CCRF, CMT-SP, CCM-Rio).
 - `divida-ativa.md` — detail on inscrição, CDA, protesto, averbação,
   transação.
 - `execucao-fiscal.md` — detail on the judicial stage.

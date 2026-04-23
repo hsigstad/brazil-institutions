@@ -204,18 +204,12 @@ rotineiro pós-Tema 1.115.
 
 ---
 
-## 7. PATs estaduais e municipais
+## 7. PATs estaduais e municipais — ver arquivo dedicado
 
-Cada ente federativo tem seu próprio processo administrativo fiscal:
-
-- **São Paulo** — TIT (Tribunal de Impostos e Taxas), sob Decreto
-  54.486/2009 e Lei 13.457/2009. Pareado (fazenda-contribuinte) em
-  alguns colegiados.
-- **Rio de Janeiro** — Conselho de Contribuintes do Estado; Decreto
-  2.473/1979.
-- **Minas Gerais** — Conselho de Contribuintes; CTE-MG.
-- **Municípios**: a maior parte segue estrutura mais simples,
-  julgamento em turmas de auditoria ou conselho municipal.
+O contencioso administrativo tributário estadual (TIT-SP, CCMG,
+Conselho de Contribuintes do RJ, TARF-RS, CCRF-PR, etc.) e municipal
+(CMT-SP, CCM-Rio, estruturas menores) é tratado em arquivo próprio:
+[`tribunais-administrativos-fiscais.md`](tribunais-administrativos-fiscais.md).
 
 **Caveat**: PATs estaduais e municipais variam enormemente em
 estrutura, paridade, prazo de recursos e duração do contencioso.

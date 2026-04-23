@@ -46,6 +46,9 @@ names, glossary.
 - **CARF** — Conselho Administrativo de Recursos Fiscais. Paritary federal tax-appeals body (Fazenda + contribuintes); 2nd instance of the PAF. → [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md)
 - **CBS** — Contribuição sobre Bens e Serviços. Federal VAT under EC 132/2023 reform. → [`topics/federalismo-fiscal.md`](topics/federalismo-fiscal.md), [`topics/direito-tributario.md`](topics/direito-tributario.md)
 - **CC** — Código Civil (Lei 10.406/2002).
+- **CCM** — Conselho de Contribuintes do Município (Rio de Janeiro). 2nd-instance municipal tax-appeals body for ISS/IPTU/ITBI cariocas. → [`topics/tribunais-administrativos-fiscais.md`](topics/tribunais-administrativos-fiscais.md)
+- **CCMG** — Conselho de Contribuintes do Estado de Minas Gerais. Paritary 2nd-instance state tax-appeals body. → [`topics/tribunais-administrativos-fiscais.md`](topics/tribunais-administrativos-fiscais.md)
+- **CCRF** — Conselho de Contribuintes e Recursos Fiscais (Paraná). Paritary 2nd-instance state tax-appeals body. → [`topics/tribunais-administrativos-fiscais.md`](topics/tribunais-administrativos-fiscais.md)
 - **CDA** — Certidão de Dívida Ativa. Extrajudicial executive title evidencing a tax or non-tax debt owed to a federative entity (`CTN.201`–`CTN.204`, `LEF.2`–`LEF.3`). → [`topics/divida-ativa.md`](topics/divida-ativa.md), [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md)
 - **CEAF** — Componente Especializado da Assistência Farmacêutica (SUS).
 - **CEIS** — Cadastro Nacional de Empresas Inidôneas e Suspensas. Public list of firms barred from contracting with the government. → [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md), [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
@@ -61,6 +64,7 @@ names, glossary.
 - **CJF** — Conselho da Justiça Federal. Administrative council of federal courts. → [`topics/cortes-superiores.md`](topics/cortes-superiores.md)
 - **CLT** — Consolidação das Leis do Trabalho (DL 5.452/1943). → [`topics/justica-trabalho.md`](topics/justica-trabalho.md)
 - **CMRI** — Comissão Mista de Reavaliação de Informações. Federal interministerial LAI appeal board. → [`topics/transparencia-dados.md`](topics/transparencia-dados.md)
+- **CMT** — Conselho Municipal de Tributos (São Paulo). Paritary 2nd-instance municipal tax-appeals body created by Lei municipal 14.107/2005. → [`topics/tribunais-administrativos-fiscais.md`](topics/tribunais-administrativos-fiscais.md)
 - **CNAE** — Classificação Nacional de Atividades Econômicas. Economic-activity classification.
 - **CNEP** — Cadastro Nacional de Empresas Punidas. Public list of firms sanctioned under Lei Anticorrupção. → [`topics/cgu-controle-interno.md`](topics/cgu-controle-interno.md), [`topics/anticorrupcao-penal.md`](topics/anticorrupcao-penal.md)
 - **CNJ** — Conselho Nacional de Justiça. Judicial-council oversight body. → [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md), [`topics/cortes-superiores.md`](topics/cortes-superiores.md)
@@ -268,12 +272,14 @@ names, glossary.
 ## T
 
 - **TAC** — Termo de Ajustamento de Conduta. Negotiated compliance agreement between MP and a violator (Lei 7.347/1985 Art. 5 §6). → [`topics/ministerio-publico.md`](topics/ministerio-publico.md)
+- **TARF** — Tribunal Administrativo de Recursos Fiscais (RS, DF). 2nd-instance state tax-appeals body; RS version set up under Lei 6.537/1973. → [`topics/tribunais-administrativos-fiscais.md`](topics/tribunais-administrativos-fiscais.md)
+- **TATE** — Tribunal Administrativo Tributário do Estado (PE). Pernambuco state tax-appeals body. → [`topics/tribunais-administrativos-fiscais.md`](topics/tribunais-administrativos-fiscais.md)
 - **TCE** — Tribunal de Contas do Estado. State-level audit court. → [`topics/tribunais-contas.md`](topics/tribunais-contas.md)
 - **TCE-SP** — Tribunal de Contas do Estado de São Paulo.
 - **TCM** — Tribunal de Contas do Município. Municipal audit court (only BA, GO, PA maintain active TCMs as of 2026; SP and RJ have municipal-level TCMs for the capitals).
 - **TCM-SP** — Tribunal de Contas do Município de São Paulo.
 - **TCU** — Tribunal de Contas da União. Federal audit court. → [`topics/tribunais-contas.md`](topics/tribunais-contas.md)
-- **TIT** — Tribunal de Impostos e Taxas (SP). São Paulo state tax-appeals tribunal; counterpart of the federal CARF at the state level. → [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md)
+- **TIT** — Tribunal de Impostos e Taxas (SP). São Paulo state tax-appeals tribunal; counterpart of the federal CARF at the state level. Established by Lei estadual 13.457/2009. → [`topics/tribunais-administrativos-fiscais.md`](topics/tribunais-administrativos-fiscais.md)
 - **TJ** — Tribunal de Justiça. State court of last resort. → [`topics/justica-estadual.md`](topics/justica-estadual.md)
 - **TJRS / TJSP / TJRJ / etc.** — Tribunal de Justiça of the corresponding state.
 - **TPU** — Tabelas Processuais Unificadas. CNJ unified case-classification schema (Res. 46/2007). → [`topics/cnj-administracao-judicial.md`](topics/cnj-administracao-judicial.md)

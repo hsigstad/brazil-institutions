@@ -123,6 +123,7 @@ acronyms and [`glossario.md`](glossario.md) for Portuguese legal terms.
 
 - [`topics/direito-tributario.md`](topics/direito-tributario.md) — CTN framework, lançamento, decadência/prescrição, responsabilidade, reforma tributária
 - [`topics/processo-administrativo-fiscal.md`](topics/processo-administrativo-fiscal.md) — PAF, DRJ, CARF, voto de qualidade
+- [`topics/tribunais-administrativos-fiscais.md`](topics/tribunais-administrativos-fiscais.md) — state/municipal PATs: TIT-SP, CCMG, Conselho RJ, TARF, CCRF, CMT-SP, CCM-Rio
 - [`topics/divida-ativa.md`](topics/divida-ativa.md) — inscrição em dívida ativa, CDA, PGFN, CADIN, protesto, averbação, transação
 - [`topics/execucao-fiscal.md`](topics/execucao-fiscal.md) — LEF, penhora, embargos, prescrição intercorrente, medida cautelar fiscal
 
